@@ -1,0 +1,4 @@
+name = Schoolcounter General API's
+description = General API's and functions.
+core = 7.x
+package = Custom module

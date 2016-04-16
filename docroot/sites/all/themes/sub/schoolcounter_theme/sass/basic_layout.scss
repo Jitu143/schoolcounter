@@ -1,0 +1,51 @@
+@import "variable";
+
+html {
+  font-size: 87.5%;
+  line-height: 1.3;
+}
+
+body {
+  font-size: 1rem;
+  color: $text-color;
+  font-family: $font-stack;
+
+  a {
+    color: $blue;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &.html {
+    > div, > header, > footer {
+      &.container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        position: relative;
+        background: white;
+      }
+    }
+  }
+
+  header#navbar {
+    margin: 0;
+  }
+
+  #first-time {
+    display: none;
+  }
+}
+
+div.row, .navbar-header, .navbar-collapse {
+  margin: 0;
+}
+
+div.highlighted.jumbotron{
+  background: white;
+  padding: 0;
+}
+
+section.col-sm-12 {
+  padding: 0;
+}
