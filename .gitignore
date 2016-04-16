@@ -1,0 +1,10 @@
+# Ignore configuration files that may contain sensitive information.
+docroot/sites/*/settings*.php
+
+# Ignore paths that contain user-generated content.
+docroot/sites/*/files
+docroot/sites/*/private
+
+# Ignore scss cache
+docroot/sites/*/.sass-cache
+docroot/sites/*/css/*.css.map

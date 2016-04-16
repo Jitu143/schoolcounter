@@ -1,0 +1,19 @@
+
+// Colors
+
+$text-color: #6B6B6B;
+$blue: blue;
+$white: white;
+$orange: orange;
+$distance: 40px;
+
+// Font size
+$h2_font: 2rem;
+
+// Fonts
+$font-stack:  'Gudea', sans-serif, Helvetica;
+$font-title:  'Oswald', sans-serif, Helvetica;
+$font-menu:  'Oswald', sans-serif, Helvetica;
+
+
+$white_bg: (background: $white, title: black, header-text: inherit, text:inherit, footer-background: $blue, footer-text: white, footer-bg-color-hover: $orange, footer-text-color-hover: $white);
