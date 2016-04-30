@@ -77,3 +77,18 @@ function schoolcounter_site_controller_update_7101() {
     ));
   }
 }
+
+/**
+ * Revert features.
+ */
+function schoolcounter_site_controller_update_7102() {
+  $modules = array('sc_f_context', 'sc_f_ct_events', 'sc_f_ct_school', 'sc_f_ct_school_result', 'sc_f_view_events', 'sc_f_view_school', 'sc_f_view_school_result');
+  module_enable($modules, TRUE);
+  features_revert_module('sc_f_context');
+  features_revert_module('sc_f_ct_events');
+  features_revert_module('sc_f_ct_school');
+  features_revert_module('sc_f_ct_school_result');
+  features_revert_module('sc_f_view_events');
+  features_revert_module('sc_f_view_school');
+  features_revert_module('sc_f_view_school_result');
+}
