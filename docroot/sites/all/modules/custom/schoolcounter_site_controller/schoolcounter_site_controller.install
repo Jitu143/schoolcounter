@@ -1,0 +1,79 @@
+<?php
+
+/**
+ * @file
+ * Install file.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function schoolcounter_site_controller_install() {
+  $themes = array('bootstrap', 'adminimal');
+  theme_enable($themes);
+
+  // Set bootstrap as default theme for all pages except admin.
+  variable_set('theme_default', 'schoolcounter_theme');
+
+  // Set Adminimal theme as admin theme.
+  variable_set('admin_theme', 'adminimal');
+
+  // Enable the following modules.
+  $modules = array(
+    'ctools',
+    'devel',
+    'features',
+    'module_filter',
+    'pathauto',
+    'redirect',
+    'strongarm',
+    'token',
+    'views',
+    'views_ui',
+  );
+  module_enable($modules);
+}
+
+/**
+ * Implements hook_update_N().
+ */
+function schoolcounter_site_controller_update_7100() {
+  $modules_to_disable = array(
+    'overlay',
+    'toolbar',
+    'comment',
+    'shortcut',
+    'help',
+    'search',
+  );
+  module_disable($modules_to_disable);
+}
+
+/**
+ *
+ * Implements hook_update_N().
+ * Create school medium vocab.
+ */
+function schoolcounter_site_controller_update_7101() {
+  // Create vocab.
+  taxonomy_vocabulary_save((object) array(
+    'name' => 'School medium',
+    'machine_name' => 'vocab_school_medium',
+  ));
+
+  // Get the vocabulary ID.
+  $vid = db_query("SELECT vid FROM {taxonomy_vocabulary} WHERE machine_name = 'vocab_school_medium'")->fetchField();
+
+  // Define the terms.
+  $terms['Hindi'] = 0;
+  $terms['English'] = 0;
+
+
+  foreach ($terms as $parent => $children) {
+     // Create the parent term.
+    taxonomy_term_save((object) array(
+      'name' => $parent,
+      'vid' => $vid,
+    ));
+  }
+}
