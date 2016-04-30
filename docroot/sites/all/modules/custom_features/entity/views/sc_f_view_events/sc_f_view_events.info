@@ -1,0 +1,4 @@
+name = sc_f_view_events
+core = 7.x
+package = views
+features[features_api][] = api:2
