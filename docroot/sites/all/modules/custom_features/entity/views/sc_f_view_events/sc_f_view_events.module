@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the sc_f_view_events feature.
  */
+
+include_once 'sc_f_view_events.features.inc';

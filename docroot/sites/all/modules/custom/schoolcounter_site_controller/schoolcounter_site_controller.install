@@ -82,7 +82,7 @@ function schoolcounter_site_controller_update_7101() {
  * Revert features.
  */
 function schoolcounter_site_controller_update_7102() {
-  $modules = array('sc_f_context', 'sc_f_ct_events', 'sc_f_ct_school', 'sc_f_ct_school_result', 'sc_f_view_events', 'sc_f_view_school', 'sc_f_view_school_result');
+  $modules = array('sc_f_context', 'sc_f_ct_events', 'sc_f_ct_school', 'sc_f_ct_school_result', 'sc_f_view_events', 'sc_f_view_school', 'sc_f_view_school_result', 'node_clone', 'telephone');
   module_enable($modules, TRUE);
   features_revert_module('sc_f_context');
   features_revert_module('sc_f_ct_events');
@@ -91,4 +91,34 @@ function schoolcounter_site_controller_update_7102() {
   features_revert_module('sc_f_view_events');
   features_revert_module('sc_f_view_school');
   features_revert_module('sc_f_view_school_result');
+  features_revert_module('sc_image_style');
+}
+
+/**
+ *
+ * Implements hook_update_N().
+ * Create school board vocab.
+ */
+function schoolcounter_site_controller_update_7103() {
+  // Create vocab.
+  taxonomy_vocabulary_save((object) array(
+    'name' => 'School board',
+    'machine_name' => 'vocab_school_board',
+  ));
+
+  // Get the vocabulary ID.
+  $vid = db_query("SELECT vid FROM {taxonomy_vocabulary} WHERE machine_name = 'vocab_school_board'")->fetchField();
+
+  // Define the terms.
+  $terms['CBSE'] = 0;
+  $terms['RBSE'] = 0;
+
+
+  foreach ($terms as $parent => $children) {
+     // Create the parent term.
+    taxonomy_term_save((object) array(
+      'name' => $parent,
+      'vid' => $vid,
+    ));
+  }
 }

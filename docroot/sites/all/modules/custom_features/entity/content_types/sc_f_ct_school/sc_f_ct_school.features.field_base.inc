@@ -100,7 +100,7 @@ function sc_f_ct_school_field_default_field_bases() {
   // Exported field_base: 'field_ct_medium'.
   $field_bases['field_ct_medium'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_ct_medium',
@@ -115,6 +115,32 @@ function sc_f_ct_school_field_default_field_bases() {
       'allowed_values' => array(
         0 => array(
           'vocabulary' => 'vocab_school_medium',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
+  // Exported field_base: 'field_ct_school_borad'.
+  $field_bases['field_ct_school_borad'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ct_school_borad',
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'vocab_school_board',
           'parent' => 0,
         ),
       ),
@@ -163,6 +189,36 @@ function sc_f_ct_school_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_fc_email'.
+  $field_bases['field_fc_email'] = array(
+    'active' => 1,
+    'cardinality' => 2,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_fc_email',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'email',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'email',
+  );
+
+  // Exported field_base: 'field_fc_phone'.
+  $field_bases['field_fc_phone'] = array(
+    'active' => 1,
+    'cardinality' => 3,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_fc_phone',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'telephone',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'telephone',
   );
 
   // Exported field_base: 'field_fc_pin_code'.
