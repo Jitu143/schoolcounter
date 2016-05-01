@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the sc_Image_style feature.
+ */
+
+include_once 'sc_image_style.features.inc';

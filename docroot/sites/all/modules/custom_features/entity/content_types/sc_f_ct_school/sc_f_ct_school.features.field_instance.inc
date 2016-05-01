@@ -81,6 +81,74 @@ function sc_f_ct_school_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'field_collection_item-field_ct_address-field_fc_email'.
+  $field_instances['field_collection_item-field_ct_address-field_fc_email'] = array(
+    'bundle' => 'field_ct_address',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'email',
+        'settings' => array(),
+        'type' => 'email_default',
+        'weight' => 6,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_fc_email',
+    'label' => 'Email',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'email',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'email_textfield',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_ct_address-field_fc_phone'.
+  $field_instances['field_collection_item-field_ct_address-field_fc_phone'] = array(
+    'bundle' => 'field_ct_address',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_plain',
+        'weight' => 5,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_fc_phone',
+    'label' => 'Phone',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'telephone',
+      'settings' => array(
+        'placeholder' => '',
+      ),
+      'type' => 'telephone_default',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance:
   // 'field_collection_item-field_ct_address-field_fc_pin_code'.
   $field_instances['field_collection_item-field_ct_address-field_fc_pin_code'] = array(
     'bundle' => 'field_ct_address',
@@ -174,7 +242,7 @@ function sc_f_ct_school_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_fc_town',
-    'label' => 'Town',
+    'label' => 'Address',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -402,18 +470,57 @@ function sc_f_ct_school_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ct_school-field_ct_school_borad'.
+  $field_instances['node-ct_school-field_ct_school_borad'] = array(
+    'bundle' => 'ct_school',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ct_school_borad',
+    'label' => 'School Board',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 37,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Address');
   t('Body');
   t('City');
   t('Distt.');
+  t('Email');
   t('Images');
   t('Logo');
   t('Medium');
+  t('Phone');
   t('Pin Code');
+  t('School Board');
   t('State');
-  t('Town');
 
   return $field_instances;
 }
