@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the sc_f_view_faculty feature.
+ */
+
+include_once 'sc_f_view_faculty.features.inc';
