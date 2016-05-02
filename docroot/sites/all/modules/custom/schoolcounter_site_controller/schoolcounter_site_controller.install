@@ -122,3 +122,14 @@ function schoolcounter_site_controller_update_7103() {
     ));
   }
 }
+
+/**
+ *
+ * Implements hook_update_N().
+ * Create teacher role.
+ */
+function schoolcounter_site_controller_update_7104() {
+  $role = new stdClass();
+  $role->name = 'Teacher';
+  user_role_save($role);
+}

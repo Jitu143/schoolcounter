@@ -1,0 +1,34 @@
+@import "variable";
+
+.page-school {
+
+  .view-display-id-page {
+    .view-content {
+
+      width: 50%;
+      margin: 0 auto;
+
+      .views-row {
+        border: 1px solid $border-color;
+        margin-top: $distance / 2;
+      }
+
+      .title {
+        font-size: 1.2rem;
+        a {
+          color: $text-color;
+        }
+      }
+
+      .views-field-field-ct-images, .views-field-nothing {
+        display: inline-block;
+        vertical-align: top;
+        //width: 48%;
+      }
+
+      .views-field-nothing {
+        margin-left: 2%;
+      }
+    }
+  }
+}

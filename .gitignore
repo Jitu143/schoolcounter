@@ -6,5 +6,5 @@ docroot/sites/*/files
 docroot/sites/*/private
 
 # Ignore scss cache
-docroot/sites/*/.sass-cache
+docroot/sites/*/.sass-cache/*.scssc
 docroot/sites/*/css/*.css.map

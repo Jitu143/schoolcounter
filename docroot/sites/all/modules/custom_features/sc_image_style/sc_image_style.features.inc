@@ -33,10 +33,25 @@ function sc_image_style_image_default_styles() {
         'name' => 'image_scale',
         'data' => array(
           'width' => 300,
-          'height' => 250,
+          'height' => 300,
           'upscale' => 1,
         ),
         'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported image style: style_teacher_profile.
+  $styles['style_teacher_profile'] = array(
+    'label' => 'Teacher profile',
+    'effects' => array(
+      5 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 250,
+          'height' => 250,
+        ),
+        'weight' => 1,
       ),
     ),
   );

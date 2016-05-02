@@ -27,9 +27,9 @@ function schoolcounter_general_apis_page_alter(&$page) {
   }
 
   switch ($path) {
-    case 'front':
+    case 'school':
       // drupal_add_js($theme_path . '/javascripts/homepage.js', 'file');
-      // drupal_add_css($theme_path . '/css/home.css', 'file');
+      drupal_add_css($theme_path . '/css/school.css', 'file');
       break;
   }
 }

@@ -47,6 +47,12 @@ function sc_f_context_context_default_contexts() {
           'region' => 'content',
           'weight' => '-9',
         ),
+        'views-views_school_faculty-block' => array(
+          'module' => 'views',
+          'delta' => 'views_school_faculty-block',
+          'region' => 'content',
+          'weight' => '-8',
+        ),
       ),
     ),
   );
