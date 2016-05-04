@@ -45,7 +45,7 @@ function sc_f_view_school_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Profile photo */
+  /* Field: Content: Images */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -188,7 +188,7 @@ function sc_f_view_school_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Profile photo */
+  /* Field: Content: Images */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -391,7 +391,7 @@ function sc_f_view_school_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Profile photo */
+  /* Field: Content: Images */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -405,6 +405,61 @@ function sc_f_view_school_views_default_views() {
   $handler->display->display_options['fields']['field_ct_images']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_ct_images']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_ct_images']['multi_type'] = 'ul';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'ct_school' => 'ct_school',
+  );
+
+  /* Display: School Detail */
+  $handler = $view->new_display('block', 'School Detail', 'block_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Know Our School';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: About Us */
+  $handler->display->display_options['fields']['field_ct_description']['id'] = 'field_ct_description';
+  $handler->display->display_options['fields']['field_ct_description']['table'] = 'field_data_field_ct_description';
+  $handler->display->display_options['fields']['field_ct_description']['field'] = 'field_ct_description';
+  $handler->display->display_options['fields']['field_ct_description']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_description']['hide_empty'] = TRUE;
+  /* Field: Content: Our Approach */
+  $handler->display->display_options['fields']['field_our_approach']['id'] = 'field_our_approach';
+  $handler->display->display_options['fields']['field_our_approach']['table'] = 'field_data_field_our_approach';
+  $handler->display->display_options['fields']['field_our_approach']['field'] = 'field_our_approach';
+  $handler->display->display_options['fields']['field_our_approach']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_our_approach']['hide_empty'] = TRUE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
