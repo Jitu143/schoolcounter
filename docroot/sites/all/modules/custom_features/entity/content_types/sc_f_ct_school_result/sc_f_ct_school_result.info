@@ -22,7 +22,6 @@ features[field_instance][] = field_collection_item-field_ct_student_result-field
 features[field_instance][] = field_collection_item-field_ct_student_result-field_fc_mark_obtained
 features[field_instance][] = field_collection_item-field_ct_student_result-field_fc_student_name
 features[field_instance][] = field_collection_item-field_ct_student_result-field_fc_student_photo
-features[field_instance][] = node-ct_school_results-field_ct_description
 features[field_instance][] = node-ct_school_results-field_ct_school
 features[field_instance][] = node-ct_school_results-field_ct_student_result
 features[node][] = ct_school_results

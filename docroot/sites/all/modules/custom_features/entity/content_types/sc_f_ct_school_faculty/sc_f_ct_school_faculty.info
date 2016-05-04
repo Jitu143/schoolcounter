@@ -16,7 +16,6 @@ features[field_base][] = field_ct_designation
 features[field_base][] = field_ct_education
 features[field_base][] = field_ct_experience
 features[field_base][] = field_ct_weight
-features[field_instance][] = node-ct_school_faculty-body
 features[field_instance][] = node-ct_school_faculty-field_ct_designation
 features[field_instance][] = node-ct_school_faculty-field_ct_education
 features[field_instance][] = node-ct_school_faculty-field_ct_experience

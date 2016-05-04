@@ -42,7 +42,7 @@ function sc_f_view_faculty_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Profile photo */
+  /* Field: Content: Images */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -118,7 +118,7 @@ function sc_f_view_faculty_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Field: Content: Profile photo */
+  /* Field: Content: Images */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -129,6 +129,8 @@ function sc_f_view_faculty_views_default_views() {
     'image_style' => 'style_teacher_profile',
     'image_link' => '',
   );
+  $handler->display->display_options['fields']['field_ct_images']['delta_limit'] = '1';
+  $handler->display->display_options['fields']['field_ct_images']['delta_offset'] = '0';
   /* Field: Content: Designation */
   $handler->display->display_options['fields']['field_ct_designation']['id'] = 'field_ct_designation';
   $handler->display->display_options['fields']['field_ct_designation']['table'] = 'field_data_field_ct_designation';
@@ -191,7 +193,7 @@ function sc_f_view_faculty_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Field: Content: Profile photo */
+  /* Field: Content: Images */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -202,6 +204,8 @@ function sc_f_view_faculty_views_default_views() {
     'image_style' => 'style_teacher_profile',
     'image_link' => '',
   );
+  $handler->display->display_options['fields']['field_ct_images']['delta_limit'] = '1';
+  $handler->display->display_options['fields']['field_ct_images']['delta_offset'] = '0';
   /* Field: Content: Designation */
   $handler->display->display_options['fields']['field_ct_designation']['id'] = 'field_ct_designation';
   $handler->display->display_options['fields']['field_ct_designation']['table'] = 'field_data_field_ct_designation';
