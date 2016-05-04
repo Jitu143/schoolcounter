@@ -10,47 +10,100 @@
 function sc_f_ct_events_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-ct_events-body'.
-  $field_instances['node-ct_events-body'] = array(
+  // Exported field_instance: 'node-ct_events-field_ct_date'.
+  $field_instances['node-ct_events-field_ct_date'] = array(
+    'bundle' => 'ct_events',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => FALSE,
+        ),
+        'type' => 'date_default',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ct_date',
+    'label' => 'Event Date',
+    'required' => 0,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'increment' => 15,
+        'input_format' => 'm/d/Y - H:i:s',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'no_fieldset' => 0,
+        'text_parts' => array(),
+        'year_range' => '-3:+3',
+      ),
+      'type' => 'date_popup',
+      'weight' => 35,
+    ),
+  );
+
+  // Exported field_instance: 'node-ct_events-field_ct_description'.
+  $field_instances['node-ct_events-field_ct_description'] = array(
     'bundle' => 'ct_events',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 4,
       ),
       'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'body',
-    'label' => 'Body',
-    'required' => FALSE,
+    'field_name' => 'field_ct_description',
+    'label' => 'Description',
+    'required' => 0,
     'settings' => array(
-      'display_summary' => TRUE,
+      'display_summary' => 0,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'rows' => 20,
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 31,
+      'weight' => 37,
     ),
   );
 
@@ -68,7 +121,7 @@ function sc_f_ct_events_field_default_field_instances() {
           'image_style' => '',
         ),
         'type' => 'image',
-        'weight' => 1,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -79,13 +132,13 @@ function sc_f_ct_events_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_ct_images',
-    'label' => 'Image',
+    'label' => 'Images',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
       'alt_field_required' => 0,
       'default_image' => 0,
-      'file_directory' => 'event/image/[current-date:custom:Y]/[current-date:custom:M]/[current-date:custom:d]',
+      'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
@@ -102,7 +155,7 @@ function sc_f_ct_events_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 33,
+      'weight' => 39,
     ),
   );
 
@@ -147,8 +200,9 @@ function sc_f_ct_events_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Body');
-  t('Image');
+  t('Description');
+  t('Event Date');
+  t('Images');
   t('school');
 
   return $field_instances;

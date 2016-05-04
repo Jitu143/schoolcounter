@@ -142,3 +142,21 @@ function schoolcounter_site_controller_update_7105() {
   module_enable($modules, TRUE);
   features_revert_module('sc_f_ct_school_blogs');
 }
+
+/**
+ * Enable module.
+ */
+function schoolcounter_site_controller_update_7106() {
+  $modules = array('date', 'date_popup');
+  module_enable($modules, TRUE);
+  features_revert_module('sc_f_context');
+  features_revert_module('sc_f_ct_events');
+  features_revert_module('sc_f_ct_school');
+  features_revert_module('sc_f_ct_school_blogs');
+  features_revert_module('sc_f_ct_school_faculty');
+  features_revert_module('sc_f_ct_school_result');
+  features_revert_module('sc_f_view_events');
+  features_revert_module('sc_f_view_school');
+}
+
+//configuration

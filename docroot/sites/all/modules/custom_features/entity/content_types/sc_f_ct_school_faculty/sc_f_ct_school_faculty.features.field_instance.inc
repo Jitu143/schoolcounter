@@ -10,49 +10,6 @@
 function sc_f_ct_school_faculty_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-ct_school_faculty-body'.
-  $field_instances['node-ct_school_faculty-body'] = array(
-    'bundle' => 'ct_school_faculty',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'body',
-    'label' => 'Body',
-    'required' => FALSE,
-    'settings' => array(
-      'display_summary' => TRUE,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 31,
-    ),
-  );
-
   // Exported field_instance: 'node-ct_school_faculty-field_ct_designation'.
   $field_instances['node-ct_school_faculty-field_ct_designation'] = array(
     'bundle' => 'ct_school_faculty',
@@ -175,7 +132,7 @@ function sc_f_ct_school_faculty_field_default_field_instances() {
   $field_instances['node-ct_school_faculty-field_ct_images'] = array(
     'bundle' => 'ct_school_faculty',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Provide your profile photo',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -192,7 +149,7 @@ function sc_f_ct_school_faculty_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_ct_images',
-    'label' => 'Profile photo',
+    'label' => 'Image',
     'required' => 0,
     'settings' => array(
       'alt_field' => 1,
@@ -333,12 +290,12 @@ function sc_f_ct_school_faculty_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Body');
   t('Designation');
   t('Education');
   t('Experience');
-  t('Profile photo');
+  t('Image');
   t('Provide in years');
+  t('Provide your profile photo');
   t('School');
   t('Weight');
 
