@@ -59,6 +59,12 @@ function sc_f_context_context_default_contexts() {
           'region' => 'content',
           'weight' => '-7',
         ),
+        'views-views_school_blogs-block_1' => array(
+          'module' => 'views',
+          'delta' => 'views_school_blogs-block_1',
+          'region' => 'content',
+          'weight' => '-6',
+        ),
       ),
     ),
   );

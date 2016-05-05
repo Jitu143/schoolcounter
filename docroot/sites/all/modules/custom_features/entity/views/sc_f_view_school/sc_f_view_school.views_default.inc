@@ -45,7 +45,7 @@ function sc_f_view_school_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Images */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -188,7 +188,7 @@ function sc_f_view_school_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Images */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -391,7 +391,7 @@ function sc_f_view_school_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Images */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -447,10 +447,11 @@ function sc_f_view_school_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: About Us */
+  /* Field: Content: Description */
   $handler->display->display_options['fields']['field_ct_description']['id'] = 'field_ct_description';
   $handler->display->display_options['fields']['field_ct_description']['table'] = 'field_data_field_ct_description';
   $handler->display->display_options['fields']['field_ct_description']['field'] = 'field_ct_description';
+  $handler->display->display_options['fields']['field_ct_description']['label'] = 'About Us';
   $handler->display->display_options['fields']['field_ct_description']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ct_description']['hide_empty'] = TRUE;
   /* Field: Content: Our Approach */
