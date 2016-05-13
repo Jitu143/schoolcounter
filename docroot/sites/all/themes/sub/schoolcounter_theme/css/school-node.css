@@ -1,6 +1,444 @@
-/* line 5, ../sass/school-node.scss */
+/* line 90, ../sass/_mixin.scss */
+#block-views-views-school-faculty-block .block-title, #block-views-views-events-block-1 .block-title, #block-views-views-school-block-2 .block-title, #block-views-views-school-blogs-block-1 .block-title {
+  font-family: "Oswald", sans-serif, Helvetica;
+  font-size: 2rem;
+}
+
+/* line 6, ../sass/school-node.scss */
 #block-views-views-school-block-1 .views-field-field-ct-images img {
   width: 100%;
+}
+
+/* line 12, ../sass/school-node.scss */
+#block-views-views-school-faculty-block {
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+/* line 12, ../sass/_mixin.scss */
+#block-views-views-school-faculty-block .block-title {
+  color: black;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
+  display: inline-block;
+}
+/* line 16, ../sass/_mixin.scss */
+#block-views-views-school-faculty-block .view-header {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: inherit;
+  margin-top: -20px;
+}
+/* line 20, ../sass/_mixin.scss */
+#block-views-views-school-faculty-block .view-content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+}
+/* line 81, ../sass/_mixin.scss */
+#block-views-views-school-faculty-block .view-content .views-rows {
+  text-align: left;
+}
+/* line 24, ../sass/_mixin.scss */
+#block-views-views-school-faculty-block .view-footer {
+  margin: auto;
+  margin-top: 40px;
+  width: auto;
+  min-width: 122px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 57, ../sass/_mixin.scss */
+#block-views-views-school-faculty-block .view-footer a {
+  color: white;
+  padding: 10px 16px;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid white;
+  background: blue;
+  transition: 0.5s all;
+}
+/* line 67, ../sass/_mixin.scss */
+#block-views-views-school-faculty-block .view-footer a:hover {
+  border: 1px solid white;
+  background: orange;
+  color: white;
+}
+/* line 14, ../sass/school-node.scss */
+#block-views-views-school-faculty-block .teacher-block {
+  position: relative;
+}
+/* line 16, ../sass/school-node.scss */
+#block-views-views-school-faculty-block .teacher-block img {
+  width: 100%;
+  height: auto;
+}
+/* line 20, ../sass/school-node.scss */
+#block-views-views-school-faculty-block .teacher-block .teacher-detail {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(111, 111, 255, 0.75);
+  box-shadow: 0px 0px 15px 2px rgba(111, 111, 255, 0.75);
+}
+/* line 35, ../sass/school-node.scss */
+#block-views-views-school-faculty-block .teacher-block:hover .teacher-detail {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+/* line 39, ../sass/school-node.scss */
+#block-views-views-school-faculty-block .teacher-detail {
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+/* line 45, ../sass/school-node.scss */
+#block-views-views-events-block-1 {
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+/* line 12, ../sass/_mixin.scss */
+#block-views-views-events-block-1 .block-title {
+  color: black;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
+  display: inline-block;
+}
+/* line 16, ../sass/_mixin.scss */
+#block-views-views-events-block-1 .view-header {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: inherit;
+  margin-top: -20px;
+}
+/* line 20, ../sass/_mixin.scss */
+#block-views-views-events-block-1 .view-content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+}
+/* line 81, ../sass/_mixin.scss */
+#block-views-views-events-block-1 .view-content .views-rows {
+  text-align: left;
+}
+/* line 24, ../sass/_mixin.scss */
+#block-views-views-events-block-1 .view-footer {
+  margin: auto;
+  margin-top: 40px;
+  width: auto;
+  min-width: 122px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 57, ../sass/_mixin.scss */
+#block-views-views-events-block-1 .view-footer a {
+  color: white;
+  padding: 10px 16px;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid white;
+  background: blue;
+  transition: 0.5s all;
+}
+/* line 67, ../sass/_mixin.scss */
+#block-views-views-events-block-1 .view-footer a:hover {
+  border: 1px solid white;
+  background: orange;
+  color: white;
+}
+/* line 48, ../sass/school-node.scss */
+#block-views-views-events-block-1 .views-row {
+  width: 25%;
+  float: left;
+}
+/* line 53, ../sass/school-node.scss */
+#block-views-views-events-block-1 .views-field-nothing {
+  padding: 0 10px;
+}
+/* line 57, ../sass/school-node.scss */
+#block-views-views-events-block-1 .event-container {
+  position: relative;
+  overflow: hidden;
+}
+/* line 60, ../sass/school-node.scss */
+#block-views-views-events-block-1 .event-container img {
+  width: 100%;
+  height: auto;
+}
+/* line 64, ../sass/school-node.scss */
+#block-views-views-events-block-1 .event-container .event-textbox {
+  text-align: left;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -100%;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: inset 0px 0px 5px 2px rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0px 0px 5px 2px rgba(255, 255, 255, 0.75);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  color: white;
+}
+/* line 80, ../sass/school-node.scss */
+#block-views-views-events-block-1 .event-container .event-textbox a {
+  color: white;
+}
+/* line 85, ../sass/school-node.scss */
+#block-views-views-events-block-1 .event-container:hover .event-textbox {
+  margin-top: 0;
+}
+/* line 89, ../sass/school-node.scss */
+#block-views-views-events-block-1 .read-more {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 15px 30px;
+}
+/* line 96, ../sass/school-node.scss */
+#block-views-views-events-block-1 .event-date {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 5px 10px;
+  margin-left: -20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+}
+/* line 106, ../sass/school-node.scss */
+#block-views-views-events-block-1 .title {
+  margin-top: 20px;
+}
+
+/* line 111, ../sass/school-node.scss */
+#block-views-views-school-block-2 {
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+/* line 12, ../sass/_mixin.scss */
+#block-views-views-school-block-2 .block-title {
+  color: black;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
+  display: inline-block;
+}
+/* line 16, ../sass/_mixin.scss */
+#block-views-views-school-block-2 .view-header {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: inherit;
+  margin-top: -20px;
+}
+/* line 20, ../sass/_mixin.scss */
+#block-views-views-school-block-2 .view-content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+}
+/* line 81, ../sass/_mixin.scss */
+#block-views-views-school-block-2 .view-content .views-rows {
+  text-align: left;
+}
+/* line 24, ../sass/_mixin.scss */
+#block-views-views-school-block-2 .view-footer {
+  margin: auto;
+  margin-top: 40px;
+  width: auto;
+  min-width: 122px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 57, ../sass/_mixin.scss */
+#block-views-views-school-block-2 .view-footer a {
+  color: white;
+  padding: 10px 16px;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid white;
+  background: blue;
+  transition: 0.5s all;
+}
+/* line 67, ../sass/_mixin.scss */
+#block-views-views-school-block-2 .view-footer a:hover {
+  border: 1px solid white;
+  background: orange;
+  color: white;
+}
+
+/* line 116, ../sass/school-node.scss */
+#views-bootstrap-accordion-schooldetail .panel.panel-default {
+  margin-bottom: 10px;
+}
+/* line 118, ../sass/school-node.scss */
+#views-bootstrap-accordion-schooldetail .panel.panel-default a.accordion-toggle {
+  display: block;
+  text-align: left;
+}
+
+/* line 125, ../sass/school-node.scss */
+#block-views-views-school-blogs-block-1 {
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+/* line 12, ../sass/_mixin.scss */
+#block-views-views-school-blogs-block-1 .block-title {
+  color: black;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
+  display: inline-block;
+}
+/* line 16, ../sass/_mixin.scss */
+#block-views-views-school-blogs-block-1 .view-header {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: inherit;
+  margin-top: -20px;
+}
+/* line 20, ../sass/_mixin.scss */
+#block-views-views-school-blogs-block-1 .view-content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+}
+/* line 81, ../sass/_mixin.scss */
+#block-views-views-school-blogs-block-1 .view-content .views-rows {
+  text-align: left;
+}
+/* line 24, ../sass/_mixin.scss */
+#block-views-views-school-blogs-block-1 .view-footer {
+  margin: auto;
+  margin-top: 40px;
+  width: auto;
+  min-width: 122px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 57, ../sass/_mixin.scss */
+#block-views-views-school-blogs-block-1 .view-footer a {
+  color: white;
+  padding: 10px 16px;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid white;
+  background: blue;
+  transition: 0.5s all;
+}
+/* line 67, ../sass/_mixin.scss */
+#block-views-views-school-blogs-block-1 .view-footer a:hover {
+  border: 1px solid white;
+  background: orange;
+  color: white;
+}
+/* line 127, ../sass/school-node.scss */
+#block-views-views-school-blogs-block-1 .views-row {
+  width: 25%;
+  float: left;
+}
+/* line 132, ../sass/school-node.scss */
+#block-views-views-school-blogs-block-1 .views-field-nothing {
+  padding: 0 10px;
+}
+/* line 136, ../sass/school-node.scss */
+#block-views-views-school-blogs-block-1 .blog-container {
+  position: relative;
+}
+/* line 139, ../sass/school-node.scss */
+#block-views-views-school-blogs-block-1 .blog-container img {
+  width: 100%;
+  height: auto;
+}
+/* line 143, ../sass/school-node.scss */
+#block-views-views-school-blogs-block-1 .blog-container .blog-textbox {
+  text-align: left;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0px 15px 2px rgba(255, 255, 255, 0.75);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  color: white;
+}
+/* line 164, ../sass/school-node.scss */
+#block-views-views-school-blogs-block-1 .blog-container .blog-textbox a {
+  color: white;
+}
+/* line 169, ../sass/school-node.scss */
+#block-views-views-school-blogs-block-1 .blog-textbox:hover {
+  margin-top: 0;
+  opacity: 1;
+}
+/* line 174, ../sass/school-node.scss */
+#block-views-views-school-blogs-block-1 .read-more {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 15px 30px;
+}
+/* line 181, ../sass/school-node.scss */
+#block-views-views-school-blogs-block-1 .blog-date {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 5px 10px;
+  margin-left: -20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+}
+/* line 191, ../sass/school-node.scss */
+#block-views-views-school-blogs-block-1 .title {
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=school-node.css.map */

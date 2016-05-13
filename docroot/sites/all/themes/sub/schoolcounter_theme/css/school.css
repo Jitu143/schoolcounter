@@ -1,29 +1,48 @@
-/* line 6, ../sass/school.scss */
-.page-school .view-display-id-page .view-content {
-  width: 50%;
-  margin: 0 auto;
-}
-/* line 11, ../sass/school.scss */
+/* line 7, ../sass/school.scss */
 .page-school .view-display-id-page .view-content .views-row {
   border: 1px solid #eee;
   margin-top: 20px;
+  position: relative;
 }
-/* line 16, ../sass/school.scss */
+/* line 13, ../sass/school.scss */
 .page-school .view-display-id-page .view-content .title {
   font-size: 1.2rem;
 }
-/* line 18, ../sass/school.scss */
+/* line 15, ../sass/school.scss */
 .page-school .view-display-id-page .view-content .title a {
-  color: #6B6B6B;
+  color: #888888;
 }
-/* line 23, ../sass/school.scss */
+/* line 21, ../sass/school.scss */
+.page-school .view-display-id-page .view-content .views-field-field-ct-images img {
+  width: 100%;
+  height: auto;
+}
+/* line 27, ../sass/school.scss */
 .page-school .view-display-id-page .view-content .views-field-field-ct-images, .page-school .view-display-id-page .view-content .views-field-nothing {
-  display: inline-block;
-  vertical-align: top;
+  width: 100%;
 }
-/* line 29, ../sass/school.scss */
+/* line 30, ../sass/school.scss */
 .page-school .view-display-id-page .view-content .views-field-nothing {
-  margin-left: 2%;
+  color: white;
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  background: rgba(10, 179, 163, 0.8);
+}
+/* line 39, ../sass/school.scss */
+.page-school .view-display-id-page .view-content .views-field-nothing a {
+  color: white;
+}
+/* line 43, ../sass/school.scss */
+.page-school .view-display-id-page .view-content .views-field-nothing .medium, .page-school .view-display-id-page .view-content .views-field-nothing .board {
+  position: absolute;
+  bottom: 10px;
+}
+/* line 48, ../sass/school.scss */
+.page-school .view-display-id-page .view-content .views-field-nothing .board {
+  right: 10px;
 }
 
 /*# sourceMappingURL=school.css.map */
