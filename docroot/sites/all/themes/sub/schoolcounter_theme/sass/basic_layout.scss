@@ -37,6 +37,10 @@ body {
   }
 }
 
+.breadcrumb {
+  margin-bottom: 0;
+}
+
 div.row, .navbar-header, .navbar-collapse {
   margin: 0;
 }
@@ -48,4 +52,24 @@ div.highlighted.jumbotron{
 
 section.col-sm-12 {
   padding: 0;
+}
+
+.page-header {
+  background: $green;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  color: $white;
+}
+
+.region-footer {
+  #block-menu-menu-sc-footer-menu {
+    background: $green-dark;
+    a {
+      color: white;
+    }
+    .block-title {
+      display: none;
+    }
+  }
 }

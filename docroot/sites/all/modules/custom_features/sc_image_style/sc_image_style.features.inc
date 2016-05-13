@@ -10,6 +10,21 @@
 function sc_image_style_image_default_styles() {
   $styles = array();
 
+  // Exported image style: style_event_thumbnail.
+  $styles['style_event_thumbnail'] = array(
+    'label' => 'event thumbnail',
+    'effects' => array(
+      7 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 300,
+          'height' => 300,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: style_school_banner.
   $styles['style_school_banner'] = array(
     'label' => 'school banner',
@@ -29,14 +44,13 @@ function sc_image_style_image_default_styles() {
   $styles['style_school_thumbnail'] = array(
     'label' => 'school thumbnail',
     'effects' => array(
-      3 => array(
-        'name' => 'image_scale',
+      6 => array(
+        'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 300,
-          'height' => 300,
-          'upscale' => 1,
+          'width' => 600,
+          'height' => 250,
         ),
-        'weight' => 2,
+        'weight' => 1,
       ),
     ),
   );

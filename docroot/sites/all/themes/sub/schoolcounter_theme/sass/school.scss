@@ -4,13 +4,10 @@
 
   .view-display-id-page {
     .view-content {
-
-      width: 50%;
-      margin: 0 auto;
-
       .views-row {
         border: 1px solid $border-color;
         margin-top: $distance / 2;
+        position: relative;
       }
 
       .title {
@@ -20,14 +17,37 @@
         }
       }
 
-      .views-field-field-ct-images, .views-field-nothing {
-        display: inline-block;
-        vertical-align: top;
-        //width: 48%;
+      .views-field-field-ct-images {
+        img {
+          width: 100%;
+          height: auto;
+        }
       }
 
+      .views-field-field-ct-images, .views-field-nothing {
+        width: 100%;
+      }
       .views-field-nothing {
-        margin-left: 2%;
+        color: $white;
+        position: absolute;
+        top: 0;
+        padding: 20px;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.80);
+        background: rgba(10, 179, 163, 0.8);
+
+        a {
+          color: $white;
+        }
+
+        .medium, .board {
+          position: absolute;
+          bottom: 10px;
+        }
+
+        .board {
+          right: 10px;
+        }
       }
     }
   }
