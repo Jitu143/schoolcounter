@@ -1,4 +1,4 @@
-name = sc_f_view_school
+name = School
 core = 7.x
 package = views
 dependencies[] = views

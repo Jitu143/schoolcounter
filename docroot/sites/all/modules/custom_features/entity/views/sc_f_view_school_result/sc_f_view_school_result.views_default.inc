@@ -51,7 +51,7 @@ function sc_f_view_school_result_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Contextual filter: Content: school (field_ct_school) */
+  /* Contextual filter: Field: school (field_ct_school) */
   $handler->display->display_options['arguments']['field_ct_school_target_id']['id'] = 'field_ct_school_target_id';
   $handler->display->display_options['arguments']['field_ct_school_target_id']['table'] = 'field_data_field_ct_school';
   $handler->display->display_options['arguments']['field_ct_school_target_id']['field'] = 'field_ct_school_target_id';
@@ -120,7 +120,7 @@ function sc_f_view_school_result_views_default_views() {
   $handler->display->display_options['fields']['field_fc_student_name']['table'] = 'field_data_field_fc_student_name';
   $handler->display->display_options['fields']['field_fc_student_name']['field'] = 'field_fc_student_name';
   $handler->display->display_options['fields']['field_fc_student_name']['relationship'] = 'field_ct_student_result_value';
-  /* Field: Field collection item: Student photo */
+  /* Field: Field collection item: Photo */
   $handler->display->display_options['fields']['field_fc_student_photo']['id'] = 'field_fc_student_photo';
   $handler->display->display_options['fields']['field_fc_student_photo']['table'] = 'field_data_field_fc_student_photo';
   $handler->display->display_options['fields']['field_fc_student_photo']['field'] = 'field_fc_student_photo';
@@ -136,7 +136,7 @@ function sc_f_view_school_result_views_default_views() {
   $handler->display->display_options['fields']['field_ct_student_percent']['field'] = 'field_ct_student_percent';
   $handler->display->display_options['fields']['field_ct_student_percent']['relationship'] = 'field_ct_student_result_value';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: school (field_ct_school) */
+  /* Contextual filter: Field: school (field_ct_school) */
   $handler->display->display_options['arguments']['field_ct_school_target_id']['id'] = 'field_ct_school_target_id';
   $handler->display->display_options['arguments']['field_ct_school_target_id']['table'] = 'field_data_field_ct_school';
   $handler->display->display_options['arguments']['field_ct_school_target_id']['field'] = 'field_ct_school_target_id';
