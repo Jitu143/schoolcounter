@@ -7,7 +7,7 @@ html {
 /* line 8, ../sass/basic_layout.scss */
 body {
   font-size: 1rem;
-  color: #6B6B6B;
+  color: #888888;
   font-family: "Gudea", sans-serif, Helvetica;
 }
 /* line 13, ../sass/basic_layout.scss */
@@ -36,19 +36,46 @@ body #first-time {
 }
 
 /* line 40, ../sass/basic_layout.scss */
+.breadcrumb {
+  margin-bottom: 0;
+}
+
+/* line 44, ../sass/basic_layout.scss */
 div.row, .navbar-header, .navbar-collapse {
   margin: 0;
 }
 
-/* line 44, ../sass/basic_layout.scss */
+/* line 48, ../sass/basic_layout.scss */
 div.highlighted.jumbotron {
   background: white;
   padding: 0;
 }
 
-/* line 49, ../sass/basic_layout.scss */
+/* line 53, ../sass/basic_layout.scss */
 section.col-sm-12 {
   padding: 0;
+}
+
+/* line 57, ../sass/basic_layout.scss */
+.page-header {
+  background: #0ab3a3;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  color: white;
+}
+
+/* line 66, ../sass/basic_layout.scss */
+.region-footer #block-menu-menu-sc-footer-menu {
+  background: #078377;
+}
+/* line 68, ../sass/basic_layout.scss */
+.region-footer #block-menu-menu-sc-footer-menu a {
+  color: white;
+}
+/* line 71, ../sass/basic_layout.scss */
+.region-footer #block-menu-menu-sc-footer-menu .block-title {
+  display: none;
 }
 
 /*# sourceMappingURL=basic_layout.css.map */

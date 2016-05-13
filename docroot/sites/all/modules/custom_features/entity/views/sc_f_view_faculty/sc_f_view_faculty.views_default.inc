@@ -42,7 +42,7 @@ function sc_f_view_faculty_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Profile photo */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -100,6 +100,10 @@ function sc_f_view_faculty_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '4';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['footer'] = FALSE;
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['area']['id'] = 'area';
@@ -114,39 +118,55 @@ function sc_f_view_faculty_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Field: Content: Profile photo */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['label'] = '';
+  $handler->display->display_options['fields']['field_ct_images']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ct_images']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ct_images']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ct_images']['settings'] = array(
     'image_style' => 'style_teacher_profile',
     'image_link' => '',
   );
+  $handler->display->display_options['fields']['field_ct_images']['delta_limit'] = '1';
+  $handler->display->display_options['fields']['field_ct_images']['delta_offset'] = '0';
   /* Field: Content: Designation */
   $handler->display->display_options['fields']['field_ct_designation']['id'] = 'field_ct_designation';
   $handler->display->display_options['fields']['field_ct_designation']['table'] = 'field_data_field_ct_designation';
   $handler->display->display_options['fields']['field_ct_designation']['field'] = 'field_ct_designation';
   $handler->display->display_options['fields']['field_ct_designation']['label'] = '';
+  $handler->display->display_options['fields']['field_ct_designation']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_ct_designation']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_ct_designation']['alter']['text'] = '<div class="designation">[field_ct_designation]</div>';
   $handler->display->display_options['fields']['field_ct_designation']['element_label_colon'] = FALSE;
   /* Field: Content: Education */
   $handler->display->display_options['fields']['field_ct_education']['id'] = 'field_ct_education';
   $handler->display->display_options['fields']['field_ct_education']['table'] = 'field_data_field_ct_education';
   $handler->display->display_options['fields']['field_ct_education']['field'] = 'field_ct_education';
   $handler->display->display_options['fields']['field_ct_education']['label'] = '';
+  $handler->display->display_options['fields']['field_ct_education']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_ct_education']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_ct_education']['alter']['text'] = '<div class="education">[field_ct_education]</div>';
   $handler->display->display_options['fields']['field_ct_education']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_education']['hide_empty'] = TRUE;
   /* Field: Content: Experience */
   $handler->display->display_options['fields']['field_ct_experience']['id'] = 'field_ct_experience';
   $handler->display->display_options['fields']['field_ct_experience']['table'] = 'field_data_field_ct_experience';
   $handler->display->display_options['fields']['field_ct_experience']['field'] = 'field_ct_experience';
   $handler->display->display_options['fields']['field_ct_experience']['label'] = '';
+  $handler->display->display_options['fields']['field_ct_experience']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_ct_experience']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_ct_experience']['alter']['text'] = '<div class="experience">[field_ct_experience] Years</div>';
   $handler->display->display_options['fields']['field_ct_experience']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_experience']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_ct_experience']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_ct_experience']['settings'] = array(
     'thousand_separator' => '',
     'prefix_suffix' => 1,
@@ -162,6 +182,21 @@ function sc_f_view_faculty_views_default_views() {
   $handler->display->display_options['fields']['field_ct_school']['settings'] = array(
     'link' => 0,
   );
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="teacher-block teacher-block-second">  
+     [field_ct_images] 
+<div class="teacher-detail">
+     <h4 class="name">[title]</h4> 
+   [field_ct_education]
+     [field_ct_designation]
+     [field_ct_experience]
+</div>
+</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Field: school (field_ct_school) */
   $handler->display->display_options['arguments']['field_ct_school_target_id']['id'] = 'field_ct_school_target_id';
@@ -191,7 +226,7 @@ function sc_f_view_faculty_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Field: Content: Profile photo */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -202,6 +237,8 @@ function sc_f_view_faculty_views_default_views() {
     'image_style' => 'style_teacher_profile',
     'image_link' => '',
   );
+  $handler->display->display_options['fields']['field_ct_images']['delta_limit'] = '1';
+  $handler->display->display_options['fields']['field_ct_images']['delta_offset'] = '0';
   /* Field: Content: Designation */
   $handler->display->display_options['fields']['field_ct_designation']['id'] = 'field_ct_designation';
   $handler->display->display_options['fields']['field_ct_designation']['table'] = 'field_data_field_ct_designation';

@@ -162,46 +162,6 @@ function sc_f_ct_school_result_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ct_school_results-field_ct_description'.
-  $field_instances['node-ct_school_results-field_ct_description'] = array(
-    'bundle' => 'ct_school_results',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ct_description',
-    'label' => 'Description',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 33,
-    ),
-  );
-
   // Exported field_instance: 'node-ct_school_results-field_ct_school'.
   $field_instances['node-ct_school_results-field_ct_school'] = array(
     'bundle' => 'ct_school_results',
@@ -286,7 +246,6 @@ function sc_f_ct_school_result_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Description');
   t('Mark obtained');
   t('Student Name');
   t('Student Percent');

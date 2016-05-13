@@ -1,9 +1,194 @@
 @import "variable";
+@import "mixin";
 
 #block-views-views-school-block-1 {
   .views-field-field-ct-images {
     img {
       width: 100%;
     }
+  }
+}
+
+#block-views-views-school-faculty-block {
+  @include main_block($white_bg...);
+  .teacher-block {
+    position:relative;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .teacher-detail {
+      padding: 20px;
+      width:100%;
+      height:100%;
+      position:absolute;
+      top:0;
+      left:0;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      border-radius:5px;
+      background-color: rgba(0,0,0,0.75);
+      -webkit-box-shadow: 0px 0px 15px 2px rgba(111,111,255,.75);
+      box-shadow: 0px 0px 15px 2px rgba(111,111,255,.75);
+    }
+  }
+  .teacher-block:hover .teacher-detail {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  .teacher-detail {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+  }
+}
+
+#block-views-views-events-block-1 {
+  @include main_block($white_bg...);
+
+  .views-row {
+    width: 25%;
+    float: left;
+  }
+
+  .views-field-nothing {
+    padding: 0 10px;
+  }
+
+  .event-container {
+    position:relative;
+    overflow:hidden;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .event-textbox {
+      text-align: left;
+      padding: 20px;
+      width:100%;
+      height:100%;
+      position:absolute;
+      top:0;
+      left:0;
+      margin-top:-100%;
+      border-radius:5px;
+      background-color: rgba(0,0,0,0.75);
+      -webkit-box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+      box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+      -webkit-transition: all 0.7s ease;
+      transition: all 0.7s ease;
+      color: $white;
+      a {
+        color: $white;
+      }
+    }
+  }
+  .event-container:hover .event-textbox {
+    margin-top:0;
+  }
+
+  .read-more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 15px 30px;
+  }
+
+  .event-date {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 5px 10px;
+    margin-left: -20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+  }
+
+  .title {
+    margin-top: 20px;
+  }
+}
+
+#block-views-views-school-block-2 {
+  @include main_block($white_bg...);
+}
+
+#views-bootstrap-accordion-schooldetail {
+  .panel.panel-default {
+    margin-bottom: 10px;
+    a.accordion-toggle {
+      display: block;
+      text-align: left;
+    }
+  }
+}
+
+#block-views-views-school-blogs-block-1 {
+  @include main_block($white_bg...);
+  .views-row {
+    width: 25%;
+    float: left;
+  }
+
+  .views-field-nothing {
+    padding: 0 10px;
+  }
+
+  .blog-container {
+    position:relative;
+    //overflow:hidden;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .blog-textbox {
+      text-align: left;
+      padding: 20px;
+      width:100%;
+      height:100%;
+      position:absolute;
+      top:0;
+      left:0;
+      //margin-top:-100%;
+      border-radius:5px;
+      background-color: rgba(0,0,0,0.75);
+      opacity:0;
+      // -webkit-box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+      // box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+      // -webkit-transition: all 0.7s ease;
+      // transition: all 0.7s ease;
+      -webkit-box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);
+      box-shadow: 0px 0px 15px 2px rgba(255,255,255,.75);
+      -webkit-transition: all 0.7s ease;
+      transition: all 0.7s ease;
+      color: $white;
+      a {
+        color: $white;
+      }
+    }
+  }
+  .blog-textbox:hover {
+    margin-top:0;
+    opacity: 1;
+  }
+
+  .read-more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 15px 30px;
+  }
+
+  .blog-date {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 5px 10px;
+    margin-left: -20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+  }
+
+  .title {
+    margin-top: 20px;
   }
 }

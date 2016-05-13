@@ -45,7 +45,7 @@ function sc_f_view_school_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Profile photo */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -188,7 +188,7 @@ function sc_f_view_school_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Profile photo */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -287,13 +287,30 @@ function sc_f_view_school_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'ct_school' => 'ct_school',
   );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Title */
+  $handler->display->display_options['filters']['title']['id'] = 'title';
+  $handler->display->display_options['filters']['title']['table'] = 'node';
+  $handler->display->display_options['filters']['title']['field'] = 'title';
+  $handler->display->display_options['filters']['title']['operator'] = 'contains';
+  $handler->display->display_options['filters']['title']['group'] = 1;
+  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['label'] = 'School Name';
+  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
+  $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    5 => 0,
+  );
   /* Filter criterion: Field collection item: Address (field_fc_town) */
   $handler->display->display_options['filters']['field_fc_town_value']['id'] = 'field_fc_town_value';
   $handler->display->display_options['filters']['field_fc_town_value']['table'] = 'field_data_field_fc_town';
   $handler->display->display_options['filters']['field_fc_town_value']['field'] = 'field_fc_town_value';
   $handler->display->display_options['filters']['field_fc_town_value']['relationship'] = 'field_ct_address_value';
   $handler->display->display_options['filters']['field_fc_town_value']['operator'] = 'contains';
-  $handler->display->display_options['filters']['field_fc_town_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_fc_town_value']['group'] = 1;
   $handler->display->display_options['filters']['field_fc_town_value']['expose']['operator_id'] = 'field_fc_town_value_op';
   $handler->display->display_options['filters']['field_fc_town_value']['expose']['label'] = 'Address';
   $handler->display->display_options['filters']['field_fc_town_value']['expose']['operator'] = 'field_fc_town_value_op';
@@ -309,7 +326,7 @@ function sc_f_view_school_views_default_views() {
   $handler->display->display_options['filters']['field_fc_city_value']['field'] = 'field_fc_city_value';
   $handler->display->display_options['filters']['field_fc_city_value']['relationship'] = 'field_ct_address_value';
   $handler->display->display_options['filters']['field_fc_city_value']['operator'] = 'contains';
-  $handler->display->display_options['filters']['field_fc_city_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_fc_city_value']['group'] = 1;
   $handler->display->display_options['filters']['field_fc_city_value']['expose']['operator_id'] = 'field_fc_city_value_op';
   $handler->display->display_options['filters']['field_fc_city_value']['expose']['label'] = 'City';
   $handler->display->display_options['filters']['field_fc_city_value']['expose']['operator'] = 'field_fc_city_value_op';
@@ -319,51 +336,43 @@ function sc_f_view_school_views_default_views() {
     1 => 0,
     3 => 0,
   );
-  /* Filter criterion: Field collection item: Distt. (field_fc_distt) */
-  $handler->display->display_options['filters']['field_fc_distt_value']['id'] = 'field_fc_distt_value';
-  $handler->display->display_options['filters']['field_fc_distt_value']['table'] = 'field_data_field_fc_distt';
-  $handler->display->display_options['filters']['field_fc_distt_value']['field'] = 'field_fc_distt_value';
-  $handler->display->display_options['filters']['field_fc_distt_value']['relationship'] = 'field_ct_address_value';
-  $handler->display->display_options['filters']['field_fc_distt_value']['operator'] = 'contains';
-  $handler->display->display_options['filters']['field_fc_distt_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_fc_distt_value']['expose']['operator_id'] = 'field_fc_distt_value_op';
-  $handler->display->display_options['filters']['field_fc_distt_value']['expose']['label'] = 'District';
-  $handler->display->display_options['filters']['field_fc_distt_value']['expose']['operator'] = 'field_fc_distt_value_op';
-  $handler->display->display_options['filters']['field_fc_distt_value']['expose']['identifier'] = 'field_fc_distt_value';
-  $handler->display->display_options['filters']['field_fc_distt_value']['expose']['remember_roles'] = array(
+  /* Filter criterion: Global: Combine fields filter */
+  $handler->display->display_options['filters']['combine']['id'] = 'combine';
+  $handler->display->display_options['filters']['combine']['table'] = 'views';
+  $handler->display->display_options['filters']['combine']['field'] = 'combine';
+  $handler->display->display_options['filters']['combine']['operator'] = 'contains';
+  $handler->display->display_options['filters']['combine']['group'] = 1;
+  $handler->display->display_options['filters']['combine']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['combine']['expose']['operator_id'] = 'combine_op';
+  $handler->display->display_options['filters']['combine']['expose']['label'] = 'Search by Name, city, address';
+  $handler->display->display_options['filters']['combine']['expose']['operator'] = 'combine_op';
+  $handler->display->display_options['filters']['combine']['expose']['identifier'] = 'combine';
+  $handler->display->display_options['filters']['combine']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
     3 => 0,
+    5 => 0,
   );
-  /* Filter criterion: Field collection item: State (field_fc_state) */
-  $handler->display->display_options['filters']['field_fc_state_value']['id'] = 'field_fc_state_value';
-  $handler->display->display_options['filters']['field_fc_state_value']['table'] = 'field_data_field_fc_state';
-  $handler->display->display_options['filters']['field_fc_state_value']['field'] = 'field_fc_state_value';
-  $handler->display->display_options['filters']['field_fc_state_value']['relationship'] = 'field_ct_address_value';
-  $handler->display->display_options['filters']['field_fc_state_value']['operator'] = 'contains';
-  $handler->display->display_options['filters']['field_fc_state_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_fc_state_value']['expose']['operator_id'] = 'field_fc_state_value_op';
-  $handler->display->display_options['filters']['field_fc_state_value']['expose']['label'] = 'State';
-  $handler->display->display_options['filters']['field_fc_state_value']['expose']['operator'] = 'field_fc_state_value_op';
-  $handler->display->display_options['filters']['field_fc_state_value']['expose']['identifier'] = 'field_fc_state_value';
-  $handler->display->display_options['filters']['field_fc_state_value']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
+  $handler->display->display_options['filters']['combine']['fields'] = array(
+    'title' => 'title',
+    'field_fc_town' => 'field_fc_town',
+    'field_fc_city' => 'field_fc_city',
   );
   /* Filter criterion: Content: Medium (field_ct_medium) */
   $handler->display->display_options['filters']['field_ct_medium_tid']['id'] = 'field_ct_medium_tid';
   $handler->display->display_options['filters']['field_ct_medium_tid']['table'] = 'field_data_field_ct_medium';
   $handler->display->display_options['filters']['field_ct_medium_tid']['field'] = 'field_ct_medium_tid';
+  $handler->display->display_options['filters']['field_ct_medium_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_ct_medium_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_ct_medium_tid']['expose']['operator_id'] = 'field_ct_medium_tid_op';
-  $handler->display->display_options['filters']['field_ct_medium_tid']['expose']['label'] = 'Language Medium';
+  $handler->display->display_options['filters']['field_ct_medium_tid']['expose']['label'] = 'School Medium';
   $handler->display->display_options['filters']['field_ct_medium_tid']['expose']['operator'] = 'field_ct_medium_tid_op';
   $handler->display->display_options['filters']['field_ct_medium_tid']['expose']['identifier'] = 'field_ct_medium_tid';
   $handler->display->display_options['filters']['field_ct_medium_tid']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
     3 => 0,
+    5 => 0,
   );
   $handler->display->display_options['filters']['field_ct_medium_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_ct_medium_tid']['vocabulary'] = 'vocab_school_medium';
@@ -372,6 +381,7 @@ function sc_f_view_school_views_default_views() {
   $handler->display->display_options['filters']['field_ct_school_borad_tid']['id'] = 'field_ct_school_borad_tid';
   $handler->display->display_options['filters']['field_ct_school_borad_tid']['table'] = 'field_data_field_ct_school_borad';
   $handler->display->display_options['filters']['field_ct_school_borad_tid']['field'] = 'field_ct_school_borad_tid';
+  $handler->display->display_options['filters']['field_ct_school_borad_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_ct_school_borad_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_ct_school_borad_tid']['expose']['operator_id'] = 'field_ct_school_borad_tid_op';
   $handler->display->display_options['filters']['field_ct_school_borad_tid']['expose']['label'] = 'School Board';
@@ -381,6 +391,7 @@ function sc_f_view_school_views_default_views() {
     2 => '2',
     1 => 0,
     3 => 0,
+    5 => 0,
   );
   $handler->display->display_options['filters']['field_ct_school_borad_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_ct_school_borad_tid']['vocabulary'] = 'vocab_school_board';
@@ -391,7 +402,7 @@ function sc_f_view_school_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Profile photo */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -405,6 +416,191 @@ function sc_f_view_school_views_default_views() {
   $handler->display->display_options['fields']['field_ct_images']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_ct_images']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_ct_images']['multi_type'] = 'ul';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'ct_school' => 'ct_school',
+  );
+
+  /* Display: School Detail */
+  $handler = $view->new_display('block', 'School Detail', 'block_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Know Our School';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['hide_empty'] = TRUE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Description */
+  $handler->display->display_options['fields']['field_ct_description']['id'] = 'field_ct_description';
+  $handler->display->display_options['fields']['field_ct_description']['table'] = 'field_data_field_ct_description';
+  $handler->display->display_options['fields']['field_ct_description']['field'] = 'field_ct_description';
+  $handler->display->display_options['fields']['field_ct_description']['label'] = 'About Us';
+  $handler->display->display_options['fields']['field_ct_description']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_description']['hide_empty'] = TRUE;
+  /* Field: Content: Our Approach */
+  $handler->display->display_options['fields']['field_our_approach']['id'] = 'field_our_approach';
+  $handler->display->display_options['fields']['field_our_approach']['table'] = 'field_data_field_our_approach';
+  $handler->display->display_options['fields']['field_our_approach']['field'] = 'field_our_approach';
+  $handler->display->display_options['fields']['field_our_approach']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_our_approach']['hide_empty'] = TRUE;
+  /* Field: Content: Academics */
+  $handler->display->display_options['fields']['field_ct_academics']['id'] = 'field_ct_academics';
+  $handler->display->display_options['fields']['field_ct_academics']['table'] = 'field_data_field_ct_academics';
+  $handler->display->display_options['fields']['field_ct_academics']['field'] = 'field_ct_academics';
+  $handler->display->display_options['fields']['field_ct_academics']['element_label_colon'] = FALSE;
+  /* Field: Content: Activity Hub */
+  $handler->display->display_options['fields']['field_ct_activity_hub']['id'] = 'field_ct_activity_hub';
+  $handler->display->display_options['fields']['field_ct_activity_hub']['table'] = 'field_data_field_ct_activity_hub';
+  $handler->display->display_options['fields']['field_ct_activity_hub']['field'] = 'field_ct_activity_hub';
+  $handler->display->display_options['fields']['field_ct_activity_hub']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_activity_hub']['settings'] = array(
+    'edit' => 'Edit',
+    'delete' => 'Delete',
+    'add' => 'Add',
+    'description' => 1,
+    'view_mode' => 'full',
+  );
+  $handler->display->display_options['fields']['field_ct_activity_hub']['delta_offset'] = '0';
+  /* Field: Content: Admission Procedure */
+  $handler->display->display_options['fields']['field_ct_admission_procedure']['id'] = 'field_ct_admission_procedure';
+  $handler->display->display_options['fields']['field_ct_admission_procedure']['table'] = 'field_data_field_ct_admission_procedure';
+  $handler->display->display_options['fields']['field_ct_admission_procedure']['field'] = 'field_ct_admission_procedure';
+  $handler->display->display_options['fields']['field_ct_admission_procedure']['element_label_colon'] = FALSE;
+  /* Field: Content: Brochures */
+  $handler->display->display_options['fields']['field_ct_brochures']['id'] = 'field_ct_brochures';
+  $handler->display->display_options['fields']['field_ct_brochures']['table'] = 'field_data_field_ct_brochures';
+  $handler->display->display_options['fields']['field_ct_brochures']['field'] = 'field_ct_brochures';
+  $handler->display->display_options['fields']['field_ct_brochures']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_brochures']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_ct_brochures']['delta_offset'] = '0';
+  /* Field: Content: Calendar */
+  $handler->display->display_options['fields']['field_ct_calendar']['id'] = 'field_ct_calendar';
+  $handler->display->display_options['fields']['field_ct_calendar']['table'] = 'field_data_field_ct_calendar';
+  $handler->display->display_options['fields']['field_ct_calendar']['field'] = 'field_ct_calendar';
+  $handler->display->display_options['fields']['field_ct_calendar']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_calendar']['click_sort_column'] = 'fid';
+  /* Field: Content: Careers */
+  $handler->display->display_options['fields']['field_ct_careers']['id'] = 'field_ct_careers';
+  $handler->display->display_options['fields']['field_ct_careers']['table'] = 'field_data_field_ct_careers';
+  $handler->display->display_options['fields']['field_ct_careers']['field'] = 'field_ct_careers';
+  $handler->display->display_options['fields']['field_ct_careers']['element_label_colon'] = FALSE;
+  /* Field: Content: Chairman’s Message */
+  $handler->display->display_options['fields']['field_ct_chairman_message']['id'] = 'field_ct_chairman_message';
+  $handler->display->display_options['fields']['field_ct_chairman_message']['table'] = 'field_data_field_ct_chairman_message';
+  $handler->display->display_options['fields']['field_ct_chairman_message']['field'] = 'field_ct_chairman_message';
+  $handler->display->display_options['fields']['field_ct_chairman_message']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_chairman_message']['settings'] = array(
+    'edit' => 'Edit',
+    'delete' => 'Delete',
+    'add' => 'Add',
+    'description' => 1,
+    'view_mode' => 'full',
+  );
+  /* Field: Content: Hostel */
+  $handler->display->display_options['fields']['field_ct_hostel']['id'] = 'field_ct_hostel';
+  $handler->display->display_options['fields']['field_ct_hostel']['table'] = 'field_data_field_ct_hostel';
+  $handler->display->display_options['fields']['field_ct_hostel']['field'] = 'field_ct_hostel';
+  $handler->display->display_options['fields']['field_ct_hostel']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_hostel']['settings'] = array(
+    'edit' => 'Edit',
+    'delete' => 'Delete',
+    'add' => 'Add',
+    'description' => 1,
+    'view_mode' => 'full',
+  );
+  /* Field: Content: Infrastructure */
+  $handler->display->display_options['fields']['field_ct_infrastructure']['id'] = 'field_ct_infrastructure';
+  $handler->display->display_options['fields']['field_ct_infrastructure']['table'] = 'field_data_field_ct_infrastructure';
+  $handler->display->display_options['fields']['field_ct_infrastructure']['field'] = 'field_ct_infrastructure';
+  $handler->display->display_options['fields']['field_ct_infrastructure']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_infrastructure']['settings'] = array(
+    'edit' => 'Edit',
+    'delete' => 'Delete',
+    'add' => 'Add',
+    'description' => 1,
+    'view_mode' => 'full',
+  );
+  $handler->display->display_options['fields']['field_ct_infrastructure']['delta_offset'] = '0';
+  /* Field: Content: Principal’s Message */
+  $handler->display->display_options['fields']['field_ct_principal_message']['id'] = 'field_ct_principal_message';
+  $handler->display->display_options['fields']['field_ct_principal_message']['table'] = 'field_data_field_ct_principal_message';
+  $handler->display->display_options['fields']['field_ct_principal_message']['field'] = 'field_ct_principal_message';
+  $handler->display->display_options['fields']['field_ct_principal_message']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_principal_message']['settings'] = array(
+    'edit' => 'Edit',
+    'delete' => 'Delete',
+    'add' => 'Add',
+    'description' => 1,
+    'view_mode' => 'full',
+  );
+  /* Field: Content: School Fees */
+  $handler->display->display_options['fields']['field_ct_file']['id'] = 'field_ct_file';
+  $handler->display->display_options['fields']['field_ct_file']['table'] = 'field_data_field_ct_file';
+  $handler->display->display_options['fields']['field_ct_file']['field'] = 'field_ct_file';
+  $handler->display->display_options['fields']['field_ct_file']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_file']['click_sort_column'] = 'fid';
+  /* Field: Content: Syllabus */
+  $handler->display->display_options['fields']['field_ct_syllabus']['id'] = 'field_ct_syllabus';
+  $handler->display->display_options['fields']['field_ct_syllabus']['table'] = 'field_data_field_ct_syllabus';
+  $handler->display->display_options['fields']['field_ct_syllabus']['field'] = 'field_ct_syllabus';
+  $handler->display->display_options['fields']['field_ct_syllabus']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_syllabus']['settings'] = array(
+    'edit' => 'Edit',
+    'delete' => 'Delete',
+    'add' => 'Add',
+    'description' => 1,
+    'view_mode' => 'full',
+  );
+  $handler->display->display_options['fields']['field_ct_syllabus']['delta_offset'] = '0';
+  /* Field: Content: Time Table */
+  $handler->display->display_options['fields']['field_ct_time_table']['id'] = 'field_ct_time_table';
+  $handler->display->display_options['fields']['field_ct_time_table']['table'] = 'field_data_field_ct_time_table';
+  $handler->display->display_options['fields']['field_ct_time_table']['field'] = 'field_ct_time_table';
+  $handler->display->display_options['fields']['field_ct_time_table']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_time_table']['settings'] = array(
+    'edit' => 'Edit',
+    'delete' => 'Delete',
+    'add' => 'Add',
+    'description' => 1,
+    'view_mode' => 'full',
+  );
+  $handler->display->display_options['fields']['field_ct_time_table']['delta_offset'] = '0';
+  /* Field: Content: Transport */
+  $handler->display->display_options['fields']['field_ct_transport']['id'] = 'field_ct_transport';
+  $handler->display->display_options['fields']['field_ct_transport']['table'] = 'field_data_field_ct_transport';
+  $handler->display->display_options['fields']['field_ct_transport']['field'] = 'field_ct_transport';
+  $handler->display->display_options['fields']['field_ct_transport']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_transport']['click_sort_column'] = 'fid';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
