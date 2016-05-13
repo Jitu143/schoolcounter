@@ -13,6 +13,38 @@ function sc_f_context_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'footer';
+  $context->description = '';
+  $context->tag = 'sitewide context';
+  $context->conditions = array(
+    'sitewide' => array(
+      'values' => array(
+        1 => 1,
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'menu-menu-sc-footer-menu' => array(
+          'module' => 'menu',
+          'delta' => 'menu-sc-footer-menu',
+          'region' => 'footer',
+          'weight' => '-9',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('sitewide context');
+  $export['footer'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'school_node_page';
   $context->description = '';
   $context->tag = 'school';
@@ -59,6 +91,12 @@ function sc_f_context_context_default_contexts() {
           'region' => 'content',
           'weight' => '-7',
         ),
+        'views-views_school_blogs-block_1' => array(
+          'module' => 'views',
+          'delta' => 'views_school_blogs-block_1',
+          'region' => 'content',
+          'weight' => '-6',
+        ),
       ),
     ),
   );
@@ -68,6 +106,44 @@ function sc_f_context_context_default_contexts() {
   // Included for use with string extractors like potx.
   t('school');
   $export['school_node_page'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'school_page';
+  $context->description = '';
+  $context->tag = 'school';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'school' => 'school',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'system-navigation' => array(
+          'module' => 'system',
+          'delta' => 'navigation',
+          'region' => 'sidebar_first',
+          'weight' => '-10',
+        ),
+        'views-views_school_blogs-block_2' => array(
+          'module' => 'views',
+          'delta' => 'views_school_blogs-block_2',
+          'region' => 'sidebar_second',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('school');
+  $export['school_page'] = $context;
 
   return $export;
 }

@@ -159,4 +159,10 @@ function schoolcounter_site_controller_update_7106() {
   features_revert_module('sc_f_view_school');
 }
 
-//configuration
+/**
+ * Enable module.
+ */
+function schoolcounter_site_controller_update_7107() {
+  $modules = array('adminimal_admin_menu');
+  module_enable($modules, TRUE);
+}

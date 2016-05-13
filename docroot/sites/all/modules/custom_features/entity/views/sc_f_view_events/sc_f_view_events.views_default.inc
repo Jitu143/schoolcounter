@@ -71,7 +71,7 @@ function sc_f_view_events_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Images */
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -113,10 +113,12 @@ function sc_f_view_events_views_default_views() {
 
   /* Display: School event */
   $handler = $view->new_display('block', 'School event', 'block_1');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '4';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'responsive_grid';
-  $handler->display->display_options['style_options']['wrapper_classes'] = 'row ';
-  $handler->display->display_options['style_options']['column_classes'] = 'views-column col-xs-12 col-sm-6 col-md-4 col-lg-4';
+  $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -126,25 +128,29 @@ function sc_f_view_events_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a href = "/teachers/[field_ct_school]" target="_blank">View All</a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a href = "/events/[field_ct_school]" target="_blank">View All</a>';
   $handler->display->display_options['footer']['area']['format'] = 'filtered_html';
+  $handler->display->display_options['footer']['area']['tokenize'] = TRUE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Images */
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '35';
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['label'] = '';
+  $handler->display->display_options['fields']['field_ct_images']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ct_images']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ct_images']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ct_images']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'style_event_thumbnail',
     'image_link' => '',
   );
   $handler->display->display_options['fields']['field_ct_images']['delta_limit'] = '1';
@@ -154,9 +160,10 @@ function sc_f_view_events_views_default_views() {
   $handler->display->display_options['fields']['field_ct_date']['table'] = 'field_data_field_ct_date';
   $handler->display->display_options['fields']['field_ct_date']['field'] = 'field_ct_date';
   $handler->display->display_options['fields']['field_ct_date']['label'] = '';
+  $handler->display->display_options['fields']['field_ct_date']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ct_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ct_date']['settings'] = array(
-    'format_type' => 'long',
+    'format_type' => 'd_m_y_date_type',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
@@ -174,6 +181,27 @@ function sc_f_view_events_views_default_views() {
   $handler->display->display_options['fields']['field_ct_school']['settings'] = array(
     'link' => 0,
   );
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="event-container">
+[field_ct_images]
+<div class="event-textbox">
+<h5 class="title">[title]</h5>
+<div class="event-date">[field_ct_date]</div>
+<div class="read-more"><a href="[path]" target="_blank">Read More</a></div>
+</div>
+</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Field: school (field_ct_school) */
   $handler->display->display_options['arguments']['field_ct_school_target_id']['id'] = 'field_ct_school_target_id';
