@@ -45,6 +45,38 @@ function sc_f_context_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'school_blog_landing_page';
+  $context->description = '';
+  $context->tag = 'School blogs';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'school-blogs' => 'school-blogs',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-views_school-block_3' => array(
+          'module' => 'views',
+          'delta' => 'views_school-block_3',
+          'region' => 'sidebar_second',
+          'weight' => '-9',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('School blogs');
+  $export['school_blog_landing_page'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'school_node_page';
   $context->description = '';
   $context->tag = 'school';
