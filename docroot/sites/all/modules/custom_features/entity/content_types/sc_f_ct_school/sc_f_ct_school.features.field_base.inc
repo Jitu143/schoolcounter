@@ -385,6 +385,23 @@ function sc_f_ct_school_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
+  // Exported field_base: 'field_ct_share_this'.
+  $field_bases['field_ct_share_this'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ct_share_this',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'addthis',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'addthis',
+  );
+
   // Exported field_base: 'field_ct_syllabus'.
   $field_bases['field_ct_syllabus'] = array(
     'active' => 1,

@@ -10,6 +10,21 @@
 function sc_image_style_image_default_styles() {
   $styles = array();
 
+  // Exported image style: blogs_landing_style.
+  $styles['blogs_landing_style'] = array(
+    'label' => 'blogs landing style',
+    'effects' => array(
+      8 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 400,
+          'height' => 200,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: style_event_thumbnail.
   $styles['style_event_thumbnail'] = array(
     'label' => 'event thumbnail',

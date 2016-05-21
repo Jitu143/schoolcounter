@@ -1,0 +1,21 @@
+@import "variable";
+
+.page-school-blogs {
+
+  .view-views-school-blogs.view-display-id-page {
+    .views-row {
+      clear: both;
+      margin-top: 20px;
+      height: 202px;
+    }
+
+    .views-field-field-ct-images {
+      float: left;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
