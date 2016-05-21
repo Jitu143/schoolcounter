@@ -192,3 +192,11 @@ function schoolcounter_site_controller_update_7109() {
   $modules = array('module_filter');
   module_enable($modules, TRUE);
 }
+
+/**
+ * Enable module.
+ */
+function schoolcounter_site_controller_update_7110() {
+  $modules = array('tb_megamenu');
+  module_enable($modules, TRUE);
+}
