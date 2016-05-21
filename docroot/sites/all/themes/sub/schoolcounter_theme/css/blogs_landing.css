@@ -1,0 +1,17 @@
+/* line 6, ../sass/blogs_landing.scss */
+.page-school-blogs .view-views-school-blogs.view-display-id-page .views-row {
+  clear: both;
+  margin-top: 20px;
+  height: 202px;
+}
+/* line 12, ../sass/blogs_landing.scss */
+.page-school-blogs .view-views-school-blogs.view-display-id-page .views-field-field-ct-images {
+  float: left;
+}
+/* line 15, ../sass/blogs_landing.scss */
+.page-school-blogs .view-views-school-blogs.view-display-id-page .views-field-field-ct-images img {
+  width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=blogs_landing.css.map */

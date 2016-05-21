@@ -200,3 +200,16 @@ function schoolcounter_site_controller_update_7110() {
   $modules = array('tb_megamenu');
   module_enable($modules, TRUE);
 }
+
+/**
+ * Enable module.
+ */
+function schoolcounter_site_controller_update_7111() {
+  $modules = array('addthis');
+  module_enable($modules, TRUE);
+  features_revert_module('sc_image_style');
+  features_revert_module('sc_f_view_school');
+  features_revert_module('sc_f_views_blogs');
+  features_revert_module('sc_f_ct_school');
+  features_revert_module('sc_f_context');
+}

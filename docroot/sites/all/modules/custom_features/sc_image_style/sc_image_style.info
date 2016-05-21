@@ -3,6 +3,7 @@ core = 7.x
 package = image style
 dependencies[] = image
 features[features_api][] = api:2
+features[image][] = blogs_landing_style
 features[image][] = style_event_thumbnail
 features[image][] = style_school_banner
 features[image][] = style_school_thumbnail

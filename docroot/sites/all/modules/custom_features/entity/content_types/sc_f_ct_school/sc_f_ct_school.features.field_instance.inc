@@ -1553,6 +1553,48 @@ function sc_f_ct_school_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ct_school-field_ct_share_this'.
+  $field_instances['node-ct_school-field_ct_share_this'] = array(
+    'bundle' => 'ct_school',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'addthis_displays',
+        'settings' => array(
+          'buttons_size' => 'addthis_32x32_style',
+          'counter_orientation' => 'horizontal',
+          'extra_css' => '',
+          'share_services' => 'facebook,twitter,googleplus,telegram,wechat,whatsapp,email,compact',
+        ),
+        'type' => 'addthis_basic_toolbox',
+        'weight' => 23,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ct_share_this',
+    'label' => 'Share this',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'addthis',
+      'settings' => array(),
+      'type' => 'addthis_button_widget',
+      'weight' => 54,
+    ),
+  );
+
   // Exported field_instance: 'node-ct_school-field_ct_syllabus'.
   $field_instances['node-ct_school-field_ct_syllabus'] = array(
     'bundle' => 'ct_school',
@@ -1738,6 +1780,7 @@ function sc_f_ct_school_field_default_field_instances() {
   t('Principal’s Message');
   t('School Board');
   t('School Fees');
+  t('Share this');
   t('State');
   t('Syllabus');
   t('Syllabus File');

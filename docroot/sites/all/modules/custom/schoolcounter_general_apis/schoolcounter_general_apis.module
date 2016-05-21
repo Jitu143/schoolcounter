@@ -30,7 +30,11 @@ function schoolcounter_general_apis_page_alter(&$page) {
     case 'school':
       // drupal_add_js($theme_path . '/javascripts/homepage.js', 'file');
       drupal_add_css($theme_path . '/css/school.css', 'file');
-      break;
+    break;
+    case 'school-blogs':
+      drupal_add_css($theme_path . '/css/blogs_landing.css', 'file');
+    break;
+
   }
 }
 
