@@ -78,4 +78,24 @@ section.col-sm-12 {
   display: none;
 }
 
+/* line 77, ../sass/basic_layout.scss */
+.sharethis-buttons {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+}
+/* line 82, ../sass/basic_layout.scss */
+.sharethis-buttons .sharethis-wrapper {
+  width: 140px;
+}
+/* line 84, ../sass/basic_layout.scss */
+.sharethis-buttons .sharethis-wrapper .stMainServices {
+  height: 26px;
+}
+/* line 88, ../sass/basic_layout.scss */
+.sharethis-buttons .sharethis-wrapper .stButton_gradient {
+  height: 22px;
+}
+
 /*# sourceMappingURL=basic_layout.css.map */
