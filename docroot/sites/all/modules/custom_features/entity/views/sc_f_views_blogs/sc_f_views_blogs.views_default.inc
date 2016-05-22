@@ -108,19 +108,27 @@ function sc_f_views_blogs_views_default_views() {
     'ct_school_blogs' => 'ct_school_blogs',
   );
 
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page');
+  /* Display: Blogs Landing Page */
+  $handler = $view->new_display('page', 'Blogs Landing Page', 'blogs_landing_page');
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'grid';
+  $handler->display->display_options['style_options']['columns'] = '2';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['label'] = '';
+  $handler->display->display_options['fields']['field_ct_images']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ct_images']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ct_images']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ct_images']['settings'] = array(
     'image_style' => 'blogs_landing_style',
-    'image_link' => '',
+    'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_ct_images']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_ct_images']['delta_offset'] = '0';
@@ -133,6 +141,16 @@ function sc_f_views_blogs_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Post date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'node';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['label'] = '';
+  $handler->display->display_options['fields']['created']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'custom';
+  $handler->display->display_options['fields']['created']['custom_date_format'] = 'F d, Y';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Content: Description */
   $handler->display->display_options['fields']['field_ct_description']['id'] = 'field_ct_description';
   $handler->display->display_options['fields']['field_ct_description']['table'] = 'field_data_field_ct_description';
@@ -152,25 +170,20 @@ function sc_f_views_blogs_views_default_views() {
   $handler->display->display_options['fields']['field_ct_school']['settings'] = array(
     'link' => 1,
   );
-  /* Field: Content: Post date */
-  $handler->display->display_options['fields']['created']['id'] = 'created';
-  $handler->display->display_options['fields']['created']['table'] = 'node';
-  $handler->display->display_options['fields']['created']['field'] = 'created';
-  $handler->display->display_options['fields']['created']['label'] = '';
-  $handler->display->display_options['fields']['created']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['created']['date_format'] = 'custom';
-  $handler->display->display_options['fields']['created']['custom_date_format'] = 'D-m-Y';
-  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="title">[title]</div>
-<div class="description">[field_ct_description]</div>
-<div class="school">[field_ct_school]</div>
-<div class="date">[created]</div>';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="blog-item">
+ <div class="blog-image">[field_ct_images]</div>
+ <div class="blog-info">
+  <div class="blog-title">[title]</div>
+  <div class="blog-date"><span>[created]</span></div>
+  <div class="blog-description">[field_ct_description]</div>
+  <div class="blog-school"><span>by: </span>[field_ct_school]</div>
+ </div>
+</div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['path'] = 'school-blogs';
   $handler->display->display_options['menu']['type'] = 'normal';
