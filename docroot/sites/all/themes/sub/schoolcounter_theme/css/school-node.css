@@ -1,7 +1,7 @@
 /* line 90, ../sass/_mixin.scss */
 #block-views-views-school-faculty-block .block-title, #block-views-views-events-block-1 .block-title, #block-views-views-school-block-2 .block-title, #block-views-views-school-blogs-block-1 .block-title {
   font-family: "Oswald", sans-serif, Helvetica;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 /* line 6, ../sass/school-node.scss */
@@ -17,6 +17,7 @@
   padding-top: 40px;
   text-align: center;
   padding-bottom: 40px;
+  background-color: #ededed;
 }
 /* line 12, ../sass/_mixin.scss */
 #block-views-views-school-faculty-block .block-title {
@@ -63,7 +64,7 @@
   display: block;
   border-radius: 3px;
   border: 1px solid white;
-  background: blue;
+  background: #2c93d5;
   transition: 0.5s all;
 }
 /* line 67, ../sass/_mixin.scss */
@@ -72,16 +73,25 @@
   background: orange;
   color: white;
 }
-/* line 14, ../sass/school-node.scss */
+/* line 15, ../sass/school-node.scss */
+#block-views-views-school-faculty-block .views-row {
+  width: 25%;
+  float: left;
+}
+/* line 20, ../sass/school-node.scss */
+#block-views-views-school-faculty-block .views-field-nothing {
+  padding: 0 10px;
+}
+/* line 23, ../sass/school-node.scss */
 #block-views-views-school-faculty-block .teacher-block {
   position: relative;
 }
-/* line 16, ../sass/school-node.scss */
+/* line 25, ../sass/school-node.scss */
 #block-views-views-school-faculty-block .teacher-block img {
   width: 100%;
   height: auto;
 }
-/* line 20, ../sass/school-node.scss */
+/* line 29, ../sass/school-node.scss */
 #block-views-views-school-faculty-block .teacher-block .teacher-detail {
   padding: 20px;
   width: 100%;
@@ -96,18 +106,18 @@
   -webkit-box-shadow: 0px 0px 15px 2px rgba(111, 111, 255, 0.75);
   box-shadow: 0px 0px 15px 2px rgba(111, 111, 255, 0.75);
 }
-/* line 35, ../sass/school-node.scss */
+/* line 44, ../sass/school-node.scss */
 #block-views-views-school-faculty-block .teacher-block:hover .teacher-detail {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-/* line 39, ../sass/school-node.scss */
+/* line 48, ../sass/school-node.scss */
 #block-views-views-school-faculty-block .teacher-detail {
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
 
-/* line 45, ../sass/school-node.scss */
+/* line 54, ../sass/school-node.scss */
 #block-views-views-events-block-1 {
   background: white;
   width: 100%;
@@ -161,7 +171,7 @@
   display: block;
   border-radius: 3px;
   border: 1px solid white;
-  background: blue;
+  background: #2c93d5;
   transition: 0.5s all;
 }
 /* line 67, ../sass/_mixin.scss */
@@ -170,26 +180,26 @@
   background: orange;
   color: white;
 }
-/* line 48, ../sass/school-node.scss */
+/* line 57, ../sass/school-node.scss */
 #block-views-views-events-block-1 .views-row {
   width: 25%;
   float: left;
 }
-/* line 53, ../sass/school-node.scss */
+/* line 62, ../sass/school-node.scss */
 #block-views-views-events-block-1 .views-field-nothing {
   padding: 0 10px;
 }
-/* line 57, ../sass/school-node.scss */
+/* line 66, ../sass/school-node.scss */
 #block-views-views-events-block-1 .event-container {
   position: relative;
   overflow: hidden;
 }
-/* line 60, ../sass/school-node.scss */
+/* line 69, ../sass/school-node.scss */
 #block-views-views-events-block-1 .event-container img {
   width: 100%;
   height: auto;
 }
-/* line 64, ../sass/school-node.scss */
+/* line 73, ../sass/school-node.scss */
 #block-views-views-events-block-1 .event-container .event-textbox {
   text-align: left;
   padding: 20px;
@@ -207,22 +217,22 @@
   transition: all 0.7s ease;
   color: white;
 }
-/* line 80, ../sass/school-node.scss */
+/* line 89, ../sass/school-node.scss */
 #block-views-views-events-block-1 .event-container .event-textbox a {
   color: white;
 }
-/* line 85, ../sass/school-node.scss */
+/* line 94, ../sass/school-node.scss */
 #block-views-views-events-block-1 .event-container:hover .event-textbox {
   margin-top: 0;
 }
-/* line 89, ../sass/school-node.scss */
+/* line 98, ../sass/school-node.scss */
 #block-views-views-events-block-1 .read-more {
   position: absolute;
   bottom: 0;
   right: 0;
   padding: 15px 30px;
 }
-/* line 96, ../sass/school-node.scss */
+/* line 105, ../sass/school-node.scss */
 #block-views-views-events-block-1 .event-date {
   position: absolute;
   top: 0;
@@ -232,12 +242,12 @@
   background: rgba(255, 255, 255, 0.2);
   color: #FFFFFF;
 }
-/* line 106, ../sass/school-node.scss */
+/* line 115, ../sass/school-node.scss */
 #block-views-views-events-block-1 .title {
   margin-top: 20px;
 }
 
-/* line 111, ../sass/school-node.scss */
+/* line 120, ../sass/school-node.scss */
 #block-views-views-school-block-2 {
   background: white;
   width: 100%;
@@ -291,7 +301,7 @@
   display: block;
   border-radius: 3px;
   border: 1px solid white;
-  background: blue;
+  background: #2c93d5;
   transition: 0.5s all;
 }
 /* line 67, ../sass/_mixin.scss */
@@ -301,17 +311,17 @@
   color: white;
 }
 
-/* line 116, ../sass/school-node.scss */
+/* line 125, ../sass/school-node.scss */
 #views-bootstrap-accordion-schooldetail .panel.panel-default {
   margin-bottom: 10px;
 }
-/* line 118, ../sass/school-node.scss */
+/* line 127, ../sass/school-node.scss */
 #views-bootstrap-accordion-schooldetail .panel.panel-default a.accordion-toggle {
   display: block;
   text-align: left;
 }
 
-/* line 125, ../sass/school-node.scss */
+/* line 134, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 {
   background: white;
   width: 100%;
@@ -319,6 +329,7 @@
   padding-top: 40px;
   text-align: center;
   padding-bottom: 40px;
+  background-color: #ededed;
 }
 /* line 12, ../sass/_mixin.scss */
 #block-views-views-school-blogs-block-1 .block-title {
@@ -365,7 +376,7 @@
   display: block;
   border-radius: 3px;
   border: 1px solid white;
-  background: blue;
+  background: #2c93d5;
   transition: 0.5s all;
 }
 /* line 67, ../sass/_mixin.scss */
@@ -374,25 +385,25 @@
   background: orange;
   color: white;
 }
-/* line 127, ../sass/school-node.scss */
+/* line 137, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .views-row {
   width: 25%;
   float: left;
 }
-/* line 132, ../sass/school-node.scss */
+/* line 142, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .views-field-nothing {
   padding: 0 10px;
 }
-/* line 136, ../sass/school-node.scss */
+/* line 146, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .blog-container {
   position: relative;
 }
-/* line 139, ../sass/school-node.scss */
+/* line 149, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .blog-container img {
   width: 100%;
   height: auto;
 }
-/* line 143, ../sass/school-node.scss */
+/* line 153, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .blog-container .blog-textbox {
   text-align: left;
   padding: 20px;
@@ -410,23 +421,23 @@
   transition: all 0.7s ease;
   color: white;
 }
-/* line 164, ../sass/school-node.scss */
+/* line 174, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .blog-container .blog-textbox a {
   color: white;
 }
-/* line 169, ../sass/school-node.scss */
+/* line 179, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .blog-textbox:hover {
   margin-top: 0;
   opacity: 1;
 }
-/* line 174, ../sass/school-node.scss */
+/* line 184, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .read-more {
   position: absolute;
   bottom: 0;
   right: 0;
   padding: 15px 30px;
 }
-/* line 181, ../sass/school-node.scss */
+/* line 191, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .blog-date {
   position: absolute;
   top: 0;
@@ -436,7 +447,7 @@
   background: rgba(255, 255, 255, 0.2);
   color: #FFFFFF;
 }
-/* line 191, ../sass/school-node.scss */
+/* line 201, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .title {
   margin-top: 20px;
 }

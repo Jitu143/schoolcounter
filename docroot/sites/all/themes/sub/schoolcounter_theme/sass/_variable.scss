@@ -19,10 +19,18 @@ $site-black: #1f1f1f;
 $site-blue: #2c93d5;
 
 // Font size
-$h2_font: 2rem;
+$h1_font: 2rem;
+$h2_font: 1.8rem;
+$h3_font: 1.5rem;
 $h4_font: 1.3rem;
 $h5_font: 1.2rem;
 $h6_font: 1.1rem;
+
+$base_font: 1rem;
+$small_font: 1.1rem;
+$large_font: 1.2rem;
+$very_large_font: 1.3rem;
+
 
 // Fonts
 $font-stack:  'Gudea', sans-serif, Helvetica;
@@ -30,4 +38,4 @@ $font-title:  'Oswald', sans-serif, Helvetica;
 $font-menu:  'Oswald', sans-serif, Helvetica;
 
 
-$white_bg: (background: $white, title: black, header-text: inherit, text:inherit, footer-background: $blue, footer-text: white, footer-bg-color-hover: $orange, footer-text-color-hover: $white);
+$white_bg: (background: $white, title: black, header-text: inherit, text:inherit, footer-background: $site-blue, footer-text: white, footer-bg-color-hover: $orange, footer-text-color-hover: $white);
