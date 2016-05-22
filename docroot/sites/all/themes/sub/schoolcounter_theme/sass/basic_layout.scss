@@ -6,14 +6,40 @@ html {
 }
 
 body {
-  font-size: 1rem;
+  font-size: $base_font;
   color: $text-color;
   font-family: $font-stack;
 
+  h1 {
+    font-size: $h1_font;
+  }
+
+  h2 {
+    font-size: $h2_font;
+  }
+
+  h3 {
+    font-size: $h3_font;
+  }
+
+  h4 {
+    font-size: $h4_font;
+  }
+
+  h5 {
+    font-size: $h5_font;
+  }
+
+  h6 {
+    font-size: $h6_font;
+  }
+
   a {
-    color: $blue;
+    color: $site-black;
     &:hover {
-      text-decoration: underline;
+      text-decoration: none;
+      color: $site-blue;
+      transition: color 0.3s ease;
     }
   }
   &.html {
@@ -43,6 +69,10 @@ body {
 
 div.row, .navbar-header, .navbar-collapse {
   margin: 0;
+}
+
+.navbar-header {
+  margin: 0 !important;
 }
 
 div.highlighted.jumbotron{

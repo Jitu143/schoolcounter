@@ -1,17 +1,58 @@
-/* line 6, ../sass/blogs_landing.scss */
-.page-school-blogs .view-views-school-blogs.view-display-id-page .views-row {
-  clear: both;
-  margin-top: 20px;
-  height: 202px;
+/* line 23, ../sass/blogs_landing.scss */
+.page-school-blogs .view-display-id-blogs_landing_page .blog-item {
+  margin: 0 1rem 1rem;
+  padding: 20px 30px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
-/* line 12, ../sass/blogs_landing.scss */
-.page-school-blogs .view-views-school-blogs.view-display-id-page .views-field-field-ct-images {
-  float: left;
+/* line 32, ../sass/blogs_landing.scss */
+.page-school-blogs .view-display-id-blogs_landing_page .blog-item .blog-image {
+  margin-bottom: 20px;
 }
-/* line 15, ../sass/blogs_landing.scss */
-.page-school-blogs .view-views-school-blogs.view-display-id-page .views-field-field-ct-images img {
+/* line 34, ../sass/blogs_landing.scss */
+.page-school-blogs .view-display-id-blogs_landing_page .blog-item .blog-image img {
   width: 100%;
-  height: auto;
+  margin: auto;
+  transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+}
+/* line 52, ../sass/blogs_landing.scss */
+.page-school-blogs .view-display-id-blogs_landing_page .blog-item .blog-info .blog-title {
+  font-size: 25px;
+  height: 70px;
+  line-height: 30px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+/* line 59, ../sass/blogs_landing.scss */
+.page-school-blogs .view-display-id-blogs_landing_page .blog-item .blog-info .blog-date {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 15px;
+  background-image: url("../images/icons/clock.png");
+  background-repeat: no-repeat;
+  background-position-y: 3px;
+}
+/* line 66, ../sass/blogs_landing.scss */
+.page-school-blogs .view-display-id-blogs_landing_page .blog-item .blog-info .blog-date span {
+  margin-left: 25px;
+}
+/* line 71, ../sass/blogs_landing.scss */
+.page-school-blogs .view-display-id-blogs_landing_page .blog-item .blog-info .blog-description p {
+  margin-bottom: 1.3em;
+  line-height: 25px;
 }
 
 /*# sourceMappingURL=blogs_landing.css.map */
