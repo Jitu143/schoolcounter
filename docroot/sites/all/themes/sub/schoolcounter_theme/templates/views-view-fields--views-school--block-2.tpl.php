@@ -32,7 +32,7 @@
         <h4 class="panel-title">
           <a class="accordion-toggle collapsed"
              data-toggle="collapse"
-             data-parent="#views-bootstrap-accordion-schooldetail""
+             data-parent="#views-bootstrap-accordion-schooldetail"
              href="#collapse<?php print $id ?>">
             <?php print $field->label_html; ?>
           </a>

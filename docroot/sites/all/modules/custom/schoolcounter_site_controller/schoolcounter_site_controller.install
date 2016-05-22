@@ -233,3 +233,11 @@ function schoolcounter_site_controller_update_7112() {
 function schoolcounter_site_controller_update_7113() {
   features_revert_module('sc_f_views_blogs');
 }
+
+/**
+ * Revert module.
+ */
+function schoolcounter_site_controller_update_7114() {
+  features_revert_module('sc_f_context');
+  features_revert_module('sc_f_view_faculty');
+}

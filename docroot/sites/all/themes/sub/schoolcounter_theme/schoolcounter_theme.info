@@ -195,6 +195,8 @@ stylesheets[all][] = css/samaj.css
 scripts[] = bootstrap-local/js/bootstrap.js
 scripts[] = bootstrap-local/js/bootstrap.min.js
 
+scripts[] = javascripts/basic_layout.js
+
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Breakpoints
 ;;;;;;;;;;;;;;;;;;;;;
