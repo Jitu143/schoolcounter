@@ -1,7 +1,7 @@
 /* line 90, ../sass/_mixin.scss */
 #block-views-views-home-page-block-1 .block-title {
   font-family: "Oswald", sans-serif, Helvetica;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 /* line 5, ../sass/home.scss */
@@ -131,7 +131,7 @@
 }
 /* line 123, ../sass/home.scss */
 #block-views-views-home-page-block .container h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #FFF;
   font-family: 'Libre Baskerville', serif;
   font-weight: bold;
@@ -209,7 +209,7 @@
   display: block;
   border-radius: 3px;
   border: 1px solid white;
-  background: blue;
+  background: #2c93d5;
   transition: 0.5s all;
 }
 /* line 67, ../sass/_mixin.scss */

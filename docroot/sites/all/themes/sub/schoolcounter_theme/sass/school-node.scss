@@ -11,6 +11,15 @@
 
 #block-views-views-school-faculty-block {
   @include main_block($white_bg...);
+  background-color: $gray;
+  .views-row {
+    width: 25%;
+    float: left;
+  }
+
+  .views-field-nothing {
+    padding: 0 10px;
+  }
   .teacher-block {
     position:relative;
     img {
@@ -124,6 +133,7 @@
 
 #block-views-views-school-blogs-block-1 {
   @include main_block($white_bg...);
+  background-color: $gray;
   .views-row {
     width: 25%;
     float: left;

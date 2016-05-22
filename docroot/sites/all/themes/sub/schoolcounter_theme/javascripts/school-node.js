@@ -12,6 +12,10 @@
         fade: true,
         cssEase: 'linear'
       });
+
+      $('#block-views-views-events-block-1 .view-content').sc_slick_slides();
+      $('#block-views-views-school-faculty-block .view-content').sc_slick_slides();
+      $('#block-views-views-school-blogs-block-1 .view-content').sc_slick_slides();
     }
   };
 })(jQuery);

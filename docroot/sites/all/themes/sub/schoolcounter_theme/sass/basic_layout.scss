@@ -73,6 +73,7 @@ div.row, .navbar-header, .navbar-collapse {
 
 .navbar-header {
   margin: 0 !important;
+  background: $site-blue;
 }
 
 div.highlighted.jumbotron{
@@ -119,4 +120,12 @@ section.col-sm-12 {
       height: 22px;
     }
   }
+}
+
+.highlighted.jumbotron {
+  margin-bottom: 0;
+}
+
+.slick-slider {
+  margin-bottom: 0;
 }

@@ -74,20 +74,21 @@ div.row, .navbar-header, .navbar-collapse {
 /* line 74, ../sass/basic_layout.scss */
 .navbar-header {
   margin: 0 !important;
+  background: #2c93d5;
 }
 
-/* line 78, ../sass/basic_layout.scss */
+/* line 79, ../sass/basic_layout.scss */
 div.highlighted.jumbotron {
   background: white;
   padding: 0;
 }
 
-/* line 83, ../sass/basic_layout.scss */
+/* line 84, ../sass/basic_layout.scss */
 section.col-sm-12 {
   padding: 0;
 }
 
-/* line 87, ../sass/basic_layout.scss */
+/* line 88, ../sass/basic_layout.scss */
 .page-header {
   background: #0ab3a3;
   text-align: center;
@@ -96,37 +97,47 @@ section.col-sm-12 {
   color: white;
 }
 
-/* line 96, ../sass/basic_layout.scss */
+/* line 97, ../sass/basic_layout.scss */
 .region-footer #block-menu-menu-sc-footer-menu {
   background: #078377;
 }
-/* line 98, ../sass/basic_layout.scss */
+/* line 99, ../sass/basic_layout.scss */
 .region-footer #block-menu-menu-sc-footer-menu a {
   color: white;
 }
-/* line 101, ../sass/basic_layout.scss */
+/* line 102, ../sass/basic_layout.scss */
 .region-footer #block-menu-menu-sc-footer-menu .block-title {
   display: none;
 }
 
-/* line 77, ../sass/basic_layout.scss */
+/* line 108, ../sass/basic_layout.scss */
 .sharethis-buttons {
   position: fixed;
   top: 50%;
   left: 0;
   z-index: 9999;
 }
-/* line 82, ../sass/basic_layout.scss */
+/* line 113, ../sass/basic_layout.scss */
 .sharethis-buttons .sharethis-wrapper {
   width: 140px;
 }
-/* line 84, ../sass/basic_layout.scss */
+/* line 115, ../sass/basic_layout.scss */
 .sharethis-buttons .sharethis-wrapper .stMainServices {
   height: 26px;
 }
-/* line 88, ../sass/basic_layout.scss */
+/* line 119, ../sass/basic_layout.scss */
 .sharethis-buttons .sharethis-wrapper .stButton_gradient {
   height: 22px;
+}
+
+/* line 125, ../sass/basic_layout.scss */
+.highlighted.jumbotron {
+  margin-bottom: 0;
+}
+
+/* line 129, ../sass/basic_layout.scss */
+.slick-slider {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=basic_layout.css.map */
