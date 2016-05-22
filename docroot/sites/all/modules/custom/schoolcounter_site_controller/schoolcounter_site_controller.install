@@ -213,3 +213,15 @@ function schoolcounter_site_controller_update_7111() {
   features_revert_module('sc_f_ct_school');
   features_revert_module('sc_f_context');
 }
+
+/**
+ * Enable module.
+ */
+function schoolcounter_site_controller_update_7112() {
+  $modules = array('sc_f_ct_home_page', 'sc_f_view_home_page');
+  module_enable($modules, TRUE);
+  features_revert_module('sc_image_style');
+  features_revert_module('sc_f_ct_home_page');
+  features_revert_module('sc_f_view_home_page');
+  features_revert_module('sc_f_context');
+}
