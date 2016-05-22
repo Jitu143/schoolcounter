@@ -103,3 +103,20 @@ section.col-sm-12 {
     }
   }
 }
+
+.sharethis-buttons {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 9999;
+  .sharethis-wrapper {
+    width: 140px;
+    .stMainServices {
+      height: 26px;
+    }
+
+    .stButton_gradient {
+      height: 22px;
+    }
+  }
+}

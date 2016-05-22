@@ -40,6 +40,21 @@ function sc_image_style_image_default_styles() {
     ),
   );
 
+  // Exported image style: style_logo_image.
+  $styles['style_logo_image'] = array(
+    'label' => 'logo image',
+    'effects' => array(
+      9 => array(
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 300,
+          'height' => 300,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: style_school_banner.
   $styles['style_school_banner'] = array(
     'label' => 'school banner',

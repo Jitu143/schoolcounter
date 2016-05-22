@@ -1,0 +1,6 @@
+name = Nodequeues
+core = 7.x
+dependencies[] = fe_nodequeue
+features[fe_nodequeue][] = queue_our_latest_schools
+features[fe_nodequeue][] = sc_queue_home_page
+features[features_api][] = api:2

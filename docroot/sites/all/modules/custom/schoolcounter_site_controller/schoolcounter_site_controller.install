@@ -215,8 +215,21 @@ function schoolcounter_site_controller_update_7111() {
 }
 
 /**
- * Revert blogs view.
+ * Enable module.
  */
 function schoolcounter_site_controller_update_7112() {
+  $modules = array('features_extra','fe_nodequeue', 'sharethis', 'nodequeue', 'sc_f_ct_home_page', 'sc_f_view_home_page');
+  module_enable($modules, TRUE);
+  features_revert_module('sc_f_nodequeues');
+  features_revert_module('sc_image_style');
+  features_revert_module('sc_f_ct_home_page');
+  features_revert_module('sc_f_view_home_page');
+  features_revert_module('sc_f_context');
+}
+
+/**
+ * Revert blogs view.
+ */
+function schoolcounter_site_controller_update_7113() {
   features_revert_module('sc_f_views_blogs');
 }
