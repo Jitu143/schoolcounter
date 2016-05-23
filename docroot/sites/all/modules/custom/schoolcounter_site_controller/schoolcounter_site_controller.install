@@ -241,3 +241,11 @@ function schoolcounter_site_controller_update_7114() {
   features_revert_module('sc_f_context');
   features_revert_module('sc_f_view_faculty');
 }
+
+/**
+ * Revert module.
+ */
+function schoolcounter_site_controller_update_7115() {
+  features_revert_module('sc_image_style');
+  features_revert_module('sc_f_view_events');
+}
