@@ -36,6 +36,10 @@ function schoolcounter_general_apis_page_alter(&$page) {
     break;
 
   }
+
+  if (arg(0) == 'events') {
+    drupal_add_css($theme_path . '/css/event_page.css', 'file');
+  }
 }
 
 /**

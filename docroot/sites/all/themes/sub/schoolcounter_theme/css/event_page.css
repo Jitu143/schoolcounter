@@ -1,0 +1,48 @@
+@media only screen and (max-width: 450px) {
+  /* line 6, ../sass/event_page.scss */
+  .page-events .view-views-events.view-display-id-page .views-column {
+    width: 100%;
+  }
+}
+/* line 10, ../sass/event_page.scss */
+.page-events .view-views-events.view-display-id-page .views-field-nothing {
+  text-align: center;
+  padding: 0;
+  margin-bottom: 50px;
+  border: 1px solid #ECECEC;
+  border-radius: 3px;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  position: relative;
+}
+/* line 23, ../sass/event_page.scss */
+.page-events .view-views-events.view-display-id-page .views-field-nothing .title h5 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+}
+/* line 28, ../sass/event_page.scss */
+.page-events .view-views-events.view-display-id-page .views-field-nothing .title h5 a {
+  color: #888888;
+}
+/* line 33, ../sass/event_page.scss */
+.page-events .view-views-events.view-display-id-page .views-field-nothing .date {
+  background: rgba(44, 147, 213, 0.7);
+  color: white;
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* line 45, ../sass/event_page.scss */
+.page-events .view-views-events.view-display-id-page img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=event_page.css.map */

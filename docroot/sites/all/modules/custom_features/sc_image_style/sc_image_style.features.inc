@@ -25,6 +25,21 @@ function sc_image_style_image_default_styles() {
     ),
   );
 
+  // Exported image style: style_event_landing.
+  $styles['style_event_landing'] = array(
+    'label' => 'event landing',
+    'effects' => array(
+      2 => array(
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 350,
+          'height' => 250,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: style_event_thumbnail.
   $styles['style_event_thumbnail'] = array(
     'label' => 'event thumbnail',

@@ -1,0 +1,51 @@
+@import "variable";
+
+.page-events {
+  .view-views-events.view-display-id-page {
+    @media only screen and (max-width: 450px) {
+      .views-column {
+        width: 100%;
+      }
+    }
+    .views-field-nothing {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 50px;
+      border: 1px solid #ECECEC;
+      border-radius: 3px;
+      -moz-transition: all 0.6s ease;
+      -webkit-transition: all 0.6s ease;
+      -ms-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease;
+      position: relative;
+
+      .title h5{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0 5px;
+        a {
+          color: $text-color;
+        }
+      }
+
+      .date {
+        background: rgba(44, 147, 213, 0.7);
+        color: white;
+        padding: 5px 10px;
+        font-size: $small_font;
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+//views-column col-xs-12 col-sm-6 col-md-4 col-lg-4
