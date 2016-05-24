@@ -1,0 +1,19 @@
+@import "variable";
+
+.node-type-ct-events {
+
+  .node-ct-events {
+    .field {
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+
+    .field-label {
+      font-size: 1.2rem;
+      color: $site-blue;
+      border-bottom: 2px solid $orange;
+      display: inline-block;
+      padding-right: 20px;
+    }
+  }
+}
