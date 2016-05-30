@@ -1,5 +1,5 @@
 /* line 90, ../sass/_mixin.scss */
-#block-views-views-school-faculty-block .block-title, #block-views-views-events-block-1 .block-title, #block-views-views-school-block-2 .block-title, #block-views-views-school-blogs-block-1 .block-title {
+#block-views-views-school-faculty-block .block-title, #block-views-views-events-block-1 .block-title, #block-views-views-school-block-2 .block-title, #block-views-views-school-blogs-block-1 .block-title, #block-views-views-school-chairman .block-title, #block-views-views-school-principal .block-title, #block-views-views-school-about-us .block-title {
   font-family: "Oswald", sans-serif, Helvetica;
   font-size: 1.8rem;
 }
@@ -450,6 +450,168 @@
 /* line 201, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .title {
   margin-top: 20px;
+}
+
+/* line 206, ../sass/school-node.scss */
+#block-views-views-school-chairman, #block-views-views-school-principal {
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+/* line 12, ../sass/_mixin.scss */
+#block-views-views-school-chairman .block-title, #block-views-views-school-principal .block-title {
+  color: black;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
+  display: inline-block;
+}
+/* line 16, ../sass/_mixin.scss */
+#block-views-views-school-chairman .view-header, #block-views-views-school-principal .view-header {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: inherit;
+  margin-top: -20px;
+}
+/* line 20, ../sass/_mixin.scss */
+#block-views-views-school-chairman .view-content, #block-views-views-school-principal .view-content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+}
+/* line 81, ../sass/_mixin.scss */
+#block-views-views-school-chairman .view-content .views-rows, #block-views-views-school-principal .view-content .views-rows {
+  text-align: left;
+}
+/* line 24, ../sass/_mixin.scss */
+#block-views-views-school-chairman .view-footer, #block-views-views-school-principal .view-footer {
+  margin: auto;
+  margin-top: 40px;
+  width: auto;
+  min-width: 122px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 57, ../sass/_mixin.scss */
+#block-views-views-school-chairman .view-footer a, #block-views-views-school-principal .view-footer a {
+  color: white;
+  padding: 10px 16px;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid white;
+  background: #2c93d5;
+  transition: 0.5s all;
+}
+/* line 67, ../sass/_mixin.scss */
+#block-views-views-school-chairman .view-footer a:hover, #block-views-views-school-principal .view-footer a:hover {
+  border: 1px solid white;
+  background: orange;
+  color: white;
+}
+/* line 210, ../sass/school-node.scss */
+#block-views-views-school-chairman .views-field-field-fc-message img, #block-views-views-school-principal .views-field-field-fc-message img {
+  float: left;
+  margin-right: 20px;
+}
+/* line 214, ../sass/school-node.scss */
+#block-views-views-school-chairman .views-field-field-fc-message p, #block-views-views-school-principal .views-field-field-fc-message p {
+  text-align: left;
+}
+/* line 219, ../sass/school-node.scss */
+#block-views-views-school-chairman .field-content, #block-views-views-school-principal .field-content {
+  height: 250px;
+}
+
+/* line 225, ../sass/school-node.scss */
+#block-views-views-school-principal {
+  background-color: #ededed;
+}
+
+/* line 229, ../sass/school-node.scss */
+#block-views-views-school-about-us {
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+  background-color: #ededed;
+}
+/* line 12, ../sass/_mixin.scss */
+#block-views-views-school-about-us .block-title {
+  color: black;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
+  display: inline-block;
+}
+/* line 16, ../sass/_mixin.scss */
+#block-views-views-school-about-us .view-header {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: inherit;
+  margin-top: -20px;
+}
+/* line 20, ../sass/_mixin.scss */
+#block-views-views-school-about-us .view-content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+}
+/* line 81, ../sass/_mixin.scss */
+#block-views-views-school-about-us .view-content .views-rows {
+  text-align: left;
+}
+/* line 24, ../sass/_mixin.scss */
+#block-views-views-school-about-us .view-footer {
+  margin: auto;
+  margin-top: 40px;
+  width: auto;
+  min-width: 122px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 57, ../sass/_mixin.scss */
+#block-views-views-school-about-us .view-footer a {
+  color: white;
+  padding: 10px 16px;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid white;
+  background: #2c93d5;
+  transition: 0.5s all;
+}
+/* line 67, ../sass/_mixin.scss */
+#block-views-views-school-about-us .view-footer a:hover {
+  border: 1px solid white;
+  background: orange;
+  color: white;
+}
+/* line 233, ../sass/school-node.scss */
+#block-views-views-school-about-us .views-field {
+  width: 48%;
+  float: left;
+  vertical-align: top;
+}
+/* line 238, ../sass/school-node.scss */
+#block-views-views-school-about-us .views-field .field-content {
+  text-align: left;
+  height: 200px;
+}
+/* line 244, ../sass/school-node.scss */
+#block-views-views-school-about-us .views-field-field-ct-description {
+  margin-right: 4%;
 }
 
 /*# sourceMappingURL=school-node.css.map */
