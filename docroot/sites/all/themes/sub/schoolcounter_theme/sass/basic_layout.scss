@@ -86,7 +86,7 @@ section.col-sm-12 {
 }
 
 .page-header {
-  background: $green;
+  background: $site-blue;
   text-align: center;
   margin: 0;
   padding: 10px 0;
@@ -128,4 +128,8 @@ section.col-sm-12 {
 
 .slick-slider {
   margin-bottom: 0;
+}
+
+.jspVerticalBar {
+  width: 5px;
 }

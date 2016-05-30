@@ -202,3 +202,46 @@
     margin-top: 20px;
   }
 }
+
+#block-views-views-school-chairman, #block-views-views-school-principal {
+  @include main_block($white_bg...);
+
+  .views-field-field-fc-message {
+    img {
+      float: left;
+      margin-right: 20px;
+    }
+    p {
+      text-align: left;
+    }
+  }
+
+  .field-content {
+    height: 250px;
+  }
+}
+
+
+#block-views-views-school-principal {
+  background-color: $gray;
+}
+
+#block-views-views-school-about-us {
+  @include main_block($white_bg...);
+  background-color: $gray;
+
+  .views-field {
+    width: 48%;
+    float: left;
+    vertical-align: top;
+
+    .field-content {
+      text-align: left;
+      height: 200px;
+    }
+  }
+
+  .views-field-field-ct-description {
+    margin-right: 4%;
+  }
+}

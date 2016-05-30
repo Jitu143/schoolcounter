@@ -239,6 +239,96 @@ function sc_f_view_events_views_default_views() {
   $handler->display->display_options['arguments']['field_ct_school_target_id']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['field_ct_school_target_id']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['field_ct_school_target_id']['summary_options']['items_per_page'] = '25';
+
+  /* Display: School event node page block */
+  $handler = $view->new_display('block', 'School event node page block', 'block_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Event Date */
+  $handler->display->display_options['fields']['field_ct_date']['id'] = 'field_ct_date';
+  $handler->display->display_options['fields']['field_ct_date']['table'] = 'field_data_field_ct_date';
+  $handler->display->display_options['fields']['field_ct_date']['field'] = 'field_ct_date';
+  $handler->display->display_options['fields']['field_ct_date']['label'] = 'Date';
+  $handler->display->display_options['fields']['field_ct_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_date']['settings'] = array(
+    'format_type' => 'd_m_y_date_type',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+  );
+  /* Field: Field: school */
+  $handler->display->display_options['fields']['field_ct_school']['id'] = 'field_ct_school';
+  $handler->display->display_options['fields']['field_ct_school']['table'] = 'field_data_field_ct_school';
+  $handler->display->display_options['fields']['field_ct_school']['field'] = 'field_ct_school';
+  $handler->display->display_options['fields']['field_ct_school']['label'] = 'School';
+  $handler->display->display_options['fields']['field_ct_school']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_school']['settings'] = array(
+    'link' => 1,
+  );
+  /* Field: Content: Description */
+  $handler->display->display_options['fields']['field_ct_description']['id'] = 'field_ct_description';
+  $handler->display->display_options['fields']['field_ct_description']['table'] = 'field_data_field_ct_description';
+  $handler->display->display_options['fields']['field_ct_description']['field'] = 'field_ct_description';
+  $handler->display->display_options['fields']['field_ct_description']['element_label_colon'] = FALSE;
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
+  $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
+  $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
+  $handler->display->display_options['fields']['field_ct_images']['label'] = '';
+  $handler->display->display_options['fields']['field_ct_images']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_ct_images']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_images']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_ct_images']['settings'] = array(
+    'image_style' => 'style_event_thumbnail',
+    'image_link' => '',
+  );
+  $handler->display->display_options['fields']['field_ct_images']['delta_limit'] = 'All';
+  $handler->display->display_options['fields']['field_ct_images']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_ct_images']['multi_type'] = 'ul';
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_ct_images_1']['id'] = 'field_ct_images_1';
+  $handler->display->display_options['fields']['field_ct_images_1']['table'] = 'field_data_field_ct_images';
+  $handler->display->display_options['fields']['field_ct_images_1']['field'] = 'field_ct_images';
+  $handler->display->display_options['fields']['field_ct_images_1']['label'] = '';
+  $handler->display->display_options['fields']['field_ct_images_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_ct_images_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_images_1']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_ct_images_1']['settings'] = array(
+    'image_style' => 'thumbnail',
+    'image_link' => '',
+  );
+  $handler->display->display_options['fields']['field_ct_images_1']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_ct_images_1']['multi_type'] = 'ul';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="slide-for">[field_ct_images]</div>
+<div class="slide-nav">[field_ct_images_1]</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
   $export['views_events'] = $view;
 
   return $export;

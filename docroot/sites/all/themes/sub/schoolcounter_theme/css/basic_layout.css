@@ -90,7 +90,7 @@ section.col-sm-12 {
 
 /* line 88, ../sass/basic_layout.scss */
 .page-header {
-  background: #0ab3a3;
+  background: #2c93d5;
   text-align: center;
   margin: 0;
   padding: 10px 0;
@@ -138,6 +138,11 @@ section.col-sm-12 {
 /* line 129, ../sass/basic_layout.scss */
 .slick-slider {
   margin-bottom: 0;
+}
+
+/* line 133, ../sass/basic_layout.scss */
+.jspVerticalBar {
+  width: 5px;
 }
 
 /*# sourceMappingURL=basic_layout.css.map */
