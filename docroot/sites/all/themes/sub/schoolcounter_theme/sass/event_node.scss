@@ -1,0 +1,57 @@
+@import "variable";
+
+.node-type-ct-events {
+
+  #block-views-views-events-block-2 {
+    width: 85%;
+    margin: auto;
+    .views-field{
+      margin-bottom: 20px;
+    }
+
+    .views-label {
+      font-size: 1.2rem;
+      color: $white;
+      border-bottom: 2px solid $orange;
+      display: inline-block;
+      padding: 0 10px;
+      font-size: $very_large_font;
+      background: $site-blue;
+    }
+
+    .views-field-field-ct-date, .views-field-field-ct-school, .views-field-field-ct-description {
+      .field-content {
+        border: 1px solid $border-color;
+        padding: 10px 10px;
+
+        a {
+          color: $orange;
+        }
+      }
+    }
+
+    .views-field-nothing {
+      img {
+        width: 100%;
+        height: auto;
+      }
+      ul {
+        list-style: none;
+      }
+
+      .slide-for {
+        width: 50%;
+        margin: auto;
+      }
+
+      .slide-nav {
+        width: 40%;
+        margin: auto;
+        margin-top: 20px;
+        img {
+          height: 100px;
+        }
+      }
+    }
+  }
+}

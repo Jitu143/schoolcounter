@@ -13,6 +13,41 @@ function sc_f_context_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'event_node_page';
+  $context->description = '';
+  $context->tag = 'Events';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'ct_events' => 'ct_events',
+      ),
+      'options' => array(
+        'node_form' => '0',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-views_events-block_2' => array(
+          'module' => 'views',
+          'delta' => 'views_events-block_2',
+          'region' => 'content',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Events');
+  $export['event_node_page'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'footer';
   $context->description = '';
   $context->tag = 'sitewide context';
@@ -141,37 +176,55 @@ function sc_f_context_context_default_contexts() {
           'module' => 'system',
           'delta' => 'main',
           'region' => 'content',
-          'weight' => '-23',
+          'weight' => '-10',
+        ),
+        'views-views_school-about_us' => array(
+          'module' => 'views',
+          'delta' => 'views_school-about_us',
+          'region' => 'content',
+          'weight' => '-9',
         ),
         'views-views_school-block_2' => array(
           'module' => 'views',
           'delta' => 'views_school-block_2',
           'region' => 'content',
-          'weight' => '-22',
+          'weight' => '-8',
         ),
         'views-views_school_blogs-block_1' => array(
           'module' => 'views',
           'delta' => 'views_school_blogs-block_1',
           'region' => 'content',
-          'weight' => '-21',
+          'weight' => '-7',
         ),
         'views-views_events-block_1' => array(
           'module' => 'views',
           'delta' => 'views_events-block_1',
           'region' => 'content',
-          'weight' => '-20',
+          'weight' => '-6',
         ),
         'views-views_school_faculty-block' => array(
           'module' => 'views',
           'delta' => 'views_school_faculty-block',
           'region' => 'content',
-          'weight' => '-19',
+          'weight' => '-5',
         ),
         'views-views_students_result-block_1' => array(
           'module' => 'views',
           'delta' => 'views_students_result-block_1',
           'region' => 'content',
-          'weight' => '-18',
+          'weight' => '-4',
+        ),
+        'views-views_school-chairman' => array(
+          'module' => 'views',
+          'delta' => 'views_school-chairman',
+          'region' => 'content',
+          'weight' => '-3',
+        ),
+        'views-views_school-principal' => array(
+          'module' => 'views',
+          'delta' => 'views_school-principal',
+          'region' => 'content',
+          'weight' => '-2',
         ),
       ),
     ),

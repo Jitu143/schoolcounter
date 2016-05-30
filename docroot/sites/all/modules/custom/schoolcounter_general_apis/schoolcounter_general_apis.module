@@ -36,6 +36,13 @@ function schoolcounter_general_apis_page_alter(&$page) {
     break;
 
   }
+
+  if (arg(0) == 'events') {
+    drupal_add_css($theme_path . '/css/event_page.css', 'file');
+  }
+  if (arg(0) == 'teachers') {
+    drupal_add_css($theme_path . '/css/faculty.css', 'file');
+  }
 }
 
 /**
@@ -43,14 +50,28 @@ function schoolcounter_general_apis_page_alter(&$page) {
  */
 function schoolcounter_general_apis_node_view($node, $view_mode, $langcode) {
   $theme_path = drupal_get_path('theme', 'schoolcounter_theme');
+  $slick_lib = libraries_get_path('slick');
+  $jscroll_lib = libraries_get_path('jScroll');
 
   if ($node->type == 'ct_school') {
-    $slick_lib = libraries_get_path('slick');
     drupal_add_css($slick_lib . '/slick/slick.css', 'file');
     drupal_add_css($slick_lib . '/slick/slick-theme.css', 'file');
     drupal_add_js($slick_lib . '/slick/slick.js', 'file');
     drupal_add_js($slick_lib . '/slick/slick.min.js', 'file');
     drupal_add_js($theme_path . '/javascripts/school-node.js', 'file');
     drupal_add_css($theme_path . '/css/school-node.css', 'file');
+
+    drupal_add_js($jscroll_lib . '/jquery.jscrollpane.min.js', 'file');
+    drupal_add_js($jscroll_lib . '/jquery.mousewheel.js', 'file');
+    drupal_add_css($jscroll_lib . '/jquery.jscrollpane.css', 'file');
+  }
+
+  if ($node->type == 'ct_events') {
+    drupal_add_css($slick_lib . '/slick/slick.css', 'file');
+    drupal_add_css($slick_lib . '/slick/slick-theme.css', 'file');
+    drupal_add_js($slick_lib . '/slick/slick.js', 'file');
+    drupal_add_js($slick_lib . '/slick/slick.min.js', 'file');
+    drupal_add_js($theme_path . '/javascripts/event_node.js', 'file');
+    drupal_add_css($theme_path . '/css/event_node.css', 'file');
   }
 }

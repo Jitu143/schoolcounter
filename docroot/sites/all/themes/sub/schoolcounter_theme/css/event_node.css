@@ -1,0 +1,54 @@
+/* line 5, ../sass/event_node.scss */
+.node-type-ct-events #block-views-views-events-block-2 {
+  width: 85%;
+  margin: auto;
+}
+/* line 8, ../sass/event_node.scss */
+.node-type-ct-events #block-views-views-events-block-2 .views-field {
+  margin-bottom: 20px;
+}
+/* line 12, ../sass/event_node.scss */
+.node-type-ct-events #block-views-views-events-block-2 .views-label {
+  font-size: 1.2rem;
+  color: white;
+  border-bottom: 2px solid orange;
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 1.3rem;
+  background: #2c93d5;
+}
+/* line 23, ../sass/event_node.scss */
+.node-type-ct-events #block-views-views-events-block-2 .views-field-field-ct-date .field-content, .node-type-ct-events #block-views-views-events-block-2 .views-field-field-ct-school .field-content, .node-type-ct-events #block-views-views-events-block-2 .views-field-field-ct-description .field-content {
+  border: 1px solid #eee;
+  padding: 10px 10px;
+}
+/* line 27, ../sass/event_node.scss */
+.node-type-ct-events #block-views-views-events-block-2 .views-field-field-ct-date .field-content a, .node-type-ct-events #block-views-views-events-block-2 .views-field-field-ct-school .field-content a, .node-type-ct-events #block-views-views-events-block-2 .views-field-field-ct-description .field-content a {
+  color: orange;
+}
+/* line 34, ../sass/event_node.scss */
+.node-type-ct-events #block-views-views-events-block-2 .views-field-nothing img {
+  width: 100%;
+  height: auto;
+}
+/* line 38, ../sass/event_node.scss */
+.node-type-ct-events #block-views-views-events-block-2 .views-field-nothing ul {
+  list-style: none;
+}
+/* line 42, ../sass/event_node.scss */
+.node-type-ct-events #block-views-views-events-block-2 .views-field-nothing .slide-for {
+  width: 50%;
+  margin: auto;
+}
+/* line 47, ../sass/event_node.scss */
+.node-type-ct-events #block-views-views-events-block-2 .views-field-nothing .slide-nav {
+  width: 40%;
+  margin: auto;
+  margin-top: 20px;
+}
+/* line 51, ../sass/event_node.scss */
+.node-type-ct-events #block-views-views-events-block-2 .views-field-nothing .slide-nav img {
+  height: 100px;
+}
+
+/*# sourceMappingURL=event_node.css.map */
