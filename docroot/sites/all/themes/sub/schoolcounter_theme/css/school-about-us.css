@@ -1,0 +1,104 @@
+/* line 90, ../sass/_mixin.scss */
+.node-type-ct-about-us #block-system-main .block-title {
+  font-family: "Oswald", sans-serif, Helvetica;
+  font-size: 1.8rem;
+}
+
+/* line 5, ../sass/school-about-us.scss */
+.node-type-ct-about-us #block-system-main {
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+/* line 12, ../sass/_mixin.scss */
+.node-type-ct-about-us #block-system-main .block-title {
+  color: black;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
+  display: inline-block;
+}
+/* line 16, ../sass/_mixin.scss */
+.node-type-ct-about-us #block-system-main .view-header {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: inherit;
+  margin-top: -20px;
+}
+/* line 20, ../sass/_mixin.scss */
+.node-type-ct-about-us #block-system-main .view-content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+}
+/* line 81, ../sass/_mixin.scss */
+.node-type-ct-about-us #block-system-main .view-content .views-rows {
+  text-align: left;
+}
+/* line 24, ../sass/_mixin.scss */
+.node-type-ct-about-us #block-system-main .view-footer {
+  margin: auto;
+  margin-top: 40px;
+  width: auto;
+  min-width: 122px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 57, ../sass/_mixin.scss */
+.node-type-ct-about-us #block-system-main .view-footer a {
+  color: white;
+  padding: 10px 16px;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid white;
+  background: #2c93d5;
+  transition: 0.5s all;
+}
+/* line 67, ../sass/_mixin.scss */
+.node-type-ct-about-us #block-system-main .view-footer a:hover {
+  border: 1px solid white;
+  background: orange;
+  color: white;
+}
+/* line 8, ../sass/school-about-us.scss */
+.node-type-ct-about-us #block-system-main .node-ct-about-us {
+  width: 85%;
+  margin: auto;
+  text-align: left;
+}
+/* line 14, ../sass/school-about-us.scss */
+.node-type-ct-about-us #block-system-main .field-label {
+  font-size: 1.3rem;
+  color: #2c93d5;
+  margin-top: 20px;
+  display: inline-block;
+  border-bottom: 2px solid orange;
+  padding-right: 20px;
+}
+/* line 23, ../sass/school-about-us.scss */
+.node-type-ct-about-us #block-system-main .field-items {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+/* line 28, ../sass/school-about-us.scss */
+.node-type-ct-about-us #block-system-main h1, .node-type-ct-about-us #block-system-main h2, .node-type-ct-about-us #block-system-main h3, .node-type-ct-about-us #block-system-main h4, .node-type-ct-about-us #block-system-main h5, .node-type-ct-about-us #block-system-main h6 {
+  color: #000;
+}
+/* line 32, ../sass/school-about-us.scss */
+.node-type-ct-about-us #block-system-main .field-name-field-ct-school a {
+  color: orange;
+  font-size: 1.1rem;
+}
+/* line 36, ../sass/school-about-us.scss */
+.node-type-ct-about-us #block-system-main .field-name-field-ct-school a:hover {
+  color: #2c93d5;
+}
+
+/*# sourceMappingURL=school-about-us.css.map */

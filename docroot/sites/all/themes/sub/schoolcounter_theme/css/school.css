@@ -30,17 +30,18 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
   background: rgba(10, 179, 163, 0.8);
+  background: rgba(44, 147, 213, 0.6);
 }
-/* line 39, ../sass/school.scss */
+/* line 40, ../sass/school.scss */
 .page-school .view-display-id-page .view-content .views-field-nothing a {
   color: white;
 }
-/* line 43, ../sass/school.scss */
+/* line 44, ../sass/school.scss */
 .page-school .view-display-id-page .view-content .views-field-nothing .medium, .page-school .view-display-id-page .view-content .views-field-nothing .board {
   position: absolute;
   bottom: 10px;
 }
-/* line 48, ../sass/school.scss */
+/* line 49, ../sass/school.scss */
 .page-school .view-display-id-page .view-content .views-field-nothing .board {
   right: 10px;
 }

@@ -133,3 +133,11 @@ section.col-sm-12 {
 .jspVerticalBar {
   width: 5px;
 }
+
+.slick-prev:before, .slick-next:before {
+  color: $site-blue;
+}
+
+*:focus {
+  outline: none;
+}
