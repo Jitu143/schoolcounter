@@ -1,9 +1,8 @@
-name = School
+name = School activities
 core = 7.x
 package = views
 dependencies[] = views
-dependencies[] = views_bootstrap
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
-features[views_view][] = views_school
+features[views_view][] = views_school_activities
 features_exclude[dependencies][ctools] = ctools

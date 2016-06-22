@@ -25,6 +25,21 @@ function sc_image_style_image_default_styles() {
     ),
   );
 
+  // Exported image style: style_activity_logo.
+  $styles['style_activity_logo'] = array(
+    'label' => 'activity Logo',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 250,
+          'height' => 250,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: style_event_landing.
   $styles['style_event_landing'] = array(
     'label' => 'event landing',
@@ -79,6 +94,21 @@ function sc_image_style_image_default_styles() {
         'data' => array(
           'width' => 1500,
           'height' => 600,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: style_school_infrastructure.
+  $styles['style_school_infrastructure'] = array(
+    'label' => 'school infrastructure',
+    'effects' => array(
+      2 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 300,
+          'height' => 300,
         ),
         'weight' => 1,
       ),

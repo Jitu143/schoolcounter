@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the about us feature.
+ */
+
+include_once 'sc_f_views_about_us.features.inc';
