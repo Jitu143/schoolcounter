@@ -1,5 +1,5 @@
 /* line 90, ../sass/_mixin.scss */
-#block-views-views-school-faculty-block .block-title, #block-views-views-events-block-1 .block-title, #block-views-views-school-block-2 .block-title, #block-views-views-school-blogs-block-1 .block-title, #block-views-views-school-chairman .block-title, #block-views-views-school-principal .block-title, #block-views-views-school-about-us .block-title {
+#block-views-views-school-faculty-block .block-title, #block-views-views-events-block-1 .block-title, #block-views-views-school-block-2 .block-title, #block-views-views-school-blogs-block-1 .block-title, #block-views-views-school-chairman .block-title, #block-views-views-school-principal .block-title, #block-views-views-about-us-about-us .block-title, #block-views-views-school-academics .block-title, #block-views-views-school-time-table .block-title, #block-views-views-school-syllabus .block-title {
   font-family: "Oswald", sans-serif, Helvetica;
   font-size: 1.8rem;
 }
@@ -398,12 +398,12 @@
 #block-views-views-school-blogs-block-1 .blog-container {
   position: relative;
 }
-/* line 149, ../sass/school-node.scss */
+/* line 148, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .blog-container img {
   width: 100%;
   height: auto;
 }
-/* line 153, ../sass/school-node.scss */
+/* line 152, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .blog-container .blog-textbox {
   text-align: left;
   padding: 20px;
@@ -421,23 +421,23 @@
   transition: all 0.7s ease;
   color: white;
 }
-/* line 174, ../sass/school-node.scss */
+/* line 168, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .blog-container .blog-textbox a {
   color: white;
 }
-/* line 179, ../sass/school-node.scss */
+/* line 173, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .blog-textbox:hover {
   margin-top: 0;
   opacity: 1;
 }
-/* line 184, ../sass/school-node.scss */
+/* line 178, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .read-more {
   position: absolute;
   bottom: 0;
   right: 0;
   padding: 15px 30px;
 }
-/* line 191, ../sass/school-node.scss */
+/* line 185, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .blog-date {
   position: absolute;
   top: 0;
@@ -447,12 +447,12 @@
   background: rgba(255, 255, 255, 0.2);
   color: #FFFFFF;
 }
-/* line 201, ../sass/school-node.scss */
+/* line 195, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .title {
   margin-top: 20px;
 }
 
-/* line 206, ../sass/school-node.scss */
+/* line 200, ../sass/school-node.scss */
 #block-views-views-school-chairman, #block-views-views-school-principal {
   background: white;
   width: 100%;
@@ -515,27 +515,27 @@
   background: orange;
   color: white;
 }
-/* line 210, ../sass/school-node.scss */
+/* line 204, ../sass/school-node.scss */
 #block-views-views-school-chairman .views-field-field-fc-message img, #block-views-views-school-principal .views-field-field-fc-message img {
   float: left;
   margin-right: 20px;
 }
-/* line 214, ../sass/school-node.scss */
+/* line 208, ../sass/school-node.scss */
 #block-views-views-school-chairman .views-field-field-fc-message p, #block-views-views-school-principal .views-field-field-fc-message p {
   text-align: left;
 }
-/* line 219, ../sass/school-node.scss */
+/* line 213, ../sass/school-node.scss */
 #block-views-views-school-chairman .field-content, #block-views-views-school-principal .field-content {
   height: 250px;
 }
 
-/* line 225, ../sass/school-node.scss */
+/* line 219, ../sass/school-node.scss */
 #block-views-views-school-principal {
   background-color: #ededed;
 }
 
-/* line 229, ../sass/school-node.scss */
-#block-views-views-school-about-us {
+/* line 223, ../sass/school-node.scss */
+#block-views-views-about-us-about-us {
   background: white;
   width: 100%;
   margin: 0;
@@ -545,7 +545,7 @@
   background-color: #ededed;
 }
 /* line 12, ../sass/_mixin.scss */
-#block-views-views-school-about-us .block-title {
+#block-views-views-about-us-about-us .block-title {
   color: black;
   margin-bottom: 40px;
   margin-top: 0;
@@ -553,7 +553,7 @@
   display: inline-block;
 }
 /* line 16, ../sass/_mixin.scss */
-#block-views-views-school-about-us .view-header {
+#block-views-views-about-us-about-us .view-header {
   width: 70%;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -561,18 +561,18 @@
   margin-top: -20px;
 }
 /* line 20, ../sass/_mixin.scss */
-#block-views-views-school-about-us .view-content {
+#block-views-views-about-us-about-us .view-content {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
   color: inherit;
 }
 /* line 81, ../sass/_mixin.scss */
-#block-views-views-school-about-us .view-content .views-rows {
+#block-views-views-about-us-about-us .view-content .views-rows {
   text-align: left;
 }
 /* line 24, ../sass/_mixin.scss */
-#block-views-views-school-about-us .view-footer {
+#block-views-views-about-us-about-us .view-footer {
   margin: auto;
   margin-top: 40px;
   width: auto;
@@ -583,7 +583,7 @@
   font-weight: bold;
 }
 /* line 57, ../sass/_mixin.scss */
-#block-views-views-school-about-us .view-footer a {
+#block-views-views-about-us-about-us .view-footer a {
   color: white;
   padding: 10px 16px;
   display: block;
@@ -593,25 +593,227 @@
   transition: 0.5s all;
 }
 /* line 67, ../sass/_mixin.scss */
-#block-views-views-school-about-us .view-footer a:hover {
+#block-views-views-about-us-about-us .view-footer a:hover {
   border: 1px solid white;
   background: orange;
   color: white;
 }
-/* line 233, ../sass/school-node.scss */
-#block-views-views-school-about-us .views-field {
+/* line 227, ../sass/school-node.scss */
+#block-views-views-about-us-about-us .views-field {
   width: 48%;
   float: left;
   vertical-align: top;
 }
-/* line 238, ../sass/school-node.scss */
-#block-views-views-school-about-us .views-field .field-content {
+/* line 232, ../sass/school-node.scss */
+#block-views-views-about-us-about-us .views-field .field-content {
   text-align: left;
-  height: 200px;
+  height: 250px;
+  overflow: hidden;
+}
+/* line 239, ../sass/school-node.scss */
+#block-views-views-about-us-about-us .views-field-path {
+  margin-top: 10px;
+  width: 100%;
+  text-align: right;
 }
 /* line 244, ../sass/school-node.scss */
-#block-views-views-school-about-us .views-field-field-ct-description {
+#block-views-views-about-us-about-us .views-field-path a {
+  color: orange;
+}
+/* line 249, ../sass/school-node.scss */
+#block-views-views-about-us-about-us .views-field-field-ct-description {
   margin-right: 4%;
+}
+@media only screen and (max-width: 500px) {
+  /* line 253, ../sass/school-node.scss */
+  #block-views-views-about-us-about-us .views-field {
+    width: 100%;
+  }
+  /* line 257, ../sass/school-node.scss */
+  #block-views-views-about-us-about-us .views-field-field-ct-description {
+    margin-right: 0;
+  }
+}
+
+/* line 263, ../sass/school-node.scss */
+#block-views-views-school-academics {
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+/* line 12, ../sass/_mixin.scss */
+#block-views-views-school-academics .block-title {
+  color: black;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
+  display: inline-block;
+}
+/* line 16, ../sass/_mixin.scss */
+#block-views-views-school-academics .view-header {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: inherit;
+  margin-top: -20px;
+}
+/* line 20, ../sass/_mixin.scss */
+#block-views-views-school-academics .view-content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+}
+/* line 81, ../sass/_mixin.scss */
+#block-views-views-school-academics .view-content .views-rows {
+  text-align: left;
+}
+/* line 24, ../sass/_mixin.scss */
+#block-views-views-school-academics .view-footer {
+  margin: auto;
+  margin-top: 40px;
+  width: auto;
+  min-width: 122px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 57, ../sass/_mixin.scss */
+#block-views-views-school-academics .view-footer a {
+  color: white;
+  padding: 10px 16px;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid white;
+  background: #2c93d5;
+  transition: 0.5s all;
+}
+/* line 67, ../sass/_mixin.scss */
+#block-views-views-school-academics .view-footer a:hover {
+  border: 1px solid white;
+  background: orange;
+  color: white;
+}
+/* line 269, ../sass/school-node.scss */
+#block-views-views-school-academics .views-row {
+  border: 1px solid #eee;
+  text-align: left;
+  max-height: 300px;
+}
+/* line 275, ../sass/school-node.scss */
+#block-views-views-school-academics .views-field {
+  padding: 10px 20px;
+}
+/* line 279, ../sass/school-node.scss */
+#block-views-views-school-academics .views-label {
+  color: #2c93d5;
+}
+
+/* line 284, ../sass/school-node.scss */
+#block-views-views-school-time-table, #block-views-views-school-syllabus {
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+  width: 50%;
+  display: inline-block;
+}
+/* line 12, ../sass/_mixin.scss */
+#block-views-views-school-time-table .block-title, #block-views-views-school-syllabus .block-title {
+  color: black;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
+  display: inline-block;
+}
+/* line 16, ../sass/_mixin.scss */
+#block-views-views-school-time-table .view-header, #block-views-views-school-syllabus .view-header {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: inherit;
+  margin-top: -20px;
+}
+/* line 20, ../sass/_mixin.scss */
+#block-views-views-school-time-table .view-content, #block-views-views-school-syllabus .view-content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+}
+/* line 81, ../sass/_mixin.scss */
+#block-views-views-school-time-table .view-content .views-rows, #block-views-views-school-syllabus .view-content .views-rows {
+  text-align: left;
+}
+/* line 24, ../sass/_mixin.scss */
+#block-views-views-school-time-table .view-footer, #block-views-views-school-syllabus .view-footer {
+  margin: auto;
+  margin-top: 40px;
+  width: auto;
+  min-width: 122px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 57, ../sass/_mixin.scss */
+#block-views-views-school-time-table .view-footer a, #block-views-views-school-syllabus .view-footer a {
+  color: white;
+  padding: 10px 16px;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid white;
+  background: #2c93d5;
+  transition: 0.5s all;
+}
+/* line 67, ../sass/_mixin.scss */
+#block-views-views-school-time-table .view-footer a:hover, #block-views-views-school-syllabus .view-footer a:hover {
+  border: 1px solid white;
+  background: orange;
+  color: white;
+}
+@media only screen and (max-width: 768px) {
+  /* line 284, ../sass/school-node.scss */
+  #block-views-views-school-time-table, #block-views-views-school-syllabus {
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+  }
+}
+/* line 295, ../sass/school-node.scss */
+#block-views-views-school-time-table .view-content, #block-views-views-school-syllabus .view-content {
+  text-align: left;
+}
+/* line 299, ../sass/school-node.scss */
+#block-views-views-school-time-table .table, #block-views-views-school-syllabus .table {
+  border: 1px solid #ddd;
+}
+/* line 302, ../sass/school-node.scss */
+#block-views-views-school-time-table .table thead, #block-views-views-school-syllabus .table thead {
+  background: #2c93d5;
+  color: white;
+  font-size: 1.2rem;
+}
+/* line 308, ../sass/school-node.scss */
+#block-views-views-school-time-table .table tr.even, #block-views-views-school-syllabus .table tr.even {
+  background: #e9f2f8;
+}
+
+/* line 314, ../sass/school-node.scss */
+#block-views-views-school-time-table {
+  float: left;
+}
+@media only screen and (max-width: 768px) {
+  /* line 314, ../sass/school-node.scss */
+  #block-views-views-school-time-table {
+    float: none;
+  }
 }
 
 /*# sourceMappingURL=school-node.css.map */

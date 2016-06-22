@@ -1,0 +1,41 @@
+@import "variable";
+@import "mixin";
+
+.node-type-ct-about-us {
+  #block-system-main {
+    @include main_block($white_bg...);
+
+    .node-ct-about-us {
+      width: 85%;
+      margin: auto;
+      text-align: left;
+    }
+
+    .field-label {
+      font-size: $very_large_font;
+      color: $site-blue;
+      margin-top: 20px;
+      display: inline-block;
+      border-bottom: 2px solid $orange;
+      padding-right: 20px;
+    }
+
+    .field-items {
+      padding-left: 20px;
+      margin-top: 5px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: $black;
+    }
+
+    .field-name-field-ct-school a {
+      color: $orange;
+      font-size: $small_font;
+
+      &:hover {
+        color: $site-blue;
+      }
+    }
+  }
+}

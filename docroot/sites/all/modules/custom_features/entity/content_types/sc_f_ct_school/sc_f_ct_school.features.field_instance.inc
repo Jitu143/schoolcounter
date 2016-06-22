@@ -11,125 +11,6 @@ function sc_f_ct_school_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
-  // 'field_collection_item-field_ct_activity_hub-field_fc_description'.
-  $field_instances['field_collection_item-field_ct_activity_hub-field_fc_description'] = array(
-    'bundle' => 'field_ct_activity_hub',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_fc_description',
-    'label' => 'Description',
-    'required' => 0,
-    'settings' => array(
-      'display_summary' => 0,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'field_collection_item-field_ct_activity_hub-field_fc_image'.
-  $field_instances['field_collection_item-field_ct_activity_hub-field_fc_image'] = array(
-    'bundle' => 'field_ct_activity_hub',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 2,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_fc_image',
-    'label' => 'Image',
-    'required' => 0,
-    'settings' => array(
-      'alt_field' => 0,
-      'alt_field_required' => 0,
-      'default_image' => 0,
-      'file_directory' => 'activity/[current-date:custom:Y]/[current-date:custom:M]/[current-date:custom:d]',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'title_field_required' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'image',
-      'settings' => array(
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'image_image',
-      'weight' => 6,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'field_collection_item-field_ct_activity_hub-field_fc_title'.
-  $field_instances['field_collection_item-field_ct_activity_hub-field_fc_title'] = array(
-    'bundle' => 'field_ct_activity_hub',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_fc_title',
-    'label' => 'Title',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance:
   // 'field_collection_item-field_ct_address-field_fc_city'.
   $field_instances['field_collection_item-field_ct_address-field_fc_city'] = array(
     'bundle' => 'field_ct_address',
@@ -923,42 +804,6 @@ function sc_f_ct_school_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ct_school-field_ct_activity_hub'.
-  $field_instances['node-ct_school-field_ct_activity_hub'] = array(
-    'bundle' => 'ct_school',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 20,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ct_activity_hub',
-    'label' => 'Activity Hub',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
-      'settings' => array(),
-      'type' => 'field_collection_embed',
-      'weight' => 51,
-    ),
-  );
-
   // Exported field_instance: 'node-ct_school-field_ct_address'.
   $field_instances['node-ct_school-field_ct_address'] = array(
     'bundle' => 'ct_school',
@@ -1361,42 +1206,6 @@ function sc_f_ct_school_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ct_school-field_ct_infrastructure'.
-  $field_instances['node-ct_school-field_ct_infrastructure'] = array(
-    'bundle' => 'ct_school',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 19,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ct_infrastructure',
-    'label' => 'Infrastructure',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
-      'settings' => array(),
-      'type' => 'field_collection_embed',
-      'weight' => 50,
-    ),
-  );
-
   // Exported field_instance: 'node-ct_school-field_ct_logo_image'.
   $field_instances['node-ct_school-field_ct_logo_image'] = array(
     'bundle' => 'ct_school',
@@ -1753,7 +1562,6 @@ function sc_f_ct_school_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('About Us');
   t('Academics');
-  t('Activity Hub');
   t('Address');
   t('Admission Procedure');
   t('Brochures');
@@ -1769,7 +1577,6 @@ function sc_f_ct_school_field_default_field_instances() {
   t('Hostel Brochure');
   t('Image');
   t('Images');
-  t('Infrastructure');
   t('Logo');
   t('Medium');
   t('Message');

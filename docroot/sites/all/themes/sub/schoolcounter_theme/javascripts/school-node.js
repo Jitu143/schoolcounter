@@ -17,9 +17,9 @@
       $('#block-views-views-school-faculty-block .view-content').sc_slick_slides();
       $('#block-views-views-school-blogs-block-1 .view-content').sc_slick_slides();
 
-      $('#block-views-views-school-about-us .field-content').jScrollPane();
       $('#block-views-views-school-chairman .field-content').jScrollPane();
       $('#block-views-views-school-principal .field-content').jScrollPane();
+      $('#block-views-views-school-academics .views-row').jScrollPane();
     }
   };
 })(jQuery);

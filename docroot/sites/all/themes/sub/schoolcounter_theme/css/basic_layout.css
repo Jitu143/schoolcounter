@@ -145,4 +145,14 @@ section.col-sm-12 {
   width: 5px;
 }
 
+/* line 137, ../sass/basic_layout.scss */
+.slick-prev:before, .slick-next:before {
+  color: #2c93d5;
+}
+
+/* line 141, ../sass/basic_layout.scss */
+*:focus {
+  outline: none;
+}
+
 /*# sourceMappingURL=basic_layout.css.map */
