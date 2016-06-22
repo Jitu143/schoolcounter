@@ -260,3 +260,22 @@ function schoolcounter_site_controller_update_7116() {
   features_revert_module('sc_f_view_school');
   features_revert_module('sc_f_view_faculty');
 }
+
+/**
+ * Revert features.
+ */
+function schoolcounter_site_controller_update_7117() {
+  $modules = array('sc_f_ct_school_about_us','sc_f_ct_school_activities', 'sc_f_ct_school_infrastructure', 'sc_f_views_about_us', 'sc_f_views_school_activities', 'sc_f_views_school_infrastructure');
+  module_enable($modules, TRUE);
+  features_revert_module('sc_f_ct_school_about_us');
+  features_revert_module('sc_f_ct_school_activities');
+  features_revert_module('sc_f_ct_school_infrastructure');
+  features_revert_module('sc_f_views_about_us');
+  features_revert_module('sc_f_views_school_activities');
+  features_revert_module('sc_f_views_school_infrastructure');
+  features_revert_module('sc_f_context');
+  features_revert_module('sc_f_ct_school');
+  features_revert_module('sc_f_view_school');
+  features_revert_module('sc_f_views_blogs');
+  features_revert_module('sc_image_style');
+}
