@@ -10,6 +10,36 @@
 function sc_f_ct_school_result_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_ct_class_result'.
+  $field_bases['field_ct_class_result'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_ct_class_result',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        6 => 6,
+        7 => 7,
+        8 => 8,
+        9 => 9,
+        10 => 10,
+        11 => 11,
+        12 => 12,
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_integer',
+  );
+
   // Exported field_base: 'field_ct_description'.
   $field_bases['field_ct_description'] = array(
     'active' => 1,
@@ -29,25 +59,33 @@ function sc_f_ct_school_result_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_ct_student_percent'.
-  $field_bases['field_ct_student_percent'] = array(
+  // Exported field_base: 'field_ct_result_year'.
+  $field_bases['field_ct_result_year'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_ct_student_percent',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
+    'field_name' => 'field_ct_result_year',
+    'indexes' => array(),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'date',
     'settings' => array(
-      'max_length' => 255,
+      'cache_count' => 4,
+      'cache_enabled' => 0,
+      'granularity' => array(
+        'day' => 0,
+        'hour' => 0,
+        'minute' => 0,
+        'month' => 0,
+        'second' => 0,
+        'year' => 'year',
+      ),
+      'timezone_db' => '',
+      'todate' => '',
+      'tz_handling' => 'none',
     ),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'datestamp',
   );
 
   // Exported field_base: 'field_ct_student_result'.
@@ -72,25 +110,19 @@ function sc_f_ct_school_result_field_default_field_bases() {
     'type' => 'field_collection',
   );
 
-  // Exported field_base: 'field_fc_mark_obtained'.
-  $field_bases['field_fc_mark_obtained'] = array(
+  // Exported field_base: 'field_fc_percent'.
+  $field_bases['field_fc_percent'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_fc_mark_obtained',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
+    'field_name' => 'field_fc_percent',
+    'indexes' => array(),
     'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
+    'module' => 'number',
+    'settings' => array(),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'number_integer',
   );
 
   // Exported field_base: 'field_fc_student_name'.

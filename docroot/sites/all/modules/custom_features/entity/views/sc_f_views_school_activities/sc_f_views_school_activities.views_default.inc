@@ -141,7 +141,7 @@ function sc_f_views_school_activities_views_default_views() {
   $handler->display->display_options['path'] = 'school-activities';
 
   /* Display: School Activites */
-  $handler = $view->new_display('block', 'School Activites', 'school_activity');
+  $handler = $view->new_display('block', 'School Activites', 'activity');
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '4';
@@ -160,24 +160,28 @@ function sc_f_views_school_activities_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Logo */
   $handler->display->display_options['fields']['field_ct_logo_image']['id'] = 'field_ct_logo_image';
   $handler->display->display_options['fields']['field_ct_logo_image']['table'] = 'field_data_field_ct_logo_image';
   $handler->display->display_options['fields']['field_ct_logo_image']['field'] = 'field_ct_logo_image';
   $handler->display->display_options['fields']['field_ct_logo_image']['label'] = '';
+  $handler->display->display_options['fields']['field_ct_logo_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ct_logo_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ct_logo_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ct_logo_image']['settings'] = array(
     'image_style' => 'style_activity_logo',
-    'image_link' => '',
+    'image_link' => 'content',
   );
   /* Field: Content: Activity type */
   $handler->display->display_options['fields']['field_ct_activity_type']['id'] = 'field_ct_activity_type';
   $handler->display->display_options['fields']['field_ct_activity_type']['table'] = 'field_data_field_ct_activity_type';
   $handler->display->display_options['fields']['field_ct_activity_type']['field'] = 'field_ct_activity_type';
   $handler->display->display_options['fields']['field_ct_activity_type']['label'] = '';
+  $handler->display->display_options['fields']['field_ct_activity_type']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ct_activity_type']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ct_activity_type']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['fields']['field_ct_activity_type']['delta_offset'] = '0';
@@ -192,6 +196,15 @@ function sc_f_views_school_activities_views_default_views() {
   $handler->display->display_options['fields']['field_ct_school']['settings'] = array(
     'link' => 0,
   );
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="activity-title">[title]</div>
+<div class="activity-logo">[field_ct_logo_image]</div>
+<div class="activity-category">[field_ct_activity_type] Activity</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Field: school (field_ct_school) */
   $handler->display->display_options['arguments']['field_ct_school_target_id']['id'] = 'field_ct_school_target_id';
@@ -207,6 +220,7 @@ function sc_f_views_school_activities_views_default_views() {
   $handler = $view->new_display('page', 'Indivdual school Page', 'individual_activity_page');
   $handler->display->display_options['defaults']['use_ajax'] = FALSE;
   $handler->display->display_options['use_ajax'] = TRUE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
