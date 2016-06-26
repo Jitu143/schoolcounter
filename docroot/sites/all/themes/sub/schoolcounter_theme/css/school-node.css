@@ -1,5 +1,5 @@
 /* line 90, ../sass/_mixin.scss */
-#block-views-views-school-faculty-block .block-title, #block-views-views-events-block-1 .block-title, #block-views-views-school-block-2 .block-title, #block-views-views-school-blogs-block-1 .block-title, #block-views-views-school-chairman .block-title, #block-views-views-school-principal .block-title, #block-views-views-about-us-about-us .block-title, #block-views-views-school-academics .block-title, #block-views-views-school-time-table .block-title, #block-views-views-school-syllabus .block-title {
+#block-views-views-school-faculty-block .block-title, #block-views-views-events-block-1 .block-title, #block-views-views-school-block-2 .block-title, #block-views-views-school-blogs-block-1 .block-title, #block-views-views-school-chairman .block-title, #block-views-views-school-principal .block-title, #block-views-views-about-us-about-us .block-title, #block-views-views-school-academics .block-title, #block-views-views-school-time-table .block-title, #block-views-views-school-syllabus .block-title, #block-views-aa78a9c77fefc3b3bbce9dee76941186 .block-title, #block-views-18a210c3d408e4f41ded41008c973061 .block-title {
   font-family: "Oswald", sans-serif, Helvetica;
   font-size: 1.8rem;
 }
@@ -814,6 +814,196 @@
   #block-views-views-school-time-table {
     float: none;
   }
+}
+
+/* line 322, ../sass/school-node.scss */
+#block-views-aa78a9c77fefc3b3bbce9dee76941186 {
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+/* line 12, ../sass/_mixin.scss */
+#block-views-aa78a9c77fefc3b3bbce9dee76941186 .block-title {
+  color: black;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
+  display: inline-block;
+}
+/* line 16, ../sass/_mixin.scss */
+#block-views-aa78a9c77fefc3b3bbce9dee76941186 .view-header {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: inherit;
+  margin-top: -20px;
+}
+/* line 20, ../sass/_mixin.scss */
+#block-views-aa78a9c77fefc3b3bbce9dee76941186 .view-content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+}
+/* line 81, ../sass/_mixin.scss */
+#block-views-aa78a9c77fefc3b3bbce9dee76941186 .view-content .views-rows {
+  text-align: left;
+}
+/* line 24, ../sass/_mixin.scss */
+#block-views-aa78a9c77fefc3b3bbce9dee76941186 .view-footer {
+  margin: auto;
+  margin-top: 40px;
+  width: auto;
+  min-width: 122px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 57, ../sass/_mixin.scss */
+#block-views-aa78a9c77fefc3b3bbce9dee76941186 .view-footer a {
+  color: white;
+  padding: 10px 16px;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid white;
+  background: #2c93d5;
+  transition: 0.5s all;
+}
+/* line 67, ../sass/_mixin.scss */
+#block-views-aa78a9c77fefc3b3bbce9dee76941186 .view-footer a:hover {
+  border: 1px solid white;
+  background: orange;
+  color: white;
+}
+/* line 324, ../sass/school-node.scss */
+#block-views-aa78a9c77fefc3b3bbce9dee76941186 .views-row {
+  width: 25%;
+  float: left;
+  padding: 0 10px;
+}
+/* line 330, ../sass/school-node.scss */
+#block-views-aa78a9c77fefc3b3bbce9dee76941186 .views-field-nothing {
+  position: relative;
+  border: 1px solid #AAB6BE;
+}
+/* line 336, ../sass/school-node.scss */
+#block-views-aa78a9c77fefc3b3bbce9dee76941186 .infrastructure-image img {
+  width: 100%;
+}
+/* line 341, ../sass/school-node.scss */
+#block-views-aa78a9c77fefc3b3bbce9dee76941186 .infrastructure-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 350, ../sass/school-node.scss */
+#block-views-aa78a9c77fefc3b3bbce9dee76941186 .infrastructure-title a {
+  color: white;
+}
+
+/* line 357, ../sass/school-node.scss */
+#block-views-18a210c3d408e4f41ded41008c973061 {
+  background: #ededed;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+/* line 12, ../sass/_mixin.scss */
+#block-views-18a210c3d408e4f41ded41008c973061 .block-title {
+  color: black;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
+  display: inline-block;
+}
+/* line 16, ../sass/_mixin.scss */
+#block-views-18a210c3d408e4f41ded41008c973061 .view-header {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: inherit;
+  margin-top: -20px;
+}
+/* line 20, ../sass/_mixin.scss */
+#block-views-18a210c3d408e4f41ded41008c973061 .view-content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+}
+/* line 81, ../sass/_mixin.scss */
+#block-views-18a210c3d408e4f41ded41008c973061 .view-content .views-rows {
+  text-align: left;
+}
+/* line 24, ../sass/_mixin.scss */
+#block-views-18a210c3d408e4f41ded41008c973061 .view-footer {
+  margin: auto;
+  margin-top: 40px;
+  width: auto;
+  min-width: 122px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 57, ../sass/_mixin.scss */
+#block-views-18a210c3d408e4f41ded41008c973061 .view-footer a {
+  color: white;
+  padding: 10px 16px;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid white;
+  background: #2c93d5;
+  transition: 0.5s all;
+}
+/* line 67, ../sass/_mixin.scss */
+#block-views-18a210c3d408e4f41ded41008c973061 .view-footer a:hover {
+  border: 1px solid white;
+  background: orange;
+  color: white;
+}
+/* line 359, ../sass/school-node.scss */
+#block-views-18a210c3d408e4f41ded41008c973061 .views-row {
+  width: 25%;
+  float: left;
+  padding: 0 10px;
+}
+/* line 365, ../sass/school-node.scss */
+#block-views-18a210c3d408e4f41ded41008c973061 .views-field-nothing {
+  position: relative;
+  border: 1px solid #AAB6BE;
+}
+/* line 371, ../sass/school-node.scss */
+#block-views-18a210c3d408e4f41ded41008c973061 .activity-logo img {
+  width: 100%;
+}
+/* line 376, ../sass/school-node.scss */
+#block-views-18a210c3d408e4f41ded41008c973061 .activity-title {
+  position: absolute;
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 384, ../sass/school-node.scss */
+#block-views-18a210c3d408e4f41ded41008c973061 .activity-title a {
+  color: white;
+}
+/* line 389, ../sass/school-node.scss */
+#block-views-18a210c3d408e4f41ded41008c973061 .activity-category {
+  padding: 5px;
+  border-top: 1px solid;
 }
 
 /*# sourceMappingURL=school-node.css.map */

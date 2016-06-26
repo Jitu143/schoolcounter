@@ -232,12 +232,6 @@ function sc_f_context_context_default_contexts() {
           'region' => 'content',
           'weight' => '-2',
         ),
-        'views-4d748e2d6c82f571f5a8d36625308c33' => array(
-          'module' => 'views',
-          'delta' => '4d748e2d6c82f571f5a8d36625308c33',
-          'region' => 'content',
-          'weight' => '0',
-        ),
         'views-views_students_result-block_1' => array(
           'module' => 'views',
           'delta' => 'views_students_result-block_1',
@@ -261,6 +255,12 @@ function sc_f_context_context_default_contexts() {
           'delta' => 'aa78a9c77fefc3b3bbce9dee76941186',
           'region' => 'content',
           'weight' => '4',
+        ),
+        'views-18a210c3d408e4f41ded41008c973061' => array(
+          'module' => 'views',
+          'delta' => '18a210c3d408e4f41ded41008c973061',
+          'region' => 'content',
+          'weight' => '5',
         ),
       ),
     ),

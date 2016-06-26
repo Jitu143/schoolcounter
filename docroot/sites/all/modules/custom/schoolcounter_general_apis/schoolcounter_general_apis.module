@@ -2,7 +2,7 @@
 <?php
 /**
  * @file
- * Contains general function for Sakal jain samaj site.
+ * Contains general function for school counter site.
  */
 
 define('MODULE_PATH', drupal_get_path('module', 'schoolcounter_general_apis'));
