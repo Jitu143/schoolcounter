@@ -46,7 +46,7 @@ function sc_f_view_school_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Image */
+  /* Field: Content: Images */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -189,7 +189,7 @@ function sc_f_view_school_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Image */
+  /* Field: Content: Images */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -403,7 +403,7 @@ function sc_f_view_school_views_default_views() {
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Image */
+  /* Field: Content: Images */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -495,19 +495,11 @@ function sc_f_view_school_views_default_views() {
     'description' => 1,
     'view_mode' => 'full',
   );
-  /* Field: Content: Infrastructure */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_ct_infrastructure']['id'] = 'field_ct_infrastructure';
   $handler->display->display_options['fields']['field_ct_infrastructure']['table'] = 'field_data_field_ct_infrastructure';
   $handler->display->display_options['fields']['field_ct_infrastructure']['field'] = 'field_ct_infrastructure';
   $handler->display->display_options['fields']['field_ct_infrastructure']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ct_infrastructure']['settings'] = array(
-    'edit' => 'Edit',
-    'delete' => 'Delete',
-    'add' => 'Add',
-    'description' => 1,
-    'view_mode' => 'full',
-  );
-  $handler->display->display_options['fields']['field_ct_infrastructure']['delta_offset'] = '0';
   /* Field: Content: School Fees */
   $handler->display->display_options['fields']['field_ct_file']['id'] = 'field_ct_file';
   $handler->display->display_options['fields']['field_ct_file']['table'] = 'field_data_field_ct_file';

@@ -418,125 +418,6 @@ function sc_f_ct_school_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'field_collection_item-field_ct_infrastructure-field_fc_description'.
-  $field_instances['field_collection_item-field_ct_infrastructure-field_fc_description'] = array(
-    'bundle' => 'field_ct_infrastructure',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_fc_description',
-    'label' => 'Description',
-    'required' => 0,
-    'settings' => array(
-      'display_summary' => 0,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'field_collection_item-field_ct_infrastructure-field_fc_image'.
-  $field_instances['field_collection_item-field_ct_infrastructure-field_fc_image'] = array(
-    'bundle' => 'field_ct_infrastructure',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 2,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_fc_image',
-    'label' => 'Image',
-    'required' => 0,
-    'settings' => array(
-      'alt_field' => 0,
-      'alt_field_required' => 0,
-      'default_image' => 0,
-      'file_directory' => 'infrastructure/[current-date:custom:Y]/[current-date:custom:M]/[current-date:custom:d]',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'title_field_required' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'image',
-      'settings' => array(
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'image_image',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'field_collection_item-field_ct_infrastructure-field_fc_title'.
-  $field_instances['field_collection_item-field_ct_infrastructure-field_fc_title'] = array(
-    'bundle' => 'field_ct_infrastructure',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_fc_title',
-    'label' => 'Title',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance:
   // 'field_collection_item-field_ct_principal_message-field_fc_message'.
   $field_instances['field_collection_item-field_ct_principal_message-field_fc_message'] = array(
     'bundle' => 'field_ct_principal_message',
@@ -1575,7 +1456,6 @@ function sc_f_ct_school_field_default_field_instances() {
   t('Email');
   t('Hostel');
   t('Hostel Brochure');
-  t('Image');
   t('Images');
   t('Logo');
   t('Medium');
@@ -1593,7 +1473,6 @@ function sc_f_ct_school_field_default_field_instances() {
   t('Syllabus File');
   t('Time Table');
   t('Time Table File');
-  t('Title');
   t('Transport');
 
   return $field_instances;

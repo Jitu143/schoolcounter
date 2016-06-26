@@ -317,3 +317,77 @@
     float: none;
   }
 }
+
+// School infrastructur block.
+#block-views-aa78a9c77fefc3b3bbce9dee76941186 {
+  @include main_block($white_bg...);
+  .views-row {
+    width: 25%;
+    float: left;
+    padding: 0 10px;
+  }
+
+  .views-field-nothing {
+    position: relative;
+    border: 1px solid #AAB6BE;
+  }
+
+  .infrastructure-image {
+    img {
+      width: 100%;
+    }
+  }
+
+  .infrastructure-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: $large_font;
+    text-align: left;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+
+    a {
+      color: $white;
+    }
+  }
+}
+
+// School Activity block.
+#block-views-18a210c3d408e4f41ded41008c973061 {
+  @include main_block($gray_bg...);
+  .views-row {
+    width: 25%;
+    float: left;
+    padding: 0 10px;
+  }
+
+  .views-field-nothing {
+    position: relative;
+    border: 1px solid #AAB6BE;
+  }
+
+  .activity-logo {
+    img {
+      width: 100%;
+    }
+  }
+
+  .activity-title {
+    position: absolute;
+    width: 100%;
+    font-size: $large_font;
+    text-align: left;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+
+    a {
+      color: $white;
+    }
+  }
+
+  .activity-category {
+    padding: 5px;
+    border-top: 1px solid;
+  }
+}

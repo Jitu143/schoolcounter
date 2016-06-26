@@ -11,8 +11,8 @@ function sc_f_ct_school_result_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
-  // 'field_collection_item-field_ct_student_result-field_ct_student_percent'.
-  $field_instances['field_collection_item-field_ct_student_result-field_ct_student_percent'] = array(
+  // 'field_collection_item-field_ct_student_result-field_fc_percent'.
+  $field_instances['field_collection_item-field_ct_student_result-field_fc_percent'] = array(
     'bundle' => 'field_ct_student_result',
     'default_value' => NULL,
     'deleted' => 0,
@@ -20,63 +20,34 @@ function sc_f_ct_school_result_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'prefix_suffix' => TRUE,
+          'scale' => 0,
+          'thousand_separator' => '',
+        ),
+        'type' => 'number_integer',
         'weight' => 2,
       ),
     ),
     'entity_type' => 'field_collection_item',
-    'field_name' => 'field_ct_student_percent',
-    'label' => 'Student Percent',
-    'required' => 0,
+    'field_name' => 'field_fc_percent',
+    'label' => 'Percent',
+    'required' => 1,
     'settings' => array(
-      'text_processing' => 0,
+      'max' => 100,
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
       'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'field_collection_item-field_ct_student_result-field_fc_mark_obtained'.
-  $field_instances['field_collection_item-field_ct_student_result-field_fc_mark_obtained'] = array(
-    'bundle' => 'field_ct_student_result',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 3,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_fc_mark_obtained',
-    'label' => 'Mark obtained',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 4,
     ),
   );
 
@@ -162,6 +133,98 @@ function sc_f_ct_school_result_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-ct_school_results-field_ct_class_result'.
+  $field_instances['node-ct_school_results-field_ct_class_result'] = array(
+    'bundle' => 'ct_school_results',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ct_class_result',
+    'label' => 'Class',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-ct_school_results-field_ct_result_year'.
+  $field_instances['node-ct_school_results-field_ct_result_year'] = array(
+    'bundle' => 'ct_school_results',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => FALSE,
+        ),
+        'type' => 'date_default',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ct_result_year',
+    'label' => 'Result Year',
+    'required' => 1,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'increment' => 15,
+        'input_format' => 'm/d/Y - H:i:s',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'no_fieldset' => 0,
+        'text_parts' => array(),
+        'year_range' => '-3:+3',
+      ),
+      'type' => 'date_select',
+      'weight' => 4,
+    ),
+  );
+
   // Exported field_instance: 'node-ct_school_results-field_ct_school'.
   $field_instances['node-ct_school_results-field_ct_school'] = array(
     'bundle' => 'ct_school_results',
@@ -197,7 +260,7 @@ function sc_f_ct_school_result_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 32,
+      'weight' => 3,
     ),
   );
 
@@ -240,15 +303,16 @@ function sc_f_ct_school_result_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 34,
+      'weight' => 6,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Mark obtained');
+  t('Class');
+  t('Percent');
+  t('Result Year');
   t('Student Name');
-  t('Student Percent');
   t('Student photo');
   t('Student result');
   t('school');
