@@ -1,5 +1,5 @@
 /* line 90, ../sass/_mixin.scss */
-#block-views-views-school-faculty-block .block-title, #block-views-views-events-block-1 .block-title, #block-views-views-school-block-2 .block-title, #block-views-views-school-blogs-block-1 .block-title, #block-views-views-school-chairman .block-title, #block-views-views-school-principal .block-title, #block-views-views-about-us-about-us .block-title, #block-views-views-school-academics .block-title, #block-views-views-school-time-table .block-title, #block-views-views-school-syllabus .block-title, #block-views-aa78a9c77fefc3b3bbce9dee76941186 .block-title, #block-views-18a210c3d408e4f41ded41008c973061 .block-title {
+#block-views-views-school-faculty-block .block-title, #block-views-views-events-block-1 .block-title, #block-views-views-school-block-2 .block-title, #block-views-views-school-blogs-block-1 .block-title, #block-views-views-school-chairman .block-title, #block-views-views-school-principal .block-title, #block-views-views-about-us-about-us .block-title, #block-views-views-school-academics .block-title, #block-views-views-school-time-table .block-title, #block-views-views-school-syllabus .block-title, #block-views-aa78a9c77fefc3b3bbce9dee76941186 .block-title, #block-views-18a210c3d408e4f41ded41008c973061 .block-title, #block-views-views-students-result-block-1 .block-title {
   font-family: "Oswald", sans-serif, Helvetica;
   font-size: 1.8rem;
 }
@@ -1004,6 +1004,101 @@
 #block-views-18a210c3d408e4f41ded41008c973061 .activity-category {
   padding: 5px;
   border-top: 1px solid;
+}
+
+/* line 395, ../sass/school-node.scss */
+#block-views-views-students-result-block-1 {
+  background: #ededed;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+  background: #BEBCBC;
+}
+/* line 12, ../sass/_mixin.scss */
+#block-views-views-students-result-block-1 .block-title {
+  color: black;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
+  display: inline-block;
+}
+/* line 16, ../sass/_mixin.scss */
+#block-views-views-students-result-block-1 .view-header {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: inherit;
+  margin-top: -20px;
+}
+/* line 20, ../sass/_mixin.scss */
+#block-views-views-students-result-block-1 .view-content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+}
+/* line 81, ../sass/_mixin.scss */
+#block-views-views-students-result-block-1 .view-content .views-rows {
+  text-align: left;
+}
+/* line 24, ../sass/_mixin.scss */
+#block-views-views-students-result-block-1 .view-footer {
+  margin: auto;
+  margin-top: 40px;
+  width: auto;
+  min-width: 122px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 57, ../sass/_mixin.scss */
+#block-views-views-students-result-block-1 .view-footer a {
+  color: white;
+  padding: 10px 16px;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid white;
+  background: #2c93d5;
+  transition: 0.5s all;
+}
+/* line 67, ../sass/_mixin.scss */
+#block-views-views-students-result-block-1 .view-footer a:hover {
+  border: 1px solid white;
+  background: orange;
+  color: white;
+}
+/* line 398, ../sass/school-node.scss */
+#block-views-views-students-result-block-1 .views-row {
+  width: 25%;
+  float: left;
+  padding: 0 10px;
+}
+/* line 405, ../sass/school-node.scss */
+#block-views-views-students-result-block-1 .views-field-field-ct-single-image img {
+  width: 100%;
+}
+/* line 410, ../sass/school-node.scss */
+#block-views-views-students-result-block-1 .views-field-nothing {
+  border: 2px dashed white;
+  margin-top: 10px;
+  color: white;
+  background: #2c93d5;
+  height: 135px;
+}
+/* line 418, ../sass/school-node.scss */
+#block-views-views-students-result-block-1 .student-result {
+  padding: 10px 0;
+}
+/* line 420, ../sass/school-node.scss */
+#block-views-views-students-result-block-1 .student-result .title {
+  font-size: 1.3rem;
+}
+/* line 424, ../sass/school-node.scss */
+#block-views-views-students-result-block-1 .student-result .subject, #block-views-views-students-result-block-1 .student-result .result {
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=school-node.css.map */

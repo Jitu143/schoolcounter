@@ -11,4 +11,5 @@ features[image][] = style_logo_image
 features[image][] = style_school_banner
 features[image][] = style_school_infrastructure
 features[image][] = style_school_thumbnail
+features[image][] = style_student_profile
 features[image][] = style_teacher_profile
