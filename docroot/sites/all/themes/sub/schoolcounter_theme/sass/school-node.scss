@@ -391,3 +391,38 @@
     border-top: 1px solid;
   }
 }
+
+#block-views-views-students-result-block-1 {
+  @include main_block($gray_bg...);
+  background: #BEBCBC;
+  .views-row {
+    width: 25%;
+    float: left;
+    padding: 0 10px;
+  }
+
+  .views-field-field-ct-single-image {
+    img {
+      width: 100%;
+    }
+  }
+
+  .views-field-nothing {
+    border: 2px dashed $white;
+    margin-top: 10px;
+    color: $white;
+    background: $site-blue;
+    height: 135px;
+  }
+
+  .student-result {
+    padding: 10px 0;
+    .title {
+      font-size: $very_large_font;
+    }
+
+    .subject, .result {
+      font-size: $large_font
+    }
+  }
+}

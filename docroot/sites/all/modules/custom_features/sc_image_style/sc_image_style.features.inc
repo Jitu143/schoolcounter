@@ -130,6 +130,21 @@ function sc_image_style_image_default_styles() {
     ),
   );
 
+  // Exported image style: style_student_profile.
+  $styles['style_student_profile'] = array(
+    'label' => 'Student profile',
+    'effects' => array(
+      3 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 250,
+          'height' => 250,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: style_teacher_profile.
   $styles['style_teacher_profile'] = array(
     'label' => 'Teacher profile',
