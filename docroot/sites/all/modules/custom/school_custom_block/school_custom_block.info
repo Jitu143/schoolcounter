@@ -1,0 +1,4 @@
+name = Schools Custom block
+description = All custom blocks related to school goes here.
+core = 7.x
+package = Custom module

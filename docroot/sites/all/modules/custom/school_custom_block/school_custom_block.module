@@ -1,0 +1,36 @@
+<?php
+/**
+ * @file
+ * Contains functions related to school custom block.
+ */
+
+
+/**
+ * Implements hook_block_info().
+ */
+function school_custom_block_block_info() {
+  $blocks = array();
+
+  $blocks['sc_contact_us'] = array(
+    'info' => t('Contact Us'),
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function school_custom_block_block_view($delta = '') {
+  $block = array();
+  module_load_include('inc', 'school_custom_block', 'includes/school_custom_block');
+
+  switch ($delta) {
+    case 'sc_contact_us':
+      $block['subject'] = t('');
+      $block['content'] = _sc_get_contact_us_detail();
+      break;
+  }
+
+  return $block;
+}
