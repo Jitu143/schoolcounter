@@ -344,6 +344,53 @@ function sc_f_ct_school_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'field_collection_item-field_ct_hostel-field_ct_images'.
+  $field_instances['field_collection_item-field_ct_hostel-field_ct_images'] = array(
+    'bundle' => 'field_ct_hostel',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'style_hostel_image',
+        ),
+        'type' => 'image',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_ct_images',
+    'label' => 'Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'alt_field_required' => 0,
+      'default_image' => 0,
+      'file_directory' => 'hostels/[current-date:custom:Y]/[current-date:custom:M]/[current-date:custom:d]',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'title_field_required' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance:
   // 'field_collection_item-field_ct_hostel-field_fc_description'.
   $field_instances['field_collection_item-field_ct_hostel-field_fc_description'] = array(
     'bundle' => 'field_ct_hostel',
@@ -762,47 +809,6 @@ function sc_f_ct_school_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ct_school-field_ct_brochures'.
-  $field_instances['node-ct_school-field_ct_brochures'] = array(
-    'bundle' => 'ct_school',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 11,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ct_brochures',
-    'label' => 'Brochures',
-    'required' => 0,
-    'settings' => array(
-      'description_field' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'doc pdf docx',
-      'max_filesize' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'file',
-      'settings' => array(
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'file_generic',
-      'weight' => 42,
-    ),
-  );
-
   // Exported field_instance: 'node-ct_school-field_ct_calendar'.
   $field_instances['node-ct_school-field_ct_calendar'] = array(
     'bundle' => 'ct_school',
@@ -918,6 +924,47 @@ function sc_f_ct_school_field_default_field_instances() {
       'settings' => array(),
       'type' => 'field_collection_embed',
       'weight' => 46,
+    ),
+  );
+
+  // Exported field_instance: 'node-ct_school-field_ct_contact_details'.
+  $field_instances['node-ct_school-field_ct_contact_details'] = array(
+    'bundle' => 'ct_school',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 24,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ct_contact_details',
+    'label' => 'Contact details',
+    'required' => 0,
+    'settings' => array(
+      'display_summary' => 0,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 20,
+        'summary_rows' => 5,
+      ),
+      'type' => 'text_textarea_with_summary',
+      'weight' => 55,
     ),
   );
 
@@ -1357,47 +1404,6 @@ function sc_f_ct_school_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-ct_school-field_ct_transport'.
-  $field_instances['node-ct_school-field_ct_transport'] = array(
-    'bundle' => 'ct_school',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 21,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_ct_transport',
-    'label' => 'Transport',
-    'required' => 0,
-    'settings' => array(
-      'description_field' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'txt',
-      'max_filesize' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'file',
-      'settings' => array(
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'file_generic',
-      'weight' => 52,
-    ),
-  );
-
   // Exported field_instance: 'node-ct_school-field_our_approach'.
   $field_instances['node-ct_school-field_our_approach'] = array(
     'bundle' => 'ct_school',
@@ -1445,17 +1451,18 @@ function sc_f_ct_school_field_default_field_instances() {
   t('Academics');
   t('Address');
   t('Admission Procedure');
-  t('Brochures');
   t('Calendar');
   t('Careers');
   t('Chairman’s Message');
   t('City');
   t('Class');
+  t('Contact details');
   t('Description');
   t('Distt.');
   t('Email');
   t('Hostel');
   t('Hostel Brochure');
+  t('Image');
   t('Images');
   t('Logo');
   t('Medium');
@@ -1473,7 +1480,6 @@ function sc_f_ct_school_field_default_field_instances() {
   t('Syllabus File');
   t('Time Table');
   t('Time Table File');
-  t('Transport');
 
   return $field_instances;
 }

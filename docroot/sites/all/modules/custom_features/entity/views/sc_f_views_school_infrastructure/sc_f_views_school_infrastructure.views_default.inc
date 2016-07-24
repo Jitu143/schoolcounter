@@ -61,14 +61,14 @@ function sc_f_views_school_infrastructure_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '8';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Images */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -77,10 +77,16 @@ function sc_f_views_school_infrastructure_views_default_views() {
   $handler->display->display_options['fields']['field_ct_images']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_ct_images']['settings'] = array(
     'image_style' => 'style_school_infrastructure',
-    'image_link' => '',
+    'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_ct_images']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_ct_images']['delta_offset'] = '0';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Field: school (field_ct_school) */
   $handler->display->display_options['arguments']['field_ct_school_target_id']['id'] = 'field_ct_school_target_id';
@@ -127,7 +133,7 @@ function sc_f_views_school_infrastructure_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Images */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -159,6 +165,41 @@ function sc_f_views_school_infrastructure_views_default_views() {
   $handler->display->display_options['arguments']['field_ct_school_target_id']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['field_ct_school_target_id']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['field_ct_school_target_id']['summary_options']['items_per_page'] = '25';
+
+  /* Display: Gallery */
+  $handler = $view->new_display('block', 'Gallery', 'block_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Gallery';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Field: Image */
+  $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
+  $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
+  $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
+  $handler->display->display_options['fields']['field_ct_images']['label'] = '';
+  $handler->display->display_options['fields']['field_ct_images']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_images']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_ct_images']['settings'] = array(
+    'image_style' => 'style_infrastructure_gallery',
+    'image_link' => '',
+  );
+  $handler->display->display_options['fields']['field_ct_images']['group_rows'] = FALSE;
+  $handler->display->display_options['fields']['field_ct_images']['delta_limit'] = 'All';
+  $handler->display->display_options['fields']['field_ct_images']['delta_offset'] = '0';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
   $export['views_school_infrastructure'] = $view;
 
   return $export;

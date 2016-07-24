@@ -21,3 +21,4 @@ features[variable][] = menu_parent_ct_school_infrastructure
 features[variable][] = node_options_ct_school_infrastructure
 features[variable][] = node_preview_ct_school_infrastructure
 features[variable][] = node_submitted_ct_school_infrastructure
+features[variable][] = pathauto_node_ct_school_infrastructure_pattern

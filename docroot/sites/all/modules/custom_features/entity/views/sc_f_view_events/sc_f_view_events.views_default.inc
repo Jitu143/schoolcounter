@@ -79,7 +79,7 @@ function sc_f_view_events_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -168,7 +168,7 @@ function sc_f_view_events_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['max_length'] = '35';
   $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -282,7 +282,7 @@ function sc_f_view_events_views_default_views() {
   $handler->display->display_options['fields']['field_ct_description']['table'] = 'field_data_field_ct_description';
   $handler->display->display_options['fields']['field_ct_description']['field'] = 'field_ct_description';
   $handler->display->display_options['fields']['field_ct_description']['element_label_colon'] = FALSE;
-  /* Field: Content: Image */
+  /* Field: Field: Image */
   $handler->display->display_options['fields']['field_ct_images']['id'] = 'field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['table'] = 'field_data_field_ct_images';
   $handler->display->display_options['fields']['field_ct_images']['field'] = 'field_ct_images';
@@ -297,27 +297,13 @@ function sc_f_view_events_views_default_views() {
   $handler->display->display_options['fields']['field_ct_images']['delta_limit'] = 'All';
   $handler->display->display_options['fields']['field_ct_images']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_ct_images']['multi_type'] = 'ul';
-  /* Field: Content: Image */
-  $handler->display->display_options['fields']['field_ct_images_1']['id'] = 'field_ct_images_1';
-  $handler->display->display_options['fields']['field_ct_images_1']['table'] = 'field_data_field_ct_images';
-  $handler->display->display_options['fields']['field_ct_images_1']['field'] = 'field_ct_images';
-  $handler->display->display_options['fields']['field_ct_images_1']['label'] = '';
-  $handler->display->display_options['fields']['field_ct_images_1']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_ct_images_1']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_ct_images_1']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_ct_images_1']['settings'] = array(
-    'image_style' => 'thumbnail',
-    'image_link' => '',
-  );
-  $handler->display->display_options['fields']['field_ct_images_1']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_ct_images_1']['multi_type'] = 'ul';
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="slide-for">[field_ct_images]</div>
-<div class="slide-nav">[field_ct_images_1]</div>';
+';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Nid */

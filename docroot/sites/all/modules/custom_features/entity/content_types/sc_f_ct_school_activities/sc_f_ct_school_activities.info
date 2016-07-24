@@ -29,3 +29,5 @@ features[variable][] = menu_parent_ct_school_activities
 features[variable][] = node_options_ct_school_activities
 features[variable][] = node_preview_ct_school_activities
 features[variable][] = node_submitted_ct_school_activities
+features[variable][] = pathauto_node_ct_school_activities_pattern
+features[variable][] = pathauto_taxonomy_term_vocab_acitivites_pattern

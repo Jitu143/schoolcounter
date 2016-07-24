@@ -59,11 +59,50 @@ function sc_image_style_image_default_styles() {
   $styles['style_event_thumbnail'] = array(
     'label' => 'event thumbnail',
     'effects' => array(
-      7 => array(
+      9 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
           'width' => 300,
           'height' => 300,
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported image style: style_hostel_image.
+  $styles['style_hostel_image'] = array(
+    'label' => 'Hostel Image',
+    'effects' => array(
+      5 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 500,
+          'height' => 300,
+          'upscale' => 1,
+        ),
+        'weight' => 1,
+      ),
+      6 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 400,
+          'height' => 250,
+        ),
+        'weight' => 2,
+      ),
+    ),
+  );
+
+  // Exported image style: style_infrastructure_gallery.
+  $styles['style_infrastructure_gallery'] = array(
+    'label' => 'infrastructure gallery',
+    'effects' => array(
+      4 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 600,
+          'height' => 400,
         ),
         'weight' => 1,
       ),
