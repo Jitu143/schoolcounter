@@ -70,7 +70,7 @@
 /* line 67, ../sass/_mixin.scss */
 #block-views-views-school-faculty-block .view-footer a:hover {
   border: 1px solid white;
-  background: orange;
+  background: #FF6109;
   color: white;
 }
 /* line 15, ../sass/school-node.scss */
@@ -177,7 +177,7 @@
 /* line 67, ../sass/_mixin.scss */
 #block-views-views-events-block-1 .view-footer a:hover {
   border: 1px solid white;
-  background: orange;
+  background: #FF6109;
   color: white;
 }
 /* line 57, ../sass/school-node.scss */
@@ -307,21 +307,68 @@
 /* line 67, ../sass/_mixin.scss */
 #block-views-views-school-block-2 .view-footer a:hover {
   border: 1px solid white;
-  background: orange;
+  background: #FF6109;
   color: white;
 }
-
+/* line 123, ../sass/school-node.scss */
+#block-views-views-school-block-2 .views-field-field-ct-careers {
+  text-align: left;
+}
 /* line 125, ../sass/school-node.scss */
+#block-views-views-school-block-2 .views-field-field-ct-careers h1, #block-views-views-school-block-2 .views-field-field-ct-careers h2, #block-views-views-school-block-2 .views-field-field-ct-careers h3, #block-views-views-school-block-2 .views-field-field-ct-careers h4, #block-views-views-school-block-2 .views-field-field-ct-careers h5, #block-views-views-school-block-2 .views-field-field-ct-careers h6 {
+  color: #FF6109;
+}
+/* line 130, ../sass/school-node.scss */
+#block-views-views-school-block-2 .views-field-field-ct-hostel {
+  text-align: left;
+}
+/* line 132, ../sass/school-node.scss */
+#block-views-views-school-block-2 .views-field-field-ct-hostel .field-label {
+  font-size: 1.2rem;
+  color: #2c93d5;
+}
+/* line 138, ../sass/school-node.scss */
+#block-views-views-school-block-2 .views-field-field-ct-hostel .field-name-field-ct-images .field-items .field-item {
+  width: 33.33%;
+  float: left;
+}
+@media only screen and (max-width: 900px) {
+  /* line 138, ../sass/school-node.scss */
+  #block-views-views-school-block-2 .views-field-field-ct-hostel .field-name-field-ct-images .field-items .field-item {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 138, ../sass/school-node.scss */
+  #block-views-views-school-block-2 .views-field-field-ct-hostel .field-name-field-ct-images .field-items .field-item {
+    width: 100%;
+  }
+}
+/* line 148, ../sass/school-node.scss */
+#block-views-views-school-block-2 .views-field-field-ct-hostel .field-name-field-ct-images .field-items .field-item img {
+  width: 100%;
+  height: auto;
+}
+/* line 154, ../sass/school-node.scss */
+#block-views-views-school-block-2 .views-field-field-ct-hostel .field-name-field-ct-images .field-items .field-item.even img {
+  border: 5px solid #FF6109;
+}
+/* line 160, ../sass/school-node.scss */
+#block-views-views-school-block-2 .views-field-field-ct-hostel .field-name-field-ct-images .field-items .field-item.odd img {
+  border: 5px solid #2c93d5;
+}
+
+/* line 171, ../sass/school-node.scss */
 #views-bootstrap-accordion-schooldetail .panel.panel-default {
   margin-bottom: 10px;
 }
-/* line 127, ../sass/school-node.scss */
+/* line 173, ../sass/school-node.scss */
 #views-bootstrap-accordion-schooldetail .panel.panel-default a.accordion-toggle {
   display: block;
   text-align: left;
 }
 
-/* line 134, ../sass/school-node.scss */
+/* line 180, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 {
   background: white;
   width: 100%;
@@ -382,28 +429,28 @@
 /* line 67, ../sass/_mixin.scss */
 #block-views-views-school-blogs-block-1 .view-footer a:hover {
   border: 1px solid white;
-  background: orange;
+  background: #FF6109;
   color: white;
 }
-/* line 137, ../sass/school-node.scss */
+/* line 183, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .views-row {
   width: 25%;
   float: left;
 }
-/* line 142, ../sass/school-node.scss */
+/* line 188, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .views-field-nothing {
   padding: 0 10px;
 }
-/* line 146, ../sass/school-node.scss */
+/* line 192, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .blog-container {
   position: relative;
 }
-/* line 148, ../sass/school-node.scss */
+/* line 194, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .blog-container img {
   width: 100%;
   height: auto;
 }
-/* line 152, ../sass/school-node.scss */
+/* line 198, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .blog-container .blog-textbox {
   text-align: left;
   padding: 20px;
@@ -421,23 +468,23 @@
   transition: all 0.7s ease;
   color: white;
 }
-/* line 168, ../sass/school-node.scss */
+/* line 214, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .blog-container .blog-textbox a {
   color: white;
 }
-/* line 173, ../sass/school-node.scss */
+/* line 219, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .blog-textbox:hover {
   margin-top: 0;
   opacity: 1;
 }
-/* line 178, ../sass/school-node.scss */
+/* line 224, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .read-more {
   position: absolute;
   bottom: 0;
   right: 0;
   padding: 15px 30px;
 }
-/* line 185, ../sass/school-node.scss */
+/* line 231, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .blog-date {
   position: absolute;
   top: 0;
@@ -447,12 +494,12 @@
   background: rgba(255, 255, 255, 0.2);
   color: #FFFFFF;
 }
-/* line 195, ../sass/school-node.scss */
+/* line 241, ../sass/school-node.scss */
 #block-views-views-school-blogs-block-1 .title {
   margin-top: 20px;
 }
 
-/* line 200, ../sass/school-node.scss */
+/* line 246, ../sass/school-node.scss */
 #block-views-views-school-chairman, #block-views-views-school-principal {
   background: white;
   width: 100%;
@@ -512,29 +559,36 @@
 /* line 67, ../sass/_mixin.scss */
 #block-views-views-school-chairman .view-footer a:hover, #block-views-views-school-principal .view-footer a:hover {
   border: 1px solid white;
-  background: orange;
+  background: #FF6109;
   color: white;
 }
-/* line 204, ../sass/school-node.scss */
+/* line 250, ../sass/school-node.scss */
 #block-views-views-school-chairman .views-field-field-fc-message img, #block-views-views-school-principal .views-field-field-fc-message img {
   float: left;
   margin-right: 20px;
 }
-/* line 208, ../sass/school-node.scss */
+/* line 254, ../sass/school-node.scss */
 #block-views-views-school-chairman .views-field-field-fc-message p, #block-views-views-school-principal .views-field-field-fc-message p {
   text-align: left;
 }
-/* line 213, ../sass/school-node.scss */
+/* line 259, ../sass/school-node.scss */
 #block-views-views-school-chairman .field-content, #block-views-views-school-principal .field-content {
   height: 250px;
 }
+/* line 263, ../sass/school-node.scss */
+#block-views-views-school-chairman .view-content, #block-views-views-school-principal .view-content {
+  box-sizing: border-box;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+}
 
-/* line 219, ../sass/school-node.scss */
+/* line 272, ../sass/school-node.scss */
 #block-views-views-school-principal {
   background-color: #ededed;
 }
 
-/* line 223, ../sass/school-node.scss */
+/* line 276, ../sass/school-node.scss */
 #block-views-views-about-us-about-us {
   background: white;
   width: 100%;
@@ -595,47 +649,47 @@
 /* line 67, ../sass/_mixin.scss */
 #block-views-views-about-us-about-us .view-footer a:hover {
   border: 1px solid white;
-  background: orange;
+  background: #FF6109;
   color: white;
 }
-/* line 227, ../sass/school-node.scss */
+/* line 280, ../sass/school-node.scss */
 #block-views-views-about-us-about-us .views-field {
   width: 48%;
   float: left;
   vertical-align: top;
 }
-/* line 232, ../sass/school-node.scss */
+/* line 285, ../sass/school-node.scss */
 #block-views-views-about-us-about-us .views-field .field-content {
   text-align: left;
   height: 250px;
   overflow: hidden;
 }
-/* line 239, ../sass/school-node.scss */
+/* line 292, ../sass/school-node.scss */
 #block-views-views-about-us-about-us .views-field-path {
   margin-top: 10px;
   width: 100%;
   text-align: right;
 }
-/* line 244, ../sass/school-node.scss */
+/* line 297, ../sass/school-node.scss */
 #block-views-views-about-us-about-us .views-field-path a {
-  color: orange;
+  color: #FF6109;
 }
-/* line 249, ../sass/school-node.scss */
+/* line 302, ../sass/school-node.scss */
 #block-views-views-about-us-about-us .views-field-field-ct-description {
   margin-right: 4%;
 }
 @media only screen and (max-width: 500px) {
-  /* line 253, ../sass/school-node.scss */
+  /* line 306, ../sass/school-node.scss */
   #block-views-views-about-us-about-us .views-field {
     width: 100%;
   }
-  /* line 257, ../sass/school-node.scss */
+  /* line 310, ../sass/school-node.scss */
   #block-views-views-about-us-about-us .views-field-field-ct-description {
     margin-right: 0;
   }
 }
 
-/* line 263, ../sass/school-node.scss */
+/* line 316, ../sass/school-node.scss */
 #block-views-views-school-academics {
   background: white;
   width: 100%;
@@ -695,25 +749,30 @@
 /* line 67, ../sass/_mixin.scss */
 #block-views-views-school-academics .view-footer a:hover {
   border: 1px solid white;
-  background: orange;
+  background: #FF6109;
   color: white;
 }
-/* line 269, ../sass/school-node.scss */
+/* line 322, ../sass/school-node.scss */
 #block-views-views-school-academics .views-row {
   border: 1px solid #eee;
   text-align: left;
   max-height: 300px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px 0;
+  margin-top: 40px;
 }
-/* line 275, ../sass/school-node.scss */
+/* line 333, ../sass/school-node.scss */
 #block-views-views-school-academics .views-field {
   padding: 10px 20px;
 }
-/* line 279, ../sass/school-node.scss */
+/* line 337, ../sass/school-node.scss */
 #block-views-views-school-academics .views-label {
   color: #2c93d5;
 }
 
-/* line 284, ../sass/school-node.scss */
+/* line 342, ../sass/school-node.scss */
 #block-views-views-school-time-table, #block-views-views-school-syllabus {
   background: white;
   width: 100%;
@@ -775,48 +834,48 @@
 /* line 67, ../sass/_mixin.scss */
 #block-views-views-school-time-table .view-footer a:hover, #block-views-views-school-syllabus .view-footer a:hover {
   border: 1px solid white;
-  background: orange;
+  background: #FF6109;
   color: white;
 }
 @media only screen and (max-width: 768px) {
-  /* line 284, ../sass/school-node.scss */
+  /* line 342, ../sass/school-node.scss */
   #block-views-views-school-time-table, #block-views-views-school-syllabus {
     width: 100%;
     display: block;
     padding: 20px 0;
   }
 }
-/* line 295, ../sass/school-node.scss */
+/* line 353, ../sass/school-node.scss */
 #block-views-views-school-time-table .view-content, #block-views-views-school-syllabus .view-content {
   text-align: left;
 }
-/* line 299, ../sass/school-node.scss */
+/* line 357, ../sass/school-node.scss */
 #block-views-views-school-time-table .table, #block-views-views-school-syllabus .table {
   border: 1px solid #ddd;
 }
-/* line 302, ../sass/school-node.scss */
+/* line 360, ../sass/school-node.scss */
 #block-views-views-school-time-table .table thead, #block-views-views-school-syllabus .table thead {
   background: #2c93d5;
   color: white;
   font-size: 1.2rem;
 }
-/* line 308, ../sass/school-node.scss */
+/* line 366, ../sass/school-node.scss */
 #block-views-views-school-time-table .table tr.even, #block-views-views-school-syllabus .table tr.even {
   background: #e9f2f8;
 }
 
-/* line 314, ../sass/school-node.scss */
+/* line 372, ../sass/school-node.scss */
 #block-views-views-school-time-table {
   float: left;
 }
 @media only screen and (max-width: 768px) {
-  /* line 314, ../sass/school-node.scss */
+  /* line 372, ../sass/school-node.scss */
   #block-views-views-school-time-table {
     float: none;
   }
 }
 
-/* line 322, ../sass/school-node.scss */
+/* line 380, ../sass/school-node.scss */
 #block-views-aa78a9c77fefc3b3bbce9dee76941186 {
   background: white;
   width: 100%;
@@ -876,25 +935,25 @@
 /* line 67, ../sass/_mixin.scss */
 #block-views-aa78a9c77fefc3b3bbce9dee76941186 .view-footer a:hover {
   border: 1px solid white;
-  background: orange;
+  background: #FF6109;
   color: white;
 }
-/* line 324, ../sass/school-node.scss */
+/* line 382, ../sass/school-node.scss */
 #block-views-aa78a9c77fefc3b3bbce9dee76941186 .views-row {
   width: 25%;
   float: left;
   padding: 0 10px;
 }
-/* line 330, ../sass/school-node.scss */
+/* line 388, ../sass/school-node.scss */
 #block-views-aa78a9c77fefc3b3bbce9dee76941186 .views-field-nothing {
   position: relative;
   border: 1px solid #AAB6BE;
 }
-/* line 336, ../sass/school-node.scss */
+/* line 394, ../sass/school-node.scss */
 #block-views-aa78a9c77fefc3b3bbce9dee76941186 .infrastructure-image img {
   width: 100%;
 }
-/* line 341, ../sass/school-node.scss */
+/* line 399, ../sass/school-node.scss */
 #block-views-aa78a9c77fefc3b3bbce9dee76941186 .infrastructure-title {
   position: absolute;
   bottom: 0;
@@ -904,12 +963,12 @@
   padding: 5px;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 350, ../sass/school-node.scss */
+/* line 408, ../sass/school-node.scss */
 #block-views-aa78a9c77fefc3b3bbce9dee76941186 .infrastructure-title a {
   color: white;
 }
 
-/* line 357, ../sass/school-node.scss */
+/* line 415, ../sass/school-node.scss */
 #block-views-18a210c3d408e4f41ded41008c973061 {
   background: #ededed;
   width: 100%;
@@ -969,25 +1028,25 @@
 /* line 67, ../sass/_mixin.scss */
 #block-views-18a210c3d408e4f41ded41008c973061 .view-footer a:hover {
   border: 1px solid white;
-  background: orange;
+  background: #FF6109;
   color: white;
 }
-/* line 359, ../sass/school-node.scss */
+/* line 417, ../sass/school-node.scss */
 #block-views-18a210c3d408e4f41ded41008c973061 .views-row {
   width: 25%;
   float: left;
   padding: 0 10px;
 }
-/* line 365, ../sass/school-node.scss */
+/* line 423, ../sass/school-node.scss */
 #block-views-18a210c3d408e4f41ded41008c973061 .views-field-nothing {
   position: relative;
   border: 1px solid #AAB6BE;
 }
-/* line 371, ../sass/school-node.scss */
+/* line 429, ../sass/school-node.scss */
 #block-views-18a210c3d408e4f41ded41008c973061 .activity-logo img {
   width: 100%;
 }
-/* line 376, ../sass/school-node.scss */
+/* line 434, ../sass/school-node.scss */
 #block-views-18a210c3d408e4f41ded41008c973061 .activity-title {
   position: absolute;
   width: 100%;
@@ -996,17 +1055,17 @@
   padding: 5px;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 384, ../sass/school-node.scss */
+/* line 442, ../sass/school-node.scss */
 #block-views-18a210c3d408e4f41ded41008c973061 .activity-title a {
   color: white;
 }
-/* line 389, ../sass/school-node.scss */
+/* line 447, ../sass/school-node.scss */
 #block-views-18a210c3d408e4f41ded41008c973061 .activity-category {
   padding: 5px;
   border-top: 1px solid;
 }
 
-/* line 395, ../sass/school-node.scss */
+/* line 453, ../sass/school-node.scss */
 #block-views-views-students-result-block-1 {
   background: #ededed;
   width: 100%;
@@ -1067,20 +1126,20 @@
 /* line 67, ../sass/_mixin.scss */
 #block-views-views-students-result-block-1 .view-footer a:hover {
   border: 1px solid white;
-  background: orange;
+  background: #FF6109;
   color: white;
 }
-/* line 398, ../sass/school-node.scss */
+/* line 456, ../sass/school-node.scss */
 #block-views-views-students-result-block-1 .views-row {
   width: 25%;
   float: left;
   padding: 0 10px;
 }
-/* line 405, ../sass/school-node.scss */
+/* line 463, ../sass/school-node.scss */
 #block-views-views-students-result-block-1 .views-field-field-ct-single-image img {
   width: 100%;
 }
-/* line 410, ../sass/school-node.scss */
+/* line 468, ../sass/school-node.scss */
 #block-views-views-students-result-block-1 .views-field-nothing {
   border: 2px dashed white;
   margin-top: 10px;
@@ -1088,17 +1147,31 @@
   background: #2c93d5;
   height: 135px;
 }
-/* line 418, ../sass/school-node.scss */
+/* line 476, ../sass/school-node.scss */
 #block-views-views-students-result-block-1 .student-result {
   padding: 10px 0;
 }
-/* line 420, ../sass/school-node.scss */
+/* line 478, ../sass/school-node.scss */
 #block-views-views-students-result-block-1 .student-result .title {
   font-size: 1.3rem;
 }
-/* line 424, ../sass/school-node.scss */
+/* line 482, ../sass/school-node.scss */
 #block-views-views-students-result-block-1 .student-result .subject, #block-views-views-students-result-block-1 .student-result .result {
   font-size: 1.2rem;
+}
+
+/* line 489, ../sass/school-node.scss */
+#block-school-custom-block-sc-contact-us a {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  right: 0;
+  font-size: 1.5rem;
+  display: inline-block;
+  background: #2c93d5;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=school-node.css.map */

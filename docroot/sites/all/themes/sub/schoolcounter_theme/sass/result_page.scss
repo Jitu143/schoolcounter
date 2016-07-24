@@ -1,0 +1,110 @@
+@import "variable";
+
+.page-students-result {
+  .view-views-students-result.view-display-id-page {
+
+    .views-column{
+      margin-top: 20px;
+      @media only screen and (max-width: 535px) {
+        width: 100%;
+      }
+
+      .views-field-nothing {
+        width: 100%;
+        margin: auto;
+        padding: 0 10px;
+      }
+    }
+
+    .profile-photo {
+      img {
+        width: 100%;
+        margin: auto;
+      }
+    }
+
+    .front {
+      position: relative;
+    }
+
+    .st-info {
+      position: absolute;
+      bottom: 0;
+      color: $site-blue;
+      font-weight: 600;
+      text-align: center;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.7);
+
+      .class, .percent {
+        width: 50%;
+        float: left;
+        font-size: 1.2rem;
+      }
+    }
+
+    .back {
+      background: $site-blue;
+    }
+
+    /* entire container, keeps perspective */
+    .flip-container {
+      perspective: 1000px;
+    }
+      /* flip the pane when hovered */
+      .flip-container:hover .flipper, .flip-container.hover .flipper {
+        transform: rotateY(180deg);
+      }
+
+    .flip-container, .front, .back, .profile-photo {
+      height: 250px;
+      width: 250px;
+      @media only screen and (max-width: 1100px) {
+        height: 225px;
+        width: 225px;
+      }
+      // @media only screen and (max-width: 1100px) {
+      //   height: 225px;
+      //   width: 225px;
+      // }
+      margin: auto;
+    }
+
+    /* flip speed goes here */
+    .flipper {
+      transition: 0.6s;
+      transform-style: preserve-3d;
+
+      position: relative;
+    }
+
+    /* hide back of pane during swap */
+    .front, .back {
+      backface-visibility: hidden;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    /* front pane, placed above back */
+    .front {
+      z-index: 2;
+      /* for firefox 31 */
+      transform: rotateY(0deg);
+    }
+
+    /* back, initially hidden pane */
+    .back {
+      transform: rotateY(180deg);
+      text-align: center;
+      padding-top: 20px;
+      font-size: 1.2rem;
+      color: $white;
+
+      a {
+        color: $orange;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+/* line 5, ../sass/school-contact.scss */
+.page-contact-us .view-views-school.view-display-id-page_1 .view-content {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  box-sizing: border-box;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px 0;
+  margin-top: 40px;
+}
+/* line 15, ../sass/school-contact.scss */
+.page-contact-us .view-views-school.view-display-id-page_1 .view-content a {
+  color: #2c93d5;
+}
+/* line 18, ../sass/school-contact.scss */
+.page-contact-us .view-views-school.view-display-id-page_1 .view-content a:hover {
+  color: #FF6109;
+}
+/* line 23, ../sass/school-contact.scss */
+.page-contact-us .view-views-school.view-display-id-page_1 .view-content .views-field-field-ct-contact-details {
+  word-break: break-word;
+  padding: 0 20px;
+}
+/* line 27, ../sass/school-contact.scss */
+.page-contact-us .view-views-school.view-display-id-page_1 .view-content .views-field-field-ct-contact-details h1, .page-contact-us .view-views-school.view-display-id-page_1 .view-content .views-field-field-ct-contact-details h2, .page-contact-us .view-views-school.view-display-id-page_1 .view-content .views-field-field-ct-contact-details h3, .page-contact-us .view-views-school.view-display-id-page_1 .view-content .views-field-field-ct-contact-details h4, .page-contact-us .view-views-school.view-display-id-page_1 .view-content .views-field-field-ct-contact-details h5, .page-contact-us .view-views-school.view-display-id-page_1 .view-content .views-field-field-ct-contact-details h6 {
+  color: #FF6109;
+}
+/* line 34, ../sass/school-contact.scss */
+.page-contact-us .block-webform {
+  width: 85%;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+}
+/* line 40, ../sass/school-contact.scss */
+.page-contact-us .block-webform .block-title {
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 20px;
+  background: #2c93d5;
+  padding: 10px 20px;
+  color: white;
+}
+/* line 49, ../sass/school-contact.scss */
+.page-contact-us .block-webform .form-item {
+  text-align: left;
+}
+
+/*# sourceMappingURL=school-contact.css.map */

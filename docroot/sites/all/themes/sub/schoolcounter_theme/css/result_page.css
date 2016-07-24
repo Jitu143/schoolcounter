@@ -1,0 +1,108 @@
+/* line 4, ../sass/result_page.scss */
+.page-students-result .view-views-students-result.view-display-id-page {
+  /* entire container, keeps perspective */
+  /* flip the pane when hovered */
+  /* flip speed goes here */
+  /* hide back of pane during swap */
+  /* front pane, placed above back */
+  /* back, initially hidden pane */
+}
+/* line 6, ../sass/result_page.scss */
+.page-students-result .view-views-students-result.view-display-id-page .views-column {
+  margin-top: 20px;
+}
+@media only screen and (max-width: 535px) {
+  /* line 6, ../sass/result_page.scss */
+  .page-students-result .view-views-students-result.view-display-id-page .views-column {
+    width: 100%;
+  }
+}
+/* line 12, ../sass/result_page.scss */
+.page-students-result .view-views-students-result.view-display-id-page .views-column .views-field-nothing {
+  width: 100%;
+  margin: auto;
+  padding: 0 10px;
+}
+/* line 20, ../sass/result_page.scss */
+.page-students-result .view-views-students-result.view-display-id-page .profile-photo img {
+  width: 100%;
+  margin: auto;
+}
+/* line 26, ../sass/result_page.scss */
+.page-students-result .view-views-students-result.view-display-id-page .front {
+  position: relative;
+}
+/* line 30, ../sass/result_page.scss */
+.page-students-result .view-views-students-result.view-display-id-page .st-info {
+  position: absolute;
+  bottom: 0;
+  color: #2c93d5;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+}
+/* line 39, ../sass/result_page.scss */
+.page-students-result .view-views-students-result.view-display-id-page .st-info .class, .page-students-result .view-views-students-result.view-display-id-page .st-info .percent {
+  width: 50%;
+  float: left;
+  font-size: 1.2rem;
+}
+/* line 46, ../sass/result_page.scss */
+.page-students-result .view-views-students-result.view-display-id-page .back {
+  background: #2c93d5;
+}
+/* line 51, ../sass/result_page.scss */
+.page-students-result .view-views-students-result.view-display-id-page .flip-container {
+  perspective: 1000px;
+}
+/* line 55, ../sass/result_page.scss */
+.page-students-result .view-views-students-result.view-display-id-page .flip-container:hover .flipper, .page-students-result .view-views-students-result.view-display-id-page .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+/* line 59, ../sass/result_page.scss */
+.page-students-result .view-views-students-result.view-display-id-page .flip-container, .page-students-result .view-views-students-result.view-display-id-page .front, .page-students-result .view-views-students-result.view-display-id-page .back, .page-students-result .view-views-students-result.view-display-id-page .profile-photo {
+  height: 250px;
+  width: 250px;
+  margin: auto;
+}
+@media only screen and (max-width: 1100px) {
+  /* line 59, ../sass/result_page.scss */
+  .page-students-result .view-views-students-result.view-display-id-page .flip-container, .page-students-result .view-views-students-result.view-display-id-page .front, .page-students-result .view-views-students-result.view-display-id-page .back, .page-students-result .view-views-students-result.view-display-id-page .profile-photo {
+    height: 225px;
+    width: 225px;
+  }
+}
+/* line 74, ../sass/result_page.scss */
+.page-students-result .view-views-students-result.view-display-id-page .flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+/* line 82, ../sass/result_page.scss */
+.page-students-result .view-views-students-result.view-display-id-page .front, .page-students-result .view-views-students-result.view-display-id-page .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 91, ../sass/result_page.scss */
+.page-students-result .view-views-students-result.view-display-id-page .front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+/* line 98, ../sass/result_page.scss */
+.page-students-result .view-views-students-result.view-display-id-page .back {
+  transform: rotateY(180deg);
+  text-align: center;
+  padding-top: 20px;
+  font-size: 1.2rem;
+  color: white;
+}
+/* line 105, ../sass/result_page.scss */
+.page-students-result .view-views-students-result.view-display-id-page .back a {
+  color: #FF6109;
+}
+
+/*# sourceMappingURL=result_page.css.map */

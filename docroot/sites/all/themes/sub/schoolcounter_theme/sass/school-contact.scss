@@ -1,0 +1,53 @@
+@import "variable";
+
+.page-contact-us {
+  .view-views-school.view-display-id-page_1 {
+    .view-content {
+      width: 85%;
+      margin: auto;
+      text-align: center;
+      box-sizing: border-box;
+      overflow-y: auto;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      padding: 20px 0;
+      margin-top: 40px;
+
+      a {
+        color: $site-blue;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+
+      .views-field-field-ct-contact-details {
+        word-break: break-word;
+        padding: 0 20px;
+
+        h1, h2, h3, h4, h5, h6 {
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  .block-webform {
+    width: 85%;
+    margin: auto;
+    padding: $distance;
+    text-align: center;
+
+    .block-title {
+      text-align: center;
+      display: inline-block;
+      margin-bottom: 20px;
+      background: $site-blue;
+      padding: 10px 20px;
+      color: white;
+    }
+
+    .form-item {
+      text-align: left;
+    }
+  }
+}

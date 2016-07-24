@@ -1,0 +1,41 @@
+@import "variable";
+
+.page-school-activities {
+  .view-views-school-activities {
+    &.view-display-id-page, &.view-display-id-individual_activity_page {
+      .views-row {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        margin-left: 10px;
+        a {
+          color: $site-blue;
+
+          &:hover {
+            font-size: 1.3rem;
+            color: $orange;
+          }
+        }
+
+        .views-field-field-ct-school {
+          margin-top: 5px;
+          padding-left: 20px;
+          a {
+            color: $orange;
+            &:hover {
+              font-size: 1.3rem;
+              color: $site-blue;
+            }
+          }
+        }
+      }
+
+      .views-row:nth-child(2n+1) {
+        border-bottom: 5px solid $site-blue;
+      }
+
+      .views-row:nth-child(2n+2) {
+        border-bottom: 5px solid #FFC800;
+      }
+    }
+  }
+}

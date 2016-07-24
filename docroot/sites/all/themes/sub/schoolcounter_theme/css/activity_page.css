@@ -1,0 +1,39 @@
+/* line 6, ../sass/activity_page.scss */
+.page-school-activities .view-views-school-activities.view-display-id-page .views-row, .page-school-activities .view-views-school-activities.view-display-id-individual_activity_page .views-row {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+/* line 10, ../sass/activity_page.scss */
+.page-school-activities .view-views-school-activities.view-display-id-page .views-row a, .page-school-activities .view-views-school-activities.view-display-id-individual_activity_page .views-row a {
+  color: #2c93d5;
+}
+/* line 13, ../sass/activity_page.scss */
+.page-school-activities .view-views-school-activities.view-display-id-page .views-row a:hover, .page-school-activities .view-views-school-activities.view-display-id-individual_activity_page .views-row a:hover {
+  font-size: 1.3rem;
+  color: #FF6109;
+}
+/* line 19, ../sass/activity_page.scss */
+.page-school-activities .view-views-school-activities.view-display-id-page .views-row .views-field-field-ct-school, .page-school-activities .view-views-school-activities.view-display-id-individual_activity_page .views-row .views-field-field-ct-school {
+  margin-top: 5px;
+  padding-left: 20px;
+}
+/* line 22, ../sass/activity_page.scss */
+.page-school-activities .view-views-school-activities.view-display-id-page .views-row .views-field-field-ct-school a, .page-school-activities .view-views-school-activities.view-display-id-individual_activity_page .views-row .views-field-field-ct-school a {
+  color: #FF6109;
+}
+/* line 24, ../sass/activity_page.scss */
+.page-school-activities .view-views-school-activities.view-display-id-page .views-row .views-field-field-ct-school a:hover, .page-school-activities .view-views-school-activities.view-display-id-individual_activity_page .views-row .views-field-field-ct-school a:hover {
+  font-size: 1.3rem;
+  color: #2c93d5;
+}
+/* line 32, ../sass/activity_page.scss */
+.page-school-activities .view-views-school-activities.view-display-id-page .views-row:nth-child(2n+1), .page-school-activities .view-views-school-activities.view-display-id-individual_activity_page .views-row:nth-child(2n+1) {
+  border-bottom: 5px solid #2c93d5;
+}
+/* line 36, ../sass/activity_page.scss */
+.page-school-activities .view-views-school-activities.view-display-id-page .views-row:nth-child(2n+2), .page-school-activities .view-views-school-activities.view-display-id-individual_activity_page .views-row:nth-child(2n+2) {
+  border-bottom: 5px solid #FFC800;
+}
+
+/*# sourceMappingURL=activity_page.css.map */

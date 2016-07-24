@@ -31,9 +31,6 @@ function schoolcounter_general_apis_page_alter(&$page) {
       // drupal_add_js($theme_path . '/javascripts/homepage.js', 'file');
       drupal_add_css($theme_path . '/css/school.css', 'file');
     break;
-    case 'school-blogs':
-      drupal_add_css($theme_path . '/css/blogs_landing.css', 'file');
-    break;
 
   }
 
@@ -42,6 +39,23 @@ function schoolcounter_general_apis_page_alter(&$page) {
   }
   if (arg(0) == 'teachers') {
     drupal_add_css($theme_path . '/css/faculty.css', 'file');
+  }
+  if (arg(0) == 'school-activities') {
+    drupal_add_css($theme_path . '/css/activity_page.css', 'file');
+  }
+  if (arg(0) == 'school-infrastructure') {
+    drupal_add_css($theme_path . '/css/school-infrastructure.css', 'file');
+  }
+  if (arg(0) == 'students-result') {
+    drupal_add_css($theme_path . '/css/result_page.css', 'file');
+  }
+  if (arg(0) == 'contact-us') {
+    drupal_add_css($theme_path . '/css/school-contact.css', 'file');
+  }
+  if (arg(0) == 'school-blogs') {
+    sc_add_mscrollbar_library();
+    drupal_add_css($theme_path . '/css/blogs_landing.css', 'file');
+    drupal_add_js($theme_path . '/javascripts/blogs.js', 'file');
   }
 }
 
@@ -54,6 +68,7 @@ function schoolcounter_general_apis_node_view($node, $view_mode, $langcode) {
   $jscroll_lib = libraries_get_path('jScroll');
 
   if ($node->type == 'ct_school') {
+    sc_add_mscrollbar_library();
     drupal_add_css($slick_lib . '/slick/slick.css', 'file');
     drupal_add_css($slick_lib . '/slick/slick-theme.css', 'file');
     drupal_add_js($slick_lib . '/slick/slick.js', 'file');
@@ -78,4 +93,67 @@ function schoolcounter_general_apis_node_view($node, $view_mode, $langcode) {
   if ($node->type == 'ct_about_us') {
     drupal_add_css($theme_path . '/css/school-about-us.css', 'file');
   }
+
+  if ($node->type == 'ct_school_activities') {
+    drupal_add_css($theme_path . '/css/activity_node.css', 'file');
+  }
+
+  if ($node->type == 'ct_school_infrastructure') {
+    drupal_add_css($slick_lib . '/slick/slick.css', 'file');
+    drupal_add_css($slick_lib . '/slick/slick-theme.css', 'file');
+    drupal_add_js($slick_lib . '/slick/slick.js', 'file');
+    drupal_add_js($slick_lib . '/slick/slick.min.js', 'file');
+    drupal_add_css($theme_path . '/css/school-infrastructure.css', 'file');
+    drupal_add_js($theme_path . '/javascripts/infrastructure.js', 'file');
+  }
+}
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function schoolcounter_general_apis_views_pre_render(&$view) {
+  if ($view->name == 'views_school' && $view->current_display == 'academics') {
+    if (empty($view->result[0]->field_field_ct_academics) && empty($view->result[0]->field_field_ct_admission_procedure)) {
+      $view->result = array();
+    }
+  }
+
+  if ($view->name == 'views_school' && $view->current_display == 'time_table') {
+    if (empty($view->result[0]->field_field_fc_class) && empty($view->result[0]->field_field_fc_time_table_file)) {
+      $view->result = array();
+    }
+  }
+
+  if ($view->name == 'views_school' && $view->current_display == 'syllabus') {
+    if (empty($view->result[0]->field_field_fc_class) && empty($view->result[0]->field_field_fc_syllabus_file)) {
+      $view->result = array();
+    }
+  }
+
+  if ($view->name == 'views_school' && $view->current_display == 'block_2') {
+    if (empty($view->result[0]->field_field_ct_calendar) && empty($view->result[0]->field_field_ct_careers && empty($view->result[0]->field_field_ct_hostel))) {
+      $view->result = array();
+    }
+  }
+
+  if ($view->name == 'views_school' && $view->current_display == 'chairman') {
+    if (empty($view->result[0]->field_field_fc_message)) {
+      $view->result = array();
+    }
+  }
+
+  if ($view->name == 'views_school' && $view->current_display == 'principal') {
+    if (empty($view->result[0]->field_field_fc_message)) {
+      $view->result = array();
+    }
+  }
+}
+
+/**
+ * Add mcustomscrollbar library.
+ */
+function sc_add_mscrollbar_library() {
+  $mscrollbar_lib = libraries_get_path('mscrollbar');
+  drupal_add_css($mscrollbar_lib . '/jquery.mCustomScrollbar.css', 'file');
+  drupal_add_js($mscrollbar_lib . '/jquery.mCustomScrollbar.concat.min.js', 'file');
 }

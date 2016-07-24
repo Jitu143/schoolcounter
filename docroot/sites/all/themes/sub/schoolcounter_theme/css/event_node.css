@@ -11,7 +11,7 @@
 .node-type-ct-events #block-views-views-events-block-2 .views-label {
   font-size: 1.2rem;
   color: white;
-  border-bottom: 2px solid orange;
+  border-bottom: 2px solid #FF6109;
   display: inline-block;
   padding: 0 10px;
   font-size: 1.3rem;
@@ -24,7 +24,7 @@
 }
 /* line 27, ../sass/event_node.scss */
 .node-type-ct-events #block-views-views-events-block-2 .views-field-field-ct-date .field-content a, .node-type-ct-events #block-views-views-events-block-2 .views-field-field-ct-school .field-content a, .node-type-ct-events #block-views-views-events-block-2 .views-field-field-ct-description .field-content a {
-  color: orange;
+  color: #FF6109;
 }
 /* line 34, ../sass/event_node.scss */
 .node-type-ct-events #block-views-views-events-block-2 .views-field-nothing img {
@@ -34,21 +34,12 @@
 /* line 38, ../sass/event_node.scss */
 .node-type-ct-events #block-views-views-events-block-2 .views-field-nothing ul {
   list-style: none;
+  padding: 0;
 }
-/* line 42, ../sass/event_node.scss */
+/* line 43, ../sass/event_node.scss */
 .node-type-ct-events #block-views-views-events-block-2 .views-field-nothing .slide-for {
-  width: 50%;
+  width: 80%;
   margin: auto;
-}
-/* line 47, ../sass/event_node.scss */
-.node-type-ct-events #block-views-views-events-block-2 .views-field-nothing .slide-nav {
-  width: 40%;
-  margin: auto;
-  margin-top: 20px;
-}
-/* line 51, ../sass/event_node.scss */
-.node-type-ct-events #block-views-views-events-block-2 .views-field-nothing .slide-nav img {
-  height: 100px;
 }
 
 /*# sourceMappingURL=event_node.css.map */

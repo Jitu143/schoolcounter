@@ -1,4 +1,5 @@
 @import "variable";
+@import "mixin";
 
 html {
   font-size: 87.5%;
@@ -140,4 +141,42 @@ section.col-sm-12 {
 
 *:focus {
   outline: none;
+}
+
+
+#block-views-views-school-blogs-block-2, #block-views-views-school-block-3 {
+  @include main_block($white_bg...);
+
+  .block-title {
+    margin-bottom: 20px;
+  }
+
+  .view-content {
+    text-align: left;
+  }
+
+  .views-row {
+    border-bottom: 2px solid;
+    padding: 5px 0;
+  }
+
+  .views-row.views-row-last {
+    border-bottom: none;
+  }
+
+  .views-field-title {
+    a {
+      color: $site-blue;
+    }
+  }
+
+  .views-field-field-ct-school {
+    a {
+      color: $orange;
+    }
+  }
+}
+
+#block-views-views-school-block-3 {
+
 }

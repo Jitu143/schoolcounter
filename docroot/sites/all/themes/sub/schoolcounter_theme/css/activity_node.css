@@ -1,0 +1,30 @@
+/* line 6, ../sass/activity_node.scss */
+.node-type-ct-school-activities .node-ct-school-activities .field {
+  margin-bottom: 10px;
+}
+/* line 10, ../sass/activity_node.scss */
+.node-type-ct-school-activities .node-ct-school-activities img {
+  width: 100%;
+  height: auto;
+}
+/* line 16, ../sass/activity_node.scss */
+.node-type-ct-school-activities .node-ct-school-activities .field-name-field-ct-description h3 {
+  color: #FF6109;
+  margin-bottom: 10px;
+}
+/* line 22, ../sass/activity_node.scss */
+.node-type-ct-school-activities .node-ct-school-activities .field-name-field-ct-activity-type {
+  margin-top: 20px;
+}
+/* line 27, ../sass/activity_node.scss */
+.node-type-ct-school-activities .node-ct-school-activities .field-name-field-ct-school a {
+  color: #2c93d5;
+  font-size: 1.2rem;
+}
+/* line 31, ../sass/activity_node.scss */
+.node-type-ct-school-activities .node-ct-school-activities .field-name-field-ct-school a:hover {
+  font-size: 1.3rem;
+  color: #FF6109;
+}
+
+/*# sourceMappingURL=activity_node.css.map */

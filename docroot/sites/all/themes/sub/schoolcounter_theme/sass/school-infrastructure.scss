@@ -1,0 +1,76 @@
+@import "variable";
+@import "mixin";
+
+.page-school-infrastructure {
+
+  #block-system-main {
+    @include main_block($white_bg...);
+  }
+
+  .view-views-school-infrastructure.view-display-id-page {
+    .views-row {
+      width: 25%;
+      @media only screen and (max-width: 1000px) {
+        width: 33.33%;
+      }
+      @media only screen and (max-width: 768px) {
+        width: 50%;
+      }
+      @media only screen and (max-width: 400px) {
+        width: 100%;
+      }
+      float: left;
+      margin: 0 auto;
+      padding: 10px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .views-field-title {
+        border: 1px solid $orange;
+        border-top: 1px solid $border-color;
+        padding: 10px 10px;
+
+        a {
+          font-size: $large_font;
+          color: $site-blue;
+        }
+      }
+    }
+  }
+}
+
+.node-type-ct-school-infrastructure {
+
+  .node-ct-school-infrastructure {
+
+    width: 85%;
+    margin: 0 auto;
+    padding: $distance 0;
+
+    .field-name-field-ct-school, .field-name-field-ct-description {
+      .field-item {
+        display: inline-block;
+        padding: 10px 10px 10px 0px;
+        a {
+          font-size: $large_font;
+          color: $site-blue;
+
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+
+  #block-views-0a43ea420f4ed790aec8cecfcaaa400a {
+    @include main_block($white_bg...);
+
+    img {
+      margin: auto;
+    }
+  }
+}

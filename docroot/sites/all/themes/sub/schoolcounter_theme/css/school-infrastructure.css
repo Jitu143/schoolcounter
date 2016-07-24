@@ -1,0 +1,200 @@
+/* line 90, ../sass/_mixin.scss */
+.page-school-infrastructure #block-system-main .block-title, .node-type-ct-school-infrastructure #block-views-0a43ea420f4ed790aec8cecfcaaa400a .block-title {
+  font-family: "Oswald", sans-serif, Helvetica;
+  font-size: 1.8rem;
+}
+
+/* line 6, ../sass/school-infrastructure.scss */
+.page-school-infrastructure #block-system-main {
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+/* line 12, ../sass/_mixin.scss */
+.page-school-infrastructure #block-system-main .block-title {
+  color: black;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
+  display: inline-block;
+}
+/* line 16, ../sass/_mixin.scss */
+.page-school-infrastructure #block-system-main .view-header {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: inherit;
+  margin-top: -20px;
+}
+/* line 20, ../sass/_mixin.scss */
+.page-school-infrastructure #block-system-main .view-content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+}
+/* line 81, ../sass/_mixin.scss */
+.page-school-infrastructure #block-system-main .view-content .views-rows {
+  text-align: left;
+}
+/* line 24, ../sass/_mixin.scss */
+.page-school-infrastructure #block-system-main .view-footer {
+  margin: auto;
+  margin-top: 40px;
+  width: auto;
+  min-width: 122px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 57, ../sass/_mixin.scss */
+.page-school-infrastructure #block-system-main .view-footer a {
+  color: white;
+  padding: 10px 16px;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid white;
+  background: #2c93d5;
+  transition: 0.5s all;
+}
+/* line 67, ../sass/_mixin.scss */
+.page-school-infrastructure #block-system-main .view-footer a:hover {
+  border: 1px solid white;
+  background: #FF6109;
+  color: white;
+}
+/* line 11, ../sass/school-infrastructure.scss */
+.page-school-infrastructure .view-views-school-infrastructure.view-display-id-page .views-row {
+  width: 25%;
+  float: left;
+  margin: 0 auto;
+  padding: 10px;
+}
+@media only screen and (max-width: 1000px) {
+  /* line 11, ../sass/school-infrastructure.scss */
+  .page-school-infrastructure .view-views-school-infrastructure.view-display-id-page .views-row {
+    width: 33.33%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 11, ../sass/school-infrastructure.scss */
+  .page-school-infrastructure .view-views-school-infrastructure.view-display-id-page .views-row {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 11, ../sass/school-infrastructure.scss */
+  .page-school-infrastructure .view-views-school-infrastructure.view-display-id-page .views-row {
+    width: 100%;
+  }
+}
+/* line 26, ../sass/school-infrastructure.scss */
+.page-school-infrastructure .view-views-school-infrastructure.view-display-id-page .views-row img {
+  width: 100%;
+  height: auto;
+}
+/* line 31, ../sass/school-infrastructure.scss */
+.page-school-infrastructure .view-views-school-infrastructure.view-display-id-page .views-row .views-field-title {
+  border: 1px solid #FF6109;
+  border-top: 1px solid #eee;
+  padding: 10px 10px;
+}
+/* line 36, ../sass/school-infrastructure.scss */
+.page-school-infrastructure .view-views-school-infrastructure.view-display-id-page .views-row .views-field-title a {
+  font-size: 1.2rem;
+  color: #2c93d5;
+}
+
+/* line 47, ../sass/school-infrastructure.scss */
+.node-type-ct-school-infrastructure .node-ct-school-infrastructure {
+  width: 85%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+/* line 54, ../sass/school-infrastructure.scss */
+.node-type-ct-school-infrastructure .node-ct-school-infrastructure .field-name-field-ct-school .field-item, .node-type-ct-school-infrastructure .node-ct-school-infrastructure .field-name-field-ct-description .field-item {
+  display: inline-block;
+  padding: 10px 10px 10px 0px;
+}
+/* line 57, ../sass/school-infrastructure.scss */
+.node-type-ct-school-infrastructure .node-ct-school-infrastructure .field-name-field-ct-school .field-item a, .node-type-ct-school-infrastructure .node-ct-school-infrastructure .field-name-field-ct-description .field-item a {
+  font-size: 1.2rem;
+  color: #2c93d5;
+}
+/* line 61, ../sass/school-infrastructure.scss */
+.node-type-ct-school-infrastructure .node-ct-school-infrastructure .field-name-field-ct-school .field-item a:hover, .node-type-ct-school-infrastructure .node-ct-school-infrastructure .field-name-field-ct-description .field-item a:hover {
+  color: #FF6109;
+}
+/* line 69, ../sass/school-infrastructure.scss */
+.node-type-ct-school-infrastructure #block-views-0a43ea420f4ed790aec8cecfcaaa400a {
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+/* line 12, ../sass/_mixin.scss */
+.node-type-ct-school-infrastructure #block-views-0a43ea420f4ed790aec8cecfcaaa400a .block-title {
+  color: black;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
+  display: inline-block;
+}
+/* line 16, ../sass/_mixin.scss */
+.node-type-ct-school-infrastructure #block-views-0a43ea420f4ed790aec8cecfcaaa400a .view-header {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: inherit;
+  margin-top: -20px;
+}
+/* line 20, ../sass/_mixin.scss */
+.node-type-ct-school-infrastructure #block-views-0a43ea420f4ed790aec8cecfcaaa400a .view-content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+}
+/* line 81, ../sass/_mixin.scss */
+.node-type-ct-school-infrastructure #block-views-0a43ea420f4ed790aec8cecfcaaa400a .view-content .views-rows {
+  text-align: left;
+}
+/* line 24, ../sass/_mixin.scss */
+.node-type-ct-school-infrastructure #block-views-0a43ea420f4ed790aec8cecfcaaa400a .view-footer {
+  margin: auto;
+  margin-top: 40px;
+  width: auto;
+  min-width: 122px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 57, ../sass/_mixin.scss */
+.node-type-ct-school-infrastructure #block-views-0a43ea420f4ed790aec8cecfcaaa400a .view-footer a {
+  color: white;
+  padding: 10px 16px;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid white;
+  background: #2c93d5;
+  transition: 0.5s all;
+}
+/* line 67, ../sass/_mixin.scss */
+.node-type-ct-school-infrastructure #block-views-0a43ea420f4ed790aec8cecfcaaa400a .view-footer a:hover {
+  border: 1px solid white;
+  background: #FF6109;
+  color: white;
+}
+/* line 72, ../sass/school-infrastructure.scss */
+.node-type-ct-school-infrastructure #block-views-0a43ea420f4ed790aec8cecfcaaa400a img {
+  margin: auto;
+}
+
+/*# sourceMappingURL=school-infrastructure.css.map */

@@ -1,76 +1,56 @@
 @import "variable";
+@import "mixin";
 
 .page-school-blogs {
 
-  // .view-views-school-blogs.view-display-id-page {
-  //   .views-row {
-  //     clear: both;
-  //     margin-top: 20px;
-  //     height: 202px;
-  //   }
+  .view-views-school-blogs {
 
-  //   .views-field-field-ct-images {
-  //     float: left;
+    &.view-display-id-blogs_landing_page, &.view-display-id-page_1 {
 
-  //     img {
-  //       width: 100%;
-  //       height: auto;
-  //     }
-  //   }
-  // }
-
-  .view-display-id-blogs_landing_page {
-    .blog-item {
-      margin: 0 1rem 1rem;
-      padding: 20px 30px;
-      border: 1px solid #e5e5e5;
-      box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-      -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-      -ms-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-      -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-      -o-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-      .blog-image {
-        margin-bottom: 20px;
-        img {
-          width: 100%;
+      .col.col-lg-6 {
+        padding: 10px;
+        width: 50%;
+        float: left;
+        overflow: auto;
+        @media only screen and (max-width: 600px) {
+          width: 85%;
+          float: none;
           margin: auto;
-          transform: scale(1.05);
-          -moz-transform: scale(1.05);
-          -ms-transform: scale(1.05);
-          -webkit-transform: scale(1.05);
-          -o-transform: scale(1.05);
-
-          transition: all 0.5s ease-in-out 0s;
-          -moz-transition: all 0.5s ease-in-out 0s;
-          -ms-transition: all 0.5s ease-in-out 0s;
-          -webkit-transition: all 0.5s ease-in-out 0s;
-          -o-transition: all 0.5s ease-in-out 0s;
-
+        }
+        @media only screen and (max-width: 400px) {
+          width: 100%;
         }
       }
-      .blog-info {
-        .blog-title {
-          font-size: 25px;
-          height: 70px;
-          line-height: 30px;
-          overflow: hidden;
-          margin-bottom: 10px;
-        }
-        .blog-date {
-          margin: 0 0 15px;
-          padding: 0;
-          font-size: 15px;
-          background-image: url("../images/icons/clock.png");
-          background-repeat: no-repeat;
-          background-position-y: 3px;
-          span {
-            margin-left: 25px;
+      .blog-item {
+        @include flip-class;
+        .blog-image {
+          img {
+            width: 100%;
+            margin: auto;
           }
         }
-        .blog-description {
-          p {
-            margin-bottom: 1.3em;
-            line-height: 25px;
+        .blog-info {
+          max-height: 100%;
+          .blog-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+          }
+          .blog-date {
+            margin: 0 0 15px;
+            padding: 0;
+            font-size: 15px;
+            background-image: url("../images/icons/clock.png");
+            background-repeat: no-repeat;
+            background-position-y: 3px;
+            span {
+              margin-left: 25px;
+            }
+          }
+          .blog-description {
+            p {
+              margin-bottom: 1.3em;
+              line-height: 25px;
+            }
           }
         }
       }

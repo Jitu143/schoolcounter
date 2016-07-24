@@ -1,50 +1,56 @@
-/* line 3, ../sass/basic_layout.scss */
+/* line 90, ../sass/_mixin.scss */
+#block-views-views-school-blogs-block-2 .block-title, #block-views-views-school-block-3 .block-title {
+  font-family: "Oswald", sans-serif, Helvetica;
+  font-size: 1.8rem;
+}
+
+/* line 4, ../sass/basic_layout.scss */
 html {
   font-size: 87.5%;
   line-height: 1.3;
 }
 
-/* line 8, ../sass/basic_layout.scss */
+/* line 9, ../sass/basic_layout.scss */
 body {
   font-size: 1rem;
   color: #888888;
   font-family: "Gudea", sans-serif, Helvetica;
 }
-/* line 13, ../sass/basic_layout.scss */
+/* line 14, ../sass/basic_layout.scss */
 body h1 {
   font-size: 2rem;
 }
-/* line 17, ../sass/basic_layout.scss */
+/* line 18, ../sass/basic_layout.scss */
 body h2 {
   font-size: 1.8rem;
 }
-/* line 21, ../sass/basic_layout.scss */
+/* line 22, ../sass/basic_layout.scss */
 body h3 {
   font-size: 1.5rem;
 }
-/* line 25, ../sass/basic_layout.scss */
+/* line 26, ../sass/basic_layout.scss */
 body h4 {
   font-size: 1.3rem;
 }
-/* line 29, ../sass/basic_layout.scss */
+/* line 30, ../sass/basic_layout.scss */
 body h5 {
   font-size: 1.2rem;
 }
-/* line 33, ../sass/basic_layout.scss */
+/* line 34, ../sass/basic_layout.scss */
 body h6 {
   font-size: 1.1rem;
 }
-/* line 37, ../sass/basic_layout.scss */
+/* line 38, ../sass/basic_layout.scss */
 body a {
   color: #1f1f1f;
 }
-/* line 39, ../sass/basic_layout.scss */
+/* line 40, ../sass/basic_layout.scss */
 body a:hover {
   text-decoration: none;
   color: #2c93d5;
   transition: color 0.3s ease;
 }
-/* line 47, ../sass/basic_layout.scss */
+/* line 48, ../sass/basic_layout.scss */
 body.html > div.container, body.html > header.container, body.html > footer.container {
   width: 100%;
   max-width: 100%;
@@ -52,43 +58,43 @@ body.html > div.container, body.html > header.container, body.html > footer.cont
   position: relative;
   background: white;
 }
-/* line 57, ../sass/basic_layout.scss */
+/* line 58, ../sass/basic_layout.scss */
 body header#navbar {
   margin: 0;
 }
-/* line 61, ../sass/basic_layout.scss */
+/* line 62, ../sass/basic_layout.scss */
 body #first-time {
   display: none;
 }
 
-/* line 66, ../sass/basic_layout.scss */
+/* line 67, ../sass/basic_layout.scss */
 .breadcrumb {
   margin-bottom: 0;
 }
 
-/* line 70, ../sass/basic_layout.scss */
+/* line 71, ../sass/basic_layout.scss */
 div.row, .navbar-header, .navbar-collapse {
   margin: 0;
 }
 
-/* line 74, ../sass/basic_layout.scss */
+/* line 75, ../sass/basic_layout.scss */
 .navbar-header {
   margin: 0 !important;
   background: #2c93d5;
 }
 
-/* line 79, ../sass/basic_layout.scss */
+/* line 80, ../sass/basic_layout.scss */
 div.highlighted.jumbotron {
   background: white;
   padding: 0;
 }
 
-/* line 84, ../sass/basic_layout.scss */
+/* line 85, ../sass/basic_layout.scss */
 section.col-sm-12 {
   padding: 0;
 }
 
-/* line 88, ../sass/basic_layout.scss */
+/* line 89, ../sass/basic_layout.scss */
 .page-header {
   background: #2c93d5;
   text-align: center;
@@ -97,62 +103,151 @@ section.col-sm-12 {
   color: white;
 }
 
-/* line 97, ../sass/basic_layout.scss */
+/* line 98, ../sass/basic_layout.scss */
 .region-footer #block-menu-menu-sc-footer-menu {
   background: #078377;
 }
-/* line 99, ../sass/basic_layout.scss */
+/* line 100, ../sass/basic_layout.scss */
 .region-footer #block-menu-menu-sc-footer-menu a {
   color: white;
 }
-/* line 102, ../sass/basic_layout.scss */
+/* line 103, ../sass/basic_layout.scss */
 .region-footer #block-menu-menu-sc-footer-menu .block-title {
   display: none;
 }
 
-/* line 108, ../sass/basic_layout.scss */
+/* line 109, ../sass/basic_layout.scss */
 .sharethis-buttons {
   position: fixed;
   top: 50%;
   left: 0;
   z-index: 9999;
 }
-/* line 113, ../sass/basic_layout.scss */
+/* line 114, ../sass/basic_layout.scss */
 .sharethis-buttons .sharethis-wrapper {
   width: 140px;
 }
-/* line 115, ../sass/basic_layout.scss */
+/* line 116, ../sass/basic_layout.scss */
 .sharethis-buttons .sharethis-wrapper .stMainServices {
   height: 26px;
 }
-/* line 119, ../sass/basic_layout.scss */
+/* line 120, ../sass/basic_layout.scss */
 .sharethis-buttons .sharethis-wrapper .stButton_gradient {
   height: 22px;
 }
 
-/* line 125, ../sass/basic_layout.scss */
+/* line 126, ../sass/basic_layout.scss */
 .highlighted.jumbotron {
   margin-bottom: 0;
 }
 
-/* line 129, ../sass/basic_layout.scss */
+/* line 130, ../sass/basic_layout.scss */
 .slick-slider {
   margin-bottom: 0;
 }
 
-/* line 133, ../sass/basic_layout.scss */
+/* line 134, ../sass/basic_layout.scss */
 .jspVerticalBar {
   width: 5px;
 }
 
-/* line 137, ../sass/basic_layout.scss */
+/* line 138, ../sass/basic_layout.scss */
 .slick-prev:before, .slick-next:before {
   color: #2c93d5;
 }
 
-/* line 141, ../sass/basic_layout.scss */
+/* line 142, ../sass/basic_layout.scss */
 *:focus {
   outline: none;
+}
+
+/* line 147, ../sass/basic_layout.scss */
+#block-views-views-school-blogs-block-2, #block-views-views-school-block-3 {
+  background: white;
+  width: 100%;
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+/* line 12, ../sass/_mixin.scss */
+#block-views-views-school-blogs-block-2 .block-title, #block-views-views-school-block-3 .block-title {
+  color: black;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
+  display: inline-block;
+}
+/* line 16, ../sass/_mixin.scss */
+#block-views-views-school-blogs-block-2 .view-header, #block-views-views-school-block-3 .view-header {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: inherit;
+  margin-top: -20px;
+}
+/* line 20, ../sass/_mixin.scss */
+#block-views-views-school-blogs-block-2 .view-content, #block-views-views-school-block-3 .view-content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+}
+/* line 81, ../sass/_mixin.scss */
+#block-views-views-school-blogs-block-2 .view-content .views-rows, #block-views-views-school-block-3 .view-content .views-rows {
+  text-align: left;
+}
+/* line 24, ../sass/_mixin.scss */
+#block-views-views-school-blogs-block-2 .view-footer, #block-views-views-school-block-3 .view-footer {
+  margin: auto;
+  margin-top: 40px;
+  width: auto;
+  min-width: 122px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 57, ../sass/_mixin.scss */
+#block-views-views-school-blogs-block-2 .view-footer a, #block-views-views-school-block-3 .view-footer a {
+  color: white;
+  padding: 10px 16px;
+  display: block;
+  border-radius: 3px;
+  border: 1px solid white;
+  background: #2c93d5;
+  transition: 0.5s all;
+}
+/* line 67, ../sass/_mixin.scss */
+#block-views-views-school-blogs-block-2 .view-footer a:hover, #block-views-views-school-block-3 .view-footer a:hover {
+  border: 1px solid white;
+  background: #FF6109;
+  color: white;
+}
+/* line 150, ../sass/basic_layout.scss */
+#block-views-views-school-blogs-block-2 .block-title, #block-views-views-school-block-3 .block-title {
+  margin-bottom: 20px;
+}
+/* line 154, ../sass/basic_layout.scss */
+#block-views-views-school-blogs-block-2 .view-content, #block-views-views-school-block-3 .view-content {
+  text-align: left;
+}
+/* line 158, ../sass/basic_layout.scss */
+#block-views-views-school-blogs-block-2 .views-row, #block-views-views-school-block-3 .views-row {
+  border-bottom: 2px solid;
+  padding: 5px 0;
+}
+/* line 163, ../sass/basic_layout.scss */
+#block-views-views-school-blogs-block-2 .views-row.views-row-last, #block-views-views-school-block-3 .views-row.views-row-last {
+  border-bottom: none;
+}
+/* line 168, ../sass/basic_layout.scss */
+#block-views-views-school-blogs-block-2 .views-field-title a, #block-views-views-school-block-3 .views-field-title a {
+  color: #2c93d5;
+}
+/* line 174, ../sass/basic_layout.scss */
+#block-views-views-school-blogs-block-2 .views-field-field-ct-school a, #block-views-views-school-block-3 .views-field-field-ct-school a {
+  color: #FF6109;
 }
 
 /*# sourceMappingURL=basic_layout.css.map */

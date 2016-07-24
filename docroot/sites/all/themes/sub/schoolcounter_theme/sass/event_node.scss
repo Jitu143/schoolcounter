@@ -37,21 +37,14 @@
       }
       ul {
         list-style: none;
+        padding: 0;
       }
 
       .slide-for {
-        width: 50%;
+        width: 80%;
         margin: auto;
       }
 
-      .slide-nav {
-        width: 40%;
-        margin: auto;
-        margin-top: 20px;
-        img {
-          height: 100px;
-        }
-      }
     }
   }
 }

@@ -119,6 +119,52 @@
 
 #block-views-views-school-block-2 {
   @include main_block($white_bg...);
+
+  .views-field-field-ct-careers {
+    text-align: left;
+    h1, h2, h3, h4, h5, h6 {
+      color: $orange;
+    }
+  }
+
+  .views-field-field-ct-hostel {
+    text-align: left;
+    .field-label {
+      font-size: 1.2rem;
+      color: $site-blue;
+    }
+    .field-name-field-ct-images {
+      .field-items {
+        .field-item {
+          width: 33.33%;
+          @media only screen and (max-width: 900px) {
+            width: 50%;
+          }
+          @media only screen and (max-width: 400px) {
+            width: 100%;
+          }
+          float: left;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+
+          &.even {
+            img {
+              border: 5px solid $orange;
+            }
+          }
+
+          &.odd {
+            img {
+              border: 5px solid $site-blue;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 #views-bootstrap-accordion-schooldetail {
@@ -213,6 +259,13 @@
   .field-content {
     height: 250px;
   }
+
+  .view-content {
+    box-sizing: border-box;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+  }
 }
 
 
@@ -270,6 +323,11 @@
     border: 1px solid $border-color;
     text-align: left;
     max-height: 300px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px 0;
+    margin-top: 40px;
   }
 
   .views-field {
@@ -424,5 +482,20 @@
     .subject, .result {
       font-size: $large_font
     }
+  }
+}
+
+#block-school-custom-block-sc-contact-us {
+  a {
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+    font-size: 1.5rem;
+    display: inline-block;
+    background: $site-blue;
+    padding: 5px 10px;
+    color: $white;
+    border-radius: 10px;
   }
 }

@@ -215,7 +215,7 @@
 /* line 67, ../sass/_mixin.scss */
 #block-views-views-home-page-block-1 .view-footer a:hover {
   border: 1px solid white;
-  background: orange;
+  background: #FF6109;
   color: white;
 }
 /* line 152, ../sass/home.scss */
@@ -308,7 +308,7 @@
 /* line 67, ../sass/_mixin.scss */
 #block-views-views-school-blogs-home-blogs .view-footer a:hover {
   border: 1px solid white;
-  background: orange;
+  background: #FF6109;
   color: white;
 }
 /* line 185, ../sass/home.scss */

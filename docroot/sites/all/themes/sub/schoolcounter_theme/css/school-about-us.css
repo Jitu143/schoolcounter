@@ -64,7 +64,7 @@
 /* line 67, ../sass/_mixin.scss */
 .node-type-ct-about-us #block-system-main .view-footer a:hover {
   border: 1px solid white;
-  background: orange;
+  background: #FF6109;
   color: white;
 }
 /* line 8, ../sass/school-about-us.scss */
@@ -79,7 +79,7 @@
   color: #2c93d5;
   margin-top: 20px;
   display: inline-block;
-  border-bottom: 2px solid orange;
+  border-bottom: 2px solid #FF6109;
   padding-right: 20px;
 }
 /* line 23, ../sass/school-about-us.scss */
@@ -93,7 +93,7 @@
 }
 /* line 32, ../sass/school-about-us.scss */
 .node-type-ct-about-us #block-system-main .field-name-field-ct-school a {
-  color: orange;
+  color: #FF6109;
   font-size: 1.1rem;
 }
 /* line 36, ../sass/school-about-us.scss */
